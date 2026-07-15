@@ -1,0 +1,19 @@
+{
+  "name": "CAPS Studio",
+  "version": "5.1.0-a2.1",
+  "channel": "beta",
+  "sprint": "A.2.1",
+  "milestone": "Guided Production",
+  "features": [
+    "caps-home",
+    "guided-production",
+    "production-score",
+    "next-step-card",
+    "coach",
+    "health-center",
+    "recent-activity",
+    "quick-continue",
+    "mobile-browser-ui",
+    "touch-navigation"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "CAPS Studio",
+  "version": "5.1.0-a1.1",
+  "channel": "beta",
+  "sprint": "A.1.1",
+  "features": [
+    "project-create",
+    "project-open",
+    "project-rename",
+    "project-duplicate",
+    "project-delete",
+    "project-local-storage",
+    "project-backup",
+    "project-restore",
+    "navigation",
+    "page-open",
+    "page-edit"
+  ]
+}
