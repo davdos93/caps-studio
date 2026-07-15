@@ -15,6 +15,17 @@ function characterPassport(character,index){
     name:character.name,
     role:character.role,
     age:character.age,
+    skinTone:"hell bis mittel",
+    bodyType:"altersgerecht und natürlich",
+    height:"altersgerecht",
+    hairColor:preset.hair,
+    hairLength:"passend zur Figur",
+    hairstyle:preset.hair,
+    eyeColor:preset.eyes,
+    top:preset.clothes,
+    bottom:"passend zur Figur",
+    shoes:"passend zur Figur",
+    accessories:"",
     hair:preset.hair,
     eyes:preset.eyes,
     clothes:preset.clothes,
@@ -25,10 +36,10 @@ function characterPassport(character,index){
 
 function buildPrompt(scene,plan,style,passports){
   const visible=passports.filter(p=>(scene.characters||[]).includes(p.name));
-  const characterText=visible.map(p=>`${p.name}: ${p.age||p.role}, ${p.hair}, ${p.eyes}, ${p.clothes}, ${p.definingFeatures}`).join("; ");
+  const characterText=visible.map(p=>`${p.name}: ${p.age||p.role}, Haut: ${p.skinTone}, Körperbau: ${p.bodyType}, Größe: ${p.height}, Haarfarbe: ${p.hairColor}, Haarlänge: ${p.hairLength}, Frisur: ${p.hairstyle}, Augenfarbe: ${p.eyeColor}, Oberteil: ${p.top}, Unterteil: ${p.bottom}, Schuhe: ${p.shoes}, Accessoires: ${p.accessories||"keine"}, Merkmale: ${p.definingFeatures}`).join("; ");
   return [
     `Kinderbuchillustration als breite Doppelseite im Format 3:2.`,
-    `Stil: ${style.name}. ${style.description}`,
+    `Stil: ${style.name}. Technik: ${style.technique}. Farbmodus: ${style.colorMode}. Detailgrad: ${style.detailLevel}. Farbintensität: ${style.colorIntensity}. Hintergrund: ${style.backgroundStyle}. Licht: ${style.lighting}. Linien: ${style.lineStyle}. Textur: ${style.texture}. ${style.description}`,
     `Szene: ${scene.illustrationIdea}`,
     `Ort: ${scene.location}.`,
     `Figuren: ${characterText||"keine Hauptfigur sichtbar"}.`,
@@ -96,5 +107,14 @@ function recalc(project){
   return project;
 }
 
-window.CAPS_IllustrationEngine={generate,recalc};
+function rebuildPrompts(project){
+  const ill=project.illustrations;
+  if(!ill)return project;
+  ill.items.forEach(item=>{
+    const scene=(project.bookPlan.scenes||[]).find(s=>s.id===item.sceneId);
+    item.prompt=buildPrompt(scene,project.bookPlan,ill.style,ill.characterPassports);
+  });
+  return project;
+}
+window.CAPS_IllustrationEngine={generate,recalc,rebuildPrompts};
 })();

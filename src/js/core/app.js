@@ -22,6 +22,47 @@ function illustrations(){
  <section class="illustration-stats"><div class="stat"><span>Fortschritt</span><strong>${ill.progress}%</strong></div><div class="stat"><span>Aufträge</span><strong>${ill.items.length}</strong></div><div class="stat"><span>Bilder</span><strong>${withImage}</strong></div><div class="stat"><span>Freigegeben</span><strong>${approved}</strong></div></section>
  <section class="style-bible"><p class="eyebrow">STYLE BIBLE</p><h2>${U.escapeHtml(ill.style.name)}</h2><p>${U.escapeHtml(ill.style.description)}</p><p><strong>Farbwelt:</strong> ${U.escapeHtml(ill.style.palette)}</p></section>
  <details class="panel"><summary><strong>Charakterpässe anzeigen</strong></summary><div class="passport-grid" style="margin-top:12px">${ill.characterPassports.map(x=>`<article class="passport-card"><strong>${U.escapeHtml(x.name)}</strong><span>${U.escapeHtml(x.age||x.role)}</span><span>${U.escapeHtml(x.hair)}</span><span>${U.escapeHtml(x.eyes)}</span><span>${U.escapeHtml(x.clothes)}</span><span>${U.escapeHtml(x.definingFeatures)}</span></article>`).join("")}</div></details>
+ 
+ <details class="control-section" open>
+  <summary><strong>Zeichenstil und Farbe festlegen</strong></summary>
+  <div class="style-editor-grid" style="margin-top:12px">
+   <label class="field"><span>Zeichenstil</span><select id="styleName">${["Warmherzige magische Kinderbuchillustration","Aquarell-Kinderbuch","Buntstiftzeichnung","Pastellillustration","Comicstil","Gouache","Bleistiftzeichnung","3D-Kinderbuchstil","Klassische Märchenillustration"].map(x=>`<option ${ill.style.name===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Maltechnik</span><select id="styleTechnique">${["Digitale Kinderbuchillustration","Aquarell","Buntstift","Pastell","Comic","Gouache","Bleistift","3D","Tusche"].map(x=>`<option ${ill.style.technique===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Farbmodus</span><select id="styleColorMode">${["Farbe","Schwarz-Weiß","Sepia","Begrenzte Farbpalette"].map(x=>`<option ${ill.style.colorMode===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Detailgrad</span><select id="styleDetail">${["Einfach","Mittel","Detailreich","Sehr detailreich"].map(x=>`<option ${ill.style.detailLevel===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Farbintensität</span><select id="styleIntensity">${["Sehr sanft","Sanft","Kräftig","Sehr kräftig"].map(x=>`<option ${ill.style.colorIntensity===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Hintergrund</span><select id="styleBackground">${["Minimalistisch","Einfach","Detailreicher Hintergrund","Sehr detailreicher Hintergrund"].map(x=>`<option ${ill.style.backgroundStyle===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Lichtstimmung</span><select id="styleLighting">${["Warmes, weiches Licht","Helles Tageslicht","Goldene Abendstimmung","Magisches Leuchten","Sanftes Mondlicht","Neutrales Licht"].map(x=>`<option ${ill.style.lighting===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Linienstil</span><select id="styleLines">${["Weiche, klare Konturen","Feine Linien","Kräftige Comiclinien","Kaum sichtbare Linien","Skizzenhaft"].map(x=>`<option ${ill.style.lineStyle===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field"><span>Textur</span><select id="styleTexture">${["Leicht malerisch","Papierstruktur","Aquarellpapier","Glatt digital","Buntstiftstruktur","Pastellstruktur"].map(x=>`<option ${ill.style.texture===x?"selected":""}>${x}</option>`).join("")}</select></label>
+   <label class="field wide"><span>Farbpalette</span><input id="stylePalette" value="${U.escapeHtml(ill.style.palette)}"></label>
+   <label class="field wide"><span>Eigene Stilbeschreibung</span><textarea id="styleDescription">${U.escapeHtml(ill.style.description)}</textarea></label>
+  </div>
+  <button class="primary" id="saveStyle">Stil speichern und alle Prompts aktualisieren</button>
+ </details>
+
+ <details class="control-section">
+  <summary><strong>Aussehen der Charaktere festlegen</strong></summary>
+  <div style="margin-top:12px">${ill.characterPassports.map((p,index)=>`
+   <section class="character-editor-card">
+    <h3>${U.escapeHtml(p.name)}</h3>
+    <div class="character-editor-grid">
+     <label class="field"><span>Hautfarbe</span><input data-passport="${index}" data-passport-field="skinTone" value="${U.escapeHtml(p.skinTone||"")}"></label>
+     <label class="field"><span>Körperbau</span><input data-passport="${index}" data-passport-field="bodyType" value="${U.escapeHtml(p.bodyType||"")}"></label>
+     <label class="field"><span>Körpergröße</span><input data-passport="${index}" data-passport-field="height" value="${U.escapeHtml(p.height||"")}"></label>
+     <label class="field"><span>Haarfarbe</span><input data-passport="${index}" data-passport-field="hairColor" value="${U.escapeHtml(p.hairColor||"")}"></label>
+     <label class="field"><span>Haarlänge</span><input data-passport="${index}" data-passport-field="hairLength" value="${U.escapeHtml(p.hairLength||"")}"></label>
+     <label class="field"><span>Frisur</span><input data-passport="${index}" data-passport-field="hairstyle" value="${U.escapeHtml(p.hairstyle||"")}"></label>
+     <label class="field"><span>Augenfarbe</span><input data-passport="${index}" data-passport-field="eyeColor" value="${U.escapeHtml(p.eyeColor||"")}"></label>
+     <label class="field"><span>Oberteil</span><input data-passport="${index}" data-passport-field="top" value="${U.escapeHtml(p.top||"")}"></label>
+     <label class="field"><span>Unterteil</span><input data-passport="${index}" data-passport-field="bottom" value="${U.escapeHtml(p.bottom||"")}"></label>
+     <label class="field"><span>Schuhe</span><input data-passport="${index}" data-passport-field="shoes" value="${U.escapeHtml(p.shoes||"")}"></label>
+     <label class="field"><span>Accessoires</span><input data-passport="${index}" data-passport-field="accessories" value="${U.escapeHtml(p.accessories||"")}"></label>
+     <label class="field wide"><span>Feste Erkennungsmerkmale</span><textarea data-passport="${index}" data-passport-field="definingFeatures">${U.escapeHtml(p.definingFeatures||"")}</textarea></label>
+    </div>
+   </section>`).join("")}</div>
+  <button class="primary" id="savePassports">Charaktere speichern und alle Prompts aktualisieren</button>
+ </details>
  <div class="illustration-layout">
   <aside class="illustration-sidebar"><p class="eyebrow">DOPPELSEITEN</p><div class="illustration-list">${ill.items.map(x=>`<button class="${x.id===item.id?"active":""}" data-illustration="${x.id}"><strong>Szene ${x.sceneNumber}</strong><br><small>${x.imageData?"Bild vorhanden":"Noch kein Bild"} · ${x.approved?"freigegeben":x.status}</small></button>`).join("")}</div></aside>
   <section class="illustration-editor">
@@ -37,6 +78,30 @@ function illustrations(){
 function save(){const g=(id,f="")=>document.getElementById(id)?.value??f;if(step===1){w.title=g("t",w.title);w.subtitle=g("st",w.subtitle);w.childType=g("ct",w.childType);w.childAge=g("ca",w.childAge);w.audience=w.childAge;w.purpose=g("pur",w.purpose);w.interests=g("int","").split(",").map(x=>x.trim()).filter(Boolean)}else if(step===2){w.coreMessage=g("cm",w.coreMessage);w.secondaryMessages=g("sm","").split("\n").map(x=>x.trim()).filter(Boolean)}else if(step===3)document.querySelectorAll("[data-c]").forEach(i=>{const n=+i.dataset.c,f=i.dataset.f;w.characters[n][f]=f==="strengths"?i.value.split(",").map(x=>x.trim()).filter(Boolean):i.value});else if(step===4){w.worldType=g("wt",w.worldType);w.worldName=g("wn",w.worldName);w.locations=g("loc","").split(",").map(x=>x.trim()).filter(Boolean);w.adventureType=g("adv",w.adventureType);w.pages=+g("pg",w.pages);w.endingFeeling=g("end",w.endingFeeling)}}
 function render(){document.getElementById("app").innerHTML=v==="home"?home():v==="projects"?projects():v==="wizard"?wizard():v==="manuscript"?manuscript():v==="illustrations"?illustrations():plan();bind()}
 function bind(){const gh=()=>{v="home";render()},gp=()=>{v="projects";render()},gb=()=>{if(ap()?.bookPlan){v="plan";render()}else gh()};["nh","mh"].forEach(id=>document.getElementById(id)?.addEventListener("click",gh));["np","mp"].forEach(id=>document.getElementById(id)?.addEventListener("click",gp));["nb","mb"].forEach(id=>document.getElementById(id)?.addEventListener("click",gb));const gm=()=>{if(ap()?.bookPlan){v="manuscript";render()}else gh()};["nm","mm"].forEach(id=>document.getElementById(id)?.addEventListener("click",gm));const gi=()=>{if(ap()?.bookPlan){v="illustrations";render()}else gh()};["ni","mi"].forEach(id=>document.getElementById(id)?.addEventListener("click",gi));document.getElementById("mq")?.addEventListener("click",()=>{tab="quality";gb()});["start","new"].forEach(id=>document.getElementById(id)?.addEventListener("click",()=>{w=init();step=1;v="wizard";render()}));document.getElementById("open")?.addEventListener("click",gb);document.getElementById("openManuscript")?.addEventListener("click",gm);document.getElementById("openIllustrations")?.addEventListener("click",gi);document.getElementById("cancel")?.addEventListener("click",gh);document.querySelectorAll("[data-x]").forEach(b=>b.onclick=()=>{const k=b.dataset.k,x=b.dataset.x,a=w[k]||[];w[k]=a.includes(x)?a.filter(y=>y!==x):[...a,x];render()});document.getElementById("ac")?.addEventListener("click",()=>{save();w.characters.push({name:"Neue Figur",role:"Begleitfigur",age:"",strengths:[],challenge:"",development:"",description:""});render()});document.querySelectorAll(".rc").forEach(b=>b.onclick=()=>{save();w.characters.splice(+b.dataset.i,1);render()});document.getElementById("back")?.addEventListener("click",()=>{save();step=Math.max(1,step-1);render()});document.getElementById("next")?.addEventListener("click",()=>{save();if(step<5){step++;render()}else{const bp=E.generate(w),p=P.createProject({title:w.title,subtitle:w.subtitle,language:"Deutsch",audience:w.childAge,pages:w.pages,format:"DIN A4 Querformat",style:w.bookStyle.join(", "),themeId:"book-engine",themeName:w.worldName,themes:[w.worldType,w.adventureType],bookBrief:w,bookPlan:bp});ps.unshift(p);aid=p.id;persist();v="plan";tab="overview";render();U.toast("Buchplan erstellt")}});document.querySelectorAll(".op").forEach(b=>b.onclick=()=>{aid=b.dataset.id;persist();v="plan";render()});document.querySelectorAll(".del").forEach(b=>b.onclick=()=>{const p=ps.find(x=>x.id===b.dataset.id);if(p&&confirm(`„${p.title}“ löschen?`)){ps=ps.filter(x=>x.id!==p.id);if(aid===p.id)aid=ps[0]?.id||null;persist();render()}});document.querySelectorAll(".pt").forEach(b=>b.onclick=()=>{tab=b.dataset.t;render()});document.getElementById("regen")?.addEventListener("click",()=>{const p=ap();p.bookPlan=E.generate(p.bookBrief);patch(p);tab="overview";render()});document.getElementById("sb")?.addEventListener("click",()=>{const p=ap();p.bookPlan.storyBible.logline=document.getElementById("bl").value;p.bookPlan.storyBible.coreMessage=document.getElementById("bm").value;patch(p);U.toast("Gespeichert")});document.getElementById("startManuscript")?.addEventListener("click",()=>{const p=ap();p.manuscript=M.generate(p.bookPlan);p.manuscriptStatus="draft";patch(p);activeSceneId=p.manuscript.scenes[0]?.id||null;render();U.toast("Manuskript erzeugt")});document.querySelectorAll(".chapter-button").forEach(b=>b.onclick=()=>{const p=ap();activeSceneId=p.manuscript.scenes.find(s=>s.chapterId===b.dataset.chapter)?.id||null;render()});document.querySelectorAll(".scene-button").forEach(b=>b.onclick=()=>{activeSceneId=b.dataset.scene;render()});document.getElementById("saveScene")?.addEventListener("click",()=>{const p=ap(),s=p.manuscript.scenes.find(x=>x.id===activeSceneId);s.history.push({revision:s.revision,text:s.text,changedAt:new Date().toISOString()});s.revision++;s.text=document.getElementById("sceneText").value;p.manuscript=M.recalc(p.manuscript);patch(p);render();U.toast("Szene gespeichert")});document.querySelectorAll(".rewrite-scene").forEach(b=>b.onclick=()=>{const x=document.getElementById("sceneText");if(b.dataset.mode==="simpler")x.value=x.value.split(/(?<=[.!?])\s+/).map(s=>s.split(" ").slice(0,14).join(" ")).join("\n\n");if(b.dataset.mode==="funny")x.value+="\n\nDann passierte etwas, womit wirklich niemand gerechnet hatte – und alle mussten lachen.";if(b.dataset.mode==="exciting")x.value+="\n\nPlötzlich wurde es ganz still. Hinter ihnen knackte ein Ast."});document.getElementById("advanceStatus")?.addEventListener("click",()=>{const p=ap(),s=p.manuscript.scenes.find(x=>x.id===activeSceneId),o=["draft","in-progress","completed","approved"];s.status=s.status==="approved"?"completed":o[Math.min(o.length-1,o.indexOf(s.status)+1)];p.manuscript=M.recalc(p.manuscript);p.manuscriptStatus=p.manuscript.progress===100?"approved":"draft";patch(p);render()});document.getElementById("regenManuscript")?.addEventListener("click",()=>{if(confirm("Manuskript neu erzeugen?")){const p=ap();p.manuscript=M.generate(p.bookPlan);patch(p);activeSceneId=p.manuscript.scenes[0]?.id||null;render()}});
+
+document.getElementById("saveStyle")?.addEventListener("click",()=>{
+ const p=ap(),s=p.illustrations.style;
+ s.name=document.getElementById("styleName").value;
+ s.technique=document.getElementById("styleTechnique").value;
+ s.colorMode=document.getElementById("styleColorMode").value;
+ s.detailLevel=document.getElementById("styleDetail").value;
+ s.colorIntensity=document.getElementById("styleIntensity").value;
+ s.backgroundStyle=document.getElementById("styleBackground").value;
+ s.lighting=document.getElementById("styleLighting").value;
+ s.lineStyle=document.getElementById("styleLines").value;
+ s.texture=document.getElementById("styleTexture").value;
+ s.palette=document.getElementById("stylePalette").value;
+ s.description=document.getElementById("styleDescription").value;
+ I.rebuildPrompts(p);patch(p);render();U.toast("Stil gespeichert und Prompts aktualisiert");
+});
+document.getElementById("savePassports")?.addEventListener("click",()=>{
+ const p=ap();
+ document.querySelectorAll("[data-passport]").forEach(input=>{
+   const index=Number(input.dataset.passport),field=input.dataset.passportField;
+   p.illustrations.characterPassports[index][field]=input.value;
+ });
+ I.rebuildPrompts(p);patch(p);render();U.toast("Charakterpässe gespeichert und Prompts aktualisiert");
+});
 document.getElementById("startIllustrations")?.addEventListener("click",()=>{const p=ap();p.illustrations=I.generate(p.bookPlan);p.illustrationStatus="draft";patch(p);activeIllustrationId=p.illustrations.items[0]?.id||null;render();U.toast("Illustrationsplan erzeugt")});
 document.querySelectorAll("[data-illustration]").forEach(b=>b.onclick=()=>{activeIllustrationId=b.dataset.illustration;render()});
 document.getElementById("saveIllustration")?.addEventListener("click",()=>{const p=ap(),item=p.illustrations.items.find(x=>x.id===activeIllustrationId);item.prompt=document.getElementById("illustrationPrompt").value;item.notes=document.getElementById("illustrationNotes").value;patch(p);U.toast("Illustrationsauftrag gespeichert")});
@@ -46,4 +111,4 @@ document.getElementById("removeImage")?.addEventListener("click",()=>{const p=ap
 document.getElementById("approveIllustration")?.addEventListener("click",()=>{const p=ap(),item=p.illustrations.items.find(x=>x.id===activeIllustrationId);if(!item.imageData&&!item.approved){alert("Bitte zuerst ein Bild hochladen.");return}item.approved=!item.approved;item.status=item.approved?"approved":"image-added";I.recalc(p);patch(p);render()});
 document.getElementById("regenIllustrations")?.addEventListener("click",()=>{if(confirm("Illustrationsplan neu erzeugen? Bereits hochgeladene Bilder gehen verloren.")){const p=ap();p.illustrations=I.generate(p.bookPlan);I.recalc(p);patch(p);activeIllustrationId=p.illustrations.items[0]?.id||null;render()}});
 document.querySelectorAll(".approve").forEach(b=>b.onclick=()=>{const p=ap(),s=b.dataset.s;p.bookPlan.approvals[s]=!p.bookPlan.approvals[s];p.planStatus=Object.values(p.bookPlan.approvals).every(Boolean)?"approved":"draft";patch(p);render()})}
-window.CAPS={name:"CAPS Studio",version:"0.7.2",sprint:"Book Plan MVP"};render()})();
+window.CAPS={name:"CAPS Studio",version:"0.7.3",sprint:"Book Plan MVP"};render()})();

@@ -246,3 +246,13 @@ textarea{min-height:130px;resize:vertical}
 .style-bible{border:1px solid #9bb7f6;background:#f6f8ff;border-radius:13px;padding:14px;margin-bottom:13px}
 @media(max-width:900px){.illustration-layout{grid-template-columns:1fr}.illustration-sidebar{position:static;max-height:none}.illustration-stats{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.illustration-stats{grid-template-columns:1fr}.illustration-toolbar{display:grid}.illustration-toolbar button,.upload-label{width:100%;min-height:48px}.passport-grid{grid-template-columns:1fr}}
+
+.style-editor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.character-editor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.character-editor-card{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fafbfd;margin-bottom:12px}
+.character-editor-card h3{margin-top:0}
+.control-section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
+.control-section summary{cursor:pointer}
+.style-preview{padding:12px;border:1px solid #9bb7f6;border-radius:10px;background:#f6f8ff;margin-top:10px}
+@media(max-width:850px){.style-editor-grid,.character-editor-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.style-editor-grid,.character-editor-grid{grid-template-columns:1fr}}
