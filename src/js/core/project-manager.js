@@ -58,6 +58,8 @@
       },
       bookBrief: input.bookBrief || null,
       bookPlan: input.bookPlan || null,
+      manuscript: input.manuscript || null,
+      manuscriptStatus: input.manuscript ? "draft" : "open",
       planStatus: input.bookPlan ? "draft" : "open",
       pagesData: createPages(pages),
       history: [{
