@@ -1,7 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "5.1.0-a2.2.0",
+  "version": "0.6.0",
   "channel": "beta",
-  "sprint": "A.2.2.0",
-  "milestone": "CAPS Universum"
+  "build": "2026-07-15",
+  "sprint": "A.2.2.1",
+  "milestone": "Projektassistent und Projektinhalte"
 }

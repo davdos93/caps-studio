@@ -34,8 +34,13 @@
       schemaVersion: "1.0",
       id: createId("CAPS"),
       title: String(input.title || "Unbenanntes Projekt").trim(),
-      themeId: String(input.themeId || "dinosaurier"),
-      themeName: String(input.themeName || "Dinosaurier"),
+      themeId: String(input.themeId || "custom"),
+      themeName: String(input.themeName || "Eigenes Thema"),
+      themes: Array.isArray(input.themes) ? input.themes : [],
+      customTheme: String(input.customTheme || ""),
+      subtitle: String(input.subtitle || ""),
+      author: String(input.author || ""),
+      language: String(input.language || "Deutsch"),
       audience: String(input.audience || "6–10 Jahre"),
       format: String(input.format || "DIN A4 Querformat"),
       style: String(input.style || "Premium detailreich"),
@@ -46,6 +51,11 @@
       lastOpenedAt: now,
       lastActivePageId: null,
       pagesCount: pages,
+      universe: input.universe || {
+        assetIds: [],
+        customAssets: [],
+        installedPackIds: []
+      },
       pagesData: createPages(pages),
       history: [{
         id: createId("HISTORY"),
