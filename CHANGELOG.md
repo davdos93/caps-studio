@@ -1,11 +1,16 @@
 # Changelog
 
-## [0.7.3-beta] – 2026-07-15
+## [0.7.3a-beta] – 2026-07-15
 
-- frei konfigurierbarer Illustrationsstil
+### Behoben
+- weißer Bildschirm beim Start
+- fehlende Stilfelder in bestehenden Illustrationsprojekten
+- inkompatible ältere Charakterpässe
+- ungültige aktive Altprojekte
+- fehlende sichtbare Fehlermeldung
+
+### Beibehalten
+- frei wählbarer Zeichenstil
 - Farbmodus und Maltechnik
-- Detailgrad, Farbintensität, Hintergrund und Licht
-- vollständig bearbeitbare Charakterpässe
-- Kleidung, Haare, Augen, Hautfarbe und Accessoires
-- automatische Prompt-Aktualisierung
-- Cache-Buster `2026-07-15-073`
+- bearbeitbare Haare, Augen, Kleidung, Schuhe und Accessoires
+- automatische Aktualisierung der Prompts

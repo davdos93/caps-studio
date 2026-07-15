@@ -1,16 +1,13 @@
-# CAPS Studio 0.7.3 Beta
+# CAPS Studio 0.7.3a Beta
 
-## Illustrationskontrolle
+Korrigierter Build der Illustrationskontrolle.
 
-- Zeichenstil frei wählen
-- Farbe, Schwarz-Weiß, Sepia oder begrenzte Farbpalette
-- Maltechnik, Detailgrad, Licht, Linien und Textur
-- Farbpalette und Stilbeschreibung
-- Hautfarbe, Körperbau und Größe
-- Haarfarbe, Haarlänge und Frisur
-- Augenfarbe
-- Oberteil, Unterteil und Schuhe
-- Accessoires und feste Erkennungsmerkmale
-- automatische Aktualisierung aller Illustrationsprompts
+## Reparaturen
 
-Build: `2026-07-15-073`
+- automatische Migration bestehender 0.7.2-Projekte
+- fehlende Stilfelder werden ergänzt
+- alte Charakterpässe werden übernommen
+- ungültiges aktives Altprojekt blockiert den Start nicht mehr
+- Startfehler werden verständlich angezeigt
+- lokale Projektdaten können über die Fehleranzeige repariert werden
+- neuer Cache-Buster `2026-07-15-073a`

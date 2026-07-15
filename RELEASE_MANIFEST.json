@@ -1,8 +1,8 @@
 {
   "product": "CAPS Studio",
-  "version": "0.7.3",
+  "version": "0.7.3a",
   "channel": "beta",
-  "build": "2026-07-15-073",
+  "build": "2026-07-15-073a",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.md",
@@ -31,8 +31,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "525c0a94114285826c9e8d8069f76d3ae952996ec034d6fee1a5c48d67b7b712",
-      "bytes": 332
+      "sha256": "bef8f7a565b68927d2ef51d5815423cec1e48b41b106fcaab821308b8c7c35e3",
+      "bytes": 434
     },
     {
       "path": "CONTRIBUTING.md",
@@ -46,13 +46,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "6a1fdca83f88ec1d8eb63121da45f0dcc5099ddb226dab905bba4b60b8a9d04f",
-      "bytes": 465
+      "sha256": "e7dcb69fad446dbc88f6d36ee618ee8e2355b485290d194cd6d9181a04fc00f8",
+      "bytes": 442
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "293320d7cf618fe404cb6cb96d0741685d0bac7159658ed2219c1c5010f52409",
-      "bytes": 22087
+      "sha256": "649f199a83c2b30d63e746de0b51c9e45b8e417c702f6ce44ef57de174da9f2d",
+      "bytes": 22253
     },
     {
       "path": "ROADMAP.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "4b4f23db2e3c30044ca1c34495392114536eff846313ec867d8a9bac964aebff",
-      "bytes": 176
+      "sha256": "4450b493ec3bbd3bdd34ec1e3b447b05602b620af3b682242d831bc5783a1c21",
+      "bytes": 203
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -76,18 +76,23 @@
     },
     {
       "path": "beta/index.html",
-      "sha256": "c263508e32351da46145732a9c1aac2e5ac3cd98baf49571de4fdb51ca28b151",
-      "bytes": 1088
+      "sha256": "c4212920f8f291ccad840c32b2cfead5434539afd18311e0d29fcb7933e9f2fc",
+      "bytes": 1165
     },
     {
       "path": "beta/js/core/app.js",
-      "sha256": "5b3f76b8f622f41c511af68552f0f8f23186b7bae1f7abe36e55815dcc6aa4f2",
-      "bytes": 38005
+      "sha256": "0105ddccdbbaa8a040a0317f6d89903f7a1834b6fe15b4bc0c6e5a94d56764f1",
+      "bytes": 39085
     },
     {
       "path": "beta/js/core/book-engine.js",
       "sha256": "8dd84721d288d328b34dc7b7e81369cc5f363fd59b215d056772ae990a57d4ad",
       "bytes": 5900
+    },
+    {
+      "path": "beta/js/core/boot-guard.js",
+      "sha256": "ae028cc2919a3783ba4e26d21f53f846fd32e08d62763337c11399b2e75fe6a4",
+      "bytes": 3657
     },
     {
       "path": "beta/js/core/illustration-engine.js",
@@ -436,8 +441,8 @@
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "4b4f23db2e3c30044ca1c34495392114536eff846313ec867d8a9bac964aebff",
-      "bytes": 176
+      "sha256": "4450b493ec3bbd3bdd34ec1e3b447b05602b620af3b682242d831bc5783a1c21",
+      "bytes": 203
     },
     {
       "path": "src/assets/.gitkeep",
@@ -451,18 +456,23 @@
     },
     {
       "path": "src/index.html",
-      "sha256": "c263508e32351da46145732a9c1aac2e5ac3cd98baf49571de4fdb51ca28b151",
-      "bytes": 1088
+      "sha256": "c4212920f8f291ccad840c32b2cfead5434539afd18311e0d29fcb7933e9f2fc",
+      "bytes": 1165
     },
     {
       "path": "src/js/core/app.js",
-      "sha256": "5b3f76b8f622f41c511af68552f0f8f23186b7bae1f7abe36e55815dcc6aa4f2",
-      "bytes": 38005
+      "sha256": "0105ddccdbbaa8a040a0317f6d89903f7a1834b6fe15b4bc0c6e5a94d56764f1",
+      "bytes": 39085
     },
     {
       "path": "src/js/core/book-engine.js",
       "sha256": "8dd84721d288d328b34dc7b7e81369cc5f363fd59b215d056772ae990a57d4ad",
       "bytes": 5900
+    },
+    {
+      "path": "src/js/core/boot-guard.js",
+      "sha256": "ae028cc2919a3783ba4e26d21f53f846fd32e08d62763337c11399b2e75fe6a4",
+      "bytes": 3657
     },
     {
       "path": "src/js/core/illustration-engine.js",
@@ -663,6 +673,11 @@
       "path": "tests/manual/SMOKE_TEST_0.7.3.md",
       "sha256": "559fd52cee37defddc0a8fe5e639c6b9acea8e587e272924c1b7cd4e6c016601",
       "bytes": 662
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.7.3a.md",
+      "sha256": "631803a7368c360ded282020627d4c5b6f209b2d8b9e7493114a2810ee8efa73",
+      "bytes": 672
     },
     {
       "path": "tests/results/.gitkeep",
