@@ -35,3 +35,13 @@ Die Oberfläche passt sich automatisch an kleine Bildschirme an. Für den mobile
 - Bilder: folgen in Sprint A.2.5 über IndexedDB
 - Projektsicherung: `.caps.json`
 - Projektbuch: PDF-Sprint
+
+
+## GitHub Pages
+
+Die Repository-Wurzel enthält eine Startseite für GitHub Pages.
+
+- `/beta/` – aktuelle Testversion
+- `/stable/` – zuletzt abgenommene Version
+
+Veröffentlichungsquelle: `main` und `/ (root)`.
