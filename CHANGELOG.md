@@ -1,10 +1,13 @@
 # Changelog
 
-## [0.7.1-beta] – 2026-07-15
+## [0.7.2-beta] – 2026-07-15
 
-- Manuskript-Generator
-- Texteditor und Statusworkflow
-- Fortschritt und Wortzählung
-- lokale Umschreibfunktionen
+- Illustrations-Engine MVP
+- Style Bible
+- Charakterpässe
+- Prompt pro Szene
+- Bild-Upload und Vorschau
+- Freigabe-Workflow
+- Fortschrittsanzeige
 - mobile Ansicht
-- Cache-Buster `2026-07-15-071`
+- Cache-Buster `2026-07-15-072`

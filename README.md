@@ -1,5 +1,16 @@
-# CAPS Studio 0.7.1 Beta
+# CAPS Studio 0.7.2 Beta
 
-Manuskript-Generator MVP: Textentwürfe, Bearbeitung, Status und Fortschritt.
+## Illustrations-Engine MVP
 
-Build: `2026-07-15-071`
+- Charakterpässe
+- Style Bible
+- Illustrationsauftrag für jede Szene
+- kopierbarer Prompt
+- Bild-Upload pro Doppelseite
+- Bildfreigabe und Fortschritt
+- mobile Chrome-Ansicht
+
+Die Bildgenerierung erfolgt in diesem MVP noch extern; CAPS verwaltet Briefs,
+Konsistenzdaten, hochgeladene Bilder und Freigaben.
+
+Build: `2026-07-15-072`
