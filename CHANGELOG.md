@@ -1,29 +1,18 @@
 # Changelog
 
-## [5.1.0-a2.2.1] – Beta
-
-### Geändert
-
-- technische Universum-Navigation entfernt
-- Inhalte vollständig in das Projekt integriert
-- Dinosaurier als feste Themenauswahl entfernt
+## [0.6.0-beta] – 2026-07-15
 
 ### Hinzugefügt
-
 - mehrstufiger Projektassistent
-- große Themenauswahl
-- mehrere Themen kombinierbar
-- freie Themeneingabe
-- automatische Inhaltsvorschläge
-- Menschen, Tiere, Dinosaurier und Fabelwesen
-- Roboter, Aliens und Monster
-- Fahrzeuge, Orte und Objekte
-- eigene Figuren direkt beim Projektstart
-- Projektbereich „Inhalte“
-- gleichwertige mobile Chrome-Ansicht
+- freie Themenwahl und Mehrfachauswahl
+- Menschen, Dinosaurier, Tiere und Fabelwesen
+- Roboter, Aliens, Monster, Fahrzeuge, Orte und Objekte
+- eigene Figuren
+- Projektbereiche Übersicht, Inhalte, Seiten und Einstellungen
+- mobile Chrome-Oberfläche
+- sichtbare Versionsanzeige
+- vollständiges Repository-Release
 
-## [5.1.0-a2.2.0]
-
-- CAPS Universum
-- Core Library
-- Universe Packs
+### Geändert
+- technische Universum-Begriffe aus dem Hauptworkflow entfernt
+- `src/` und `beta/` auf denselben Release-Stand vereinheitlicht

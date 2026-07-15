@@ -1,32 +1,27 @@
-# CAPS Studio
+# CAPS Studio 0.6.0 Beta
 
-## Aktueller Beta-Stand
+Dieses Paket enthält das vollständige Repository.
 
-**5.1.0-a2.2.1 – Projektassistent & Projektinhalte**
+## Verbindliche Struktur
 
-Die technischen Begriffe „Core Library“, „Universe Pack“ und „Projekt-Universum“
-wurden aus dem normalen Arbeitsablauf entfernt.
-
-### Neuer Projektablauf
-
-1. Buchinformationen
-2. Themen auswählen oder frei eingeben
-3. passende Inhalte auswählen
-4. Orte und Fahrzeuge auswählen
-5. eigene Figuren ergänzen
-6. Projekt prüfen und erstellen
-
-### Im geöffneten Projekt
-
-- Übersicht
-- Inhalte
-- Seiten
-- Einstellungen
-
-Menschen, Dinosaurier, Tiere, Fabelwesen, Fahrzeuge, Orte und Objekte werden
-direkt im jeweiligen Projekt verwaltet.
+- `src/` – aktuelle Entwicklungsquelle 0.6.0 Beta
+- `beta/` – veröffentlichte Beta 0.6.0, identisch mit `src/`
+- `stable/` – zuletzt vollständig getestete Version
+- `docs/` – Dokumentation
+- `tests/` – Smoke-Tests
+- `releases/` – Release-Unterlagen
 
 ## GitHub Pages
 
-- `/beta/` – aktuelle Testversion
-- `/stable/` – zuletzt vollständig abgenommene Version
+- Startseite: `/caps-studio/`
+- Beta: `/caps-studio/beta/`
+- Stable: `/caps-studio/stable/`
+
+## Hinweis zum GitHub-Webupload
+
+Der Webupload überschreibt gleichnamige Dateien, entfernt aber keine alten Dateien,
+die in einem neuen Paket fehlen. Die aktiven Anwendungspfade `src/`, `beta/` und
+`stable/` werden deshalb bei jedem Release vollständig mitgeliefert.
+
+Die Beta-Website lädt ausschließlich Dateien innerhalb von `beta/`. Alte Dateien
+außerhalb dieses Ordners können die Beta-Anwendung nicht beeinflussen.

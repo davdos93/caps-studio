@@ -1,43 +1,16 @@
-# CAPS Studio Roadmap
+# Roadmap
 
-## 5.1 Stable
+## 0.6.x
+Projektassistent stabilisieren und Projektinhalte verfeinern.
 
-- Projektverwaltung
-- lokale Speicherung
-- Theme-System
-- Scene Director
-- Prompt Engine
-- Bildverwaltung mit IndexedDB
-- Projektbuch als PDF
-- Chrome Desktop
-- Chrome iPhone
+## 0.7.0
+Storyboard Board und Story Editor.
 
-## 5.2
+## 0.8.0
+Scene Director und Balance-Prüfung.
 
-- Projektduplizierung
-- Suche und Filter
-- automatische Backups
-- Vorlagen
-- Favoriten
+## 0.9.0
+Prompt Engine und Bildverwaltung.
 
-## 5.3
-
-- erweiterte Story Engine
-- Variantenvergleich
-- Produktionsstatistiken
-- erweiterte Originalitätsprüfung
-
-## 6.0
-
-- weitere Bucharten
-- Activity Books
-- Rätselbücher
-- Suchbilder
-- Lernbücher
-
-## 7.0
-
-- Publisher Edition
-- Cover Studio
-- KDP-Vorbereitung
-- Serienverwaltung
+## 1.0.0
+PDF-Projektbuch und erste Stable-Veröffentlichung.

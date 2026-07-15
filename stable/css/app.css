@@ -169,3 +169,6 @@ textarea{min-height:130px;resize:vertical}
   .timeline{grid-template-columns:1fr 1fr}
   .primary,.secondary,.danger,.success{min-height:48px}
 }
+
+.release-badge{position:fixed;right:12px;bottom:12px;z-index:35;padding:7px 10px;border-radius:999px;background:rgba(17,24,39,.92);color:#fff;font-size:10px;font-weight:800;letter-spacing:.04em;box-shadow:0 5px 18px rgba(0,0,0,.22);pointer-events:none}
+@media(max-width:850px){.release-badge{right:10px;bottom:calc(78px + env(safe-area-inset-bottom))}}

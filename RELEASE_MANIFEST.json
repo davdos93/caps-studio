@@ -1,0 +1,628 @@
+{
+  "product": "CAPS Studio",
+  "version": "0.6.0",
+  "channel": "beta",
+  "buildDate": "2026-07-15",
+  "canonicalPaths": {
+    "development": "src/",
+    "beta": "beta/",
+    "stable": "stable/"
+  },
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "deba847508ebe0497e232621660d69d2f076c6057e72d1d33993981162cec7ca",
+      "bytes": 524
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sha256": "e9c0bad86f64cb26be818f47a66b577bb07c1f1a2ca2d8dd427398fb675877ee",
+      "bytes": 452
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "8e482f49a7e6389902c8e8365ea45a2823019127df3ce1b97a7d4238cbc93171",
+      "bytes": 301
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "3575362c3c94fe3a847f177bfa9456531f8e0a466676f24246d6704aab42f0e1",
+      "bytes": 74
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "fcf80027f8047fdb3aa5f9dcad0185c03ff4fbb1b2d4e716b52efb3ffc11b1c9",
+      "bytes": 551
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "af413b7f38a54731f843e312e1b89b266ef2a306a0fdb54d4e59d62fbda0646d",
+      "bytes": 196
+    },
+    {
+      "path": "README.md",
+      "sha256": "1b24f51e517ef2d28d343c27905fa2635e83b0fcbb42c4bf83c754dcfb3e8c46",
+      "bytes": 905
+    },
+    {
+      "path": "REPLACE_REPOSITORY.md",
+      "sha256": "d69334035746f2d9d72e42a0e3b39d1a1d2904fbdda25642a2cdaf8e82403f75",
+      "bytes": 653
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "7e31f3f8d5b193bce2a786b59ccefafb4119fbfda7e25c61a1d859ffa9fd8fbe",
+      "bytes": 280
+    },
+    {
+      "path": "beta/VERSION.json",
+      "sha256": "cadd200513bd7e1885ed2ae595fa2660bd32addf1251d8322f1c3d232ddc511e",
+      "bytes": 173
+    },
+    {
+      "path": "beta/assets/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "beta/css/app.css",
+      "sha256": "2af4863ee5d02ce1ee3e7d4389d84be52a373ddc074351e7dc61c8f2bdd9c3c3",
+      "bytes": 16203
+    },
+    {
+      "path": "beta/index.html",
+      "sha256": "f780984a9c78ed65875d875545fc2d7186535b6074dab4aa214de077f6bd7d2f",
+      "bytes": 759
+    },
+    {
+      "path": "beta/js/core/app.js",
+      "sha256": "43d0ae4d420fd3b5a93a139c5b6c9ed292e972b6e16d4b7b36119b8ef17363ba",
+      "bytes": 38298
+    },
+    {
+      "path": "beta/js/core/project-manager.js",
+      "sha256": "b66ef4f26719c7d2fa302cebdd7f4d1aaca54a23608ea650f9bf514b50f289a2",
+      "bytes": 8039
+    },
+    {
+      "path": "beta/js/core/storage-engine.js",
+      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
+      "bytes": 773
+    },
+    {
+      "path": "beta/js/core/universe-engine.js",
+      "sha256": "6c4070ad1b59c061f3657322a69c17a9e1d42d387ef24236bb4b8db440e3d60d",
+      "bytes": 1573
+    },
+    {
+      "path": "beta/js/engines/prompt-engine.js",
+      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
+      "bytes": 107
+    },
+    {
+      "path": "beta/js/engines/scene-director.js",
+      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
+      "bytes": 108
+    },
+    {
+      "path": "beta/js/engines/story-engine.js",
+      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
+      "bytes": 106
+    },
+    {
+      "path": "beta/js/engines/theme-engine.js",
+      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
+      "bytes": 106
+    },
+    {
+      "path": "beta/js/export/export-engine.js",
+      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
+      "bytes": 107
+    },
+    {
+      "path": "beta/js/export/pdf-engine.js",
+      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
+      "bytes": 104
+    },
+    {
+      "path": "beta/js/ui/image-manager.js",
+      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
+      "bytes": 107
+    },
+    {
+      "path": "beta/js/ui/ui-controller.js",
+      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
+      "bytes": 904
+    },
+    {
+      "path": "beta/themes/core-library.json",
+      "sha256": "65d152e3a7cd8797283e0772e38cb1df0c139a20bb9ff01d860a6f10be2a0945",
+      "bytes": 32095
+    },
+    {
+      "path": "beta/themes/dinosaurier.json",
+      "sha256": "7f096b238336111015cfa83b39d413e08c43e4071372c73249d2e4ba0756c606",
+      "bytes": 337
+    },
+    {
+      "path": "beta/themes/universe-data.js",
+      "sha256": "0cd0349bb5d97fb25f4ff001978f66fffb96f093d1259d257df6f58f2738a7c3",
+      "bytes": 25603
+    },
+    {
+      "path": "beta/themes/universe-packs.json",
+      "sha256": "037eec82477564b57b120df89ed642bacdd26fd2ced6efd89e73c2cb547b1080",
+      "bytes": 2814
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE.md",
+      "sha256": "ef14d43e4e7a6bc74d92c65d00c012280240a257da72c5856f203dc49129858a",
+      "bytes": 356
+    },
+    {
+      "path": "docs/changelog/FOUNDATION.md",
+      "sha256": "2d3182586bf2bb7d1a54bf20f1f6b1ba2cf09c08044f60714771b42d281618f9",
+      "bytes": 301
+    },
+    {
+      "path": "docs/roadmap/SPRINT_A.md",
+      "sha256": "95f047adec2a6a439b27c383a277081006ebffae13092a47a685817443218ad6",
+      "bytes": 636
+    },
+    {
+      "path": "docs/standards/DATA_MODEL.md",
+      "sha256": "0f7c023b003ceea75e37c2d3c1b0a6415af6b8432c254fc5e9c7ff3d03d746be",
+      "bytes": 453
+    },
+    {
+      "path": "docs/standards/RELEASE_STANDARD.md",
+      "sha256": "ee040481570b525db71fac828958b3546485b8be15ef578aab4a4e300e239aef",
+      "bytes": 475
+    },
+    {
+      "path": "docs/vision/VISION.md",
+      "sha256": "61556fe85ba7afa337706a5ffb1cc684aa94a378f987972ef40e84a7a8d1aa94",
+      "bytes": 349
+    },
+    {
+      "path": "index.html",
+      "sha256": "fa3f05ac2d6d26ccb7470074003a5635ef58665d617aaff49127f590b0d77d76",
+      "bytes": 1964
+    },
+    {
+      "path": "releases/README.md",
+      "sha256": "a5ac3c2baefcc61174c17be37ec6fd3fd1bc421c51ff4ef401fec16983734e35",
+      "bytes": 130
+    },
+    {
+      "path": "releases/beta/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/VERSION.json",
+      "sha256": "d439a598a973a978c1793b252f8874c54615a38fa63426c53d12034d3fcfa09b",
+      "bytes": 297
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/css/app.css",
+      "sha256": "2b68d07212567e4daac95d1dd33b6eeb4710ab4909896f10014a3f752f460edf",
+      "bytes": 5477
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/index.html",
+      "sha256": "577d03aa0d644e336f5d4ff5dee131397ef4cde13afdecb5c87ddfbf7e216bc9",
+      "bytes": 543
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/core/app.js",
+      "sha256": "8e9be69c56dd2640aae6307086003e3bab6d35b772db04ccac887a690ec265ec",
+      "bytes": 13310
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/core/project-manager.js",
+      "sha256": "3163aa81b497cb455ee33bf539b930aaf984ad922636f22d8e6cc2cded9b4c9c",
+      "bytes": 3191
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/core/storage-engine.js",
+      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
+      "bytes": 773
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/prompt-engine.js",
+      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/scene-director.js",
+      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
+      "bytes": 108
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/story-engine.js",
+      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/theme-engine.js",
+      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/export/export-engine.js",
+      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/export/pdf-engine.js",
+      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
+      "bytes": 104
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/ui/image-manager.js",
+      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/ui/ui-controller.js",
+      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
+      "bytes": 904
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/VERSION.json",
+      "sha256": "f4fa04b2297fa8ed885d38fe86e65348824d7b6ce1d805a68bbaa86b495a8829",
+      "bytes": 354
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/css/app.css",
+      "sha256": "690947e78842dd00bd50f2e3f79f893683a3d5c6c4460121a0a3995b106154e8",
+      "bytes": 7521
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/index.html",
+      "sha256": "577d03aa0d644e336f5d4ff5dee131397ef4cde13afdecb5c87ddfbf7e216bc9",
+      "bytes": 543
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/core/app.js",
+      "sha256": "d0239b5165aad8642231370998cec54ca16a3440691b70ba6e651682ee9ce455",
+      "bytes": 20636
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/core/project-manager.js",
+      "sha256": "deff9371c086c683f389221b51e567a302d007f7fd96f97f77799e11ced2ec50",
+      "bytes": 4058
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/core/storage-engine.js",
+      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
+      "bytes": 773
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/engines/prompt-engine.js",
+      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/engines/scene-director.js",
+      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
+      "bytes": 108
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/engines/story-engine.js",
+      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/engines/theme-engine.js",
+      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/export/export-engine.js",
+      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/export/pdf-engine.js",
+      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
+      "bytes": 104
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/ui/image-manager.js",
+      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1.1/js/ui/ui-controller.js",
+      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
+      "bytes": 904
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/VERSION.json",
+      "sha256": "146b25d96d2ca757f2c95200533e919a0c4ce4ad289e54e0d1041102bdcb7eed",
+      "bytes": 369
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/css/app.css",
+      "sha256": "d499bdb8b379bc71852b52b72608f09fed3abc3266b25733cbbac1b4cd144541",
+      "bytes": 10756
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/index.html",
+      "sha256": "b06a26da3c77b3c114ffc46bfefda68ce9877f1e06f1dcfb4354bc6e55f08954",
+      "bytes": 603
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/core/app.js",
+      "sha256": "da9239fe9eabd701d74899272c61cd5e4faf71603b8289f35621168a52b1c258",
+      "bytes": 24478
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/core/project-manager.js",
+      "sha256": "aac531f5b1f4c2aca06118c01dd5c0c808828444093b46d57b5cbdae45e8f83f",
+      "bytes": 7664
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/core/storage-engine.js",
+      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
+      "bytes": 773
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/engines/prompt-engine.js",
+      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/engines/scene-director.js",
+      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
+      "bytes": 108
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/engines/story-engine.js",
+      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/engines/theme-engine.js",
+      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/export/export-engine.js",
+      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/export/pdf-engine.js",
+      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
+      "bytes": 104
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/ui/image-manager.js",
+      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a2.1/js/ui/ui-controller.js",
+      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
+      "bytes": 904
+    },
+    {
+      "path": "releases/stable/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/VERSION.json",
+      "sha256": "cadd200513bd7e1885ed2ae595fa2660bd32addf1251d8322f1c3d232ddc511e",
+      "bytes": 173
+    },
+    {
+      "path": "src/assets/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/css/app.css",
+      "sha256": "2af4863ee5d02ce1ee3e7d4389d84be52a373ddc074351e7dc61c8f2bdd9c3c3",
+      "bytes": 16203
+    },
+    {
+      "path": "src/index.html",
+      "sha256": "f780984a9c78ed65875d875545fc2d7186535b6074dab4aa214de077f6bd7d2f",
+      "bytes": 759
+    },
+    {
+      "path": "src/js/core/app.js",
+      "sha256": "43d0ae4d420fd3b5a93a139c5b6c9ed292e972b6e16d4b7b36119b8ef17363ba",
+      "bytes": 38298
+    },
+    {
+      "path": "src/js/core/project-manager.js",
+      "sha256": "b66ef4f26719c7d2fa302cebdd7f4d1aaca54a23608ea650f9bf514b50f289a2",
+      "bytes": 8039
+    },
+    {
+      "path": "src/js/core/storage-engine.js",
+      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
+      "bytes": 773
+    },
+    {
+      "path": "src/js/core/universe-engine.js",
+      "sha256": "6c4070ad1b59c061f3657322a69c17a9e1d42d387ef24236bb4b8db440e3d60d",
+      "bytes": 1573
+    },
+    {
+      "path": "src/js/engines/prompt-engine.js",
+      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
+      "bytes": 107
+    },
+    {
+      "path": "src/js/engines/scene-director.js",
+      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
+      "bytes": 108
+    },
+    {
+      "path": "src/js/engines/story-engine.js",
+      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
+      "bytes": 106
+    },
+    {
+      "path": "src/js/engines/theme-engine.js",
+      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
+      "bytes": 106
+    },
+    {
+      "path": "src/js/export/export-engine.js",
+      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
+      "bytes": 107
+    },
+    {
+      "path": "src/js/export/pdf-engine.js",
+      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
+      "bytes": 104
+    },
+    {
+      "path": "src/js/ui/image-manager.js",
+      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
+      "bytes": 107
+    },
+    {
+      "path": "src/js/ui/ui-controller.js",
+      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
+      "bytes": 904
+    },
+    {
+      "path": "src/themes/core-library.json",
+      "sha256": "65d152e3a7cd8797283e0772e38cb1df0c139a20bb9ff01d860a6f10be2a0945",
+      "bytes": 32095
+    },
+    {
+      "path": "src/themes/dinosaurier.json",
+      "sha256": "7f096b238336111015cfa83b39d413e08c43e4071372c73249d2e4ba0756c606",
+      "bytes": 337
+    },
+    {
+      "path": "src/themes/universe-data.js",
+      "sha256": "0cd0349bb5d97fb25f4ff001978f66fffb96f093d1259d257df6f58f2738a7c3",
+      "bytes": 25603
+    },
+    {
+      "path": "src/themes/universe-packs.json",
+      "sha256": "037eec82477564b57b120df89ed642bacdd26fd2ced6efd89e73c2cb547b1080",
+      "bytes": 2814
+    },
+    {
+      "path": "stable/VERSION.json",
+      "sha256": "146b25d96d2ca757f2c95200533e919a0c4ce4ad289e54e0d1041102bdcb7eed",
+      "bytes": 369
+    },
+    {
+      "path": "stable/assets/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "stable/css/app.css",
+      "sha256": "12998576dd927a2cc4cb9ae16cdc4b25a5599680f9ba01213503a8184ad4d3e9",
+      "bytes": 11110
+    },
+    {
+      "path": "stable/index.html",
+      "sha256": "46942c37cebefb599747f70a3332f0e9f3e8ccb2fa2777af5ca4b169e609ae7b",
+      "bytes": 664
+    },
+    {
+      "path": "stable/js/core/app.js",
+      "sha256": "da9239fe9eabd701d74899272c61cd5e4faf71603b8289f35621168a52b1c258",
+      "bytes": 24478
+    },
+    {
+      "path": "stable/js/core/project-manager.js",
+      "sha256": "aac531f5b1f4c2aca06118c01dd5c0c808828444093b46d57b5cbdae45e8f83f",
+      "bytes": 7664
+    },
+    {
+      "path": "stable/js/core/storage-engine.js",
+      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
+      "bytes": 773
+    },
+    {
+      "path": "stable/js/engines/prompt-engine.js",
+      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
+      "bytes": 107
+    },
+    {
+      "path": "stable/js/engines/scene-director.js",
+      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
+      "bytes": 108
+    },
+    {
+      "path": "stable/js/engines/story-engine.js",
+      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
+      "bytes": 106
+    },
+    {
+      "path": "stable/js/engines/theme-engine.js",
+      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
+      "bytes": 106
+    },
+    {
+      "path": "stable/js/export/export-engine.js",
+      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
+      "bytes": 107
+    },
+    {
+      "path": "stable/js/export/pdf-engine.js",
+      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
+      "bytes": 104
+    },
+    {
+      "path": "stable/js/ui/image-manager.js",
+      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
+      "bytes": 107
+    },
+    {
+      "path": "stable/js/ui/ui-controller.js",
+      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
+      "bytes": 904
+    },
+    {
+      "path": "stable/themes/dinosaurier.json",
+      "sha256": "7f096b238336111015cfa83b39d413e08c43e4071372c73249d2e4ba0756c606",
+      "bytes": 337
+    },
+    {
+      "path": "tests/fixtures/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tests/manual/RELEASE_CHECKLIST.md",
+      "sha256": "d202b62a824fb97e0e50f3442085f01463123bb249915f88d2817ce745d3a067",
+      "bytes": 273
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST.md",
+      "sha256": "89c4b46d056d53336b462c9dda1499dc7af02fcf030d5297847e8ee48c08b23a",
+      "bytes": 1506
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.6.0.md",
+      "sha256": "d1f3019e8ac3ce910e77547a817f0545d1376a12b494d0ab3d7970dd694e7db4",
+      "bytes": 555
+    },
+    {
+      "path": "tests/results/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}
