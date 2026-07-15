@@ -1,25 +1,12 @@
 # Changelog
 
-## [0.6.1-beta] – 2026-07-15
+## [0.7.0-beta] – 2026-07-15
 
-### Geändert
-- Release Manager eingeführt und Veröffentlichungsprozess vereinheitlicht.
-
-## [0.6.1-beta] – 2026-07-15
-
-### Hinzugefügt
-- Cache-Buster für sämtliche CSS- und JavaScript-Dateien
-- Build-Kennung `2026-07-15-061`
-- synchronisierte Versionsanzeige
-- vollständiges Repository-Release
-
-### Beibehalten
-- mehrstufiger Projektassistent
-- freie Themenwahl und Mehrfachauswahl
-- projektbezogene Inhalte
-- mobile Chrome-Oberfläche
-
-## [0.6.0-beta]
-
-- vollständiges Repository-Release
-- Projektassistent und Projektinhalte
+- fünfstufiger Buchassistent
+- Kernbotschaft, Gefühle und Lernziele
+- Figuren mit Entwicklung
+- lokaler Buchplan-Generator
+- Story-Bibel, Welt, Kapitel, Szenen und Qualitätsbericht
+- Freigabeprozess
+- mobile Ansicht
+- Cache-Buster `2026-07-15-070`

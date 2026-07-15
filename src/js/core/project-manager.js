@@ -56,6 +56,9 @@
         customAssets: [],
         installedPackIds: []
       },
+      bookBrief: input.bookBrief || null,
+      bookPlan: input.bookPlan || null,
+      planStatus: input.bookPlan ? "draft" : "open",
       pagesData: createPages(pages),
       history: [{
         id: createId("HISTORY"),

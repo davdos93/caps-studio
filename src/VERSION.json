@@ -1,9 +1,9 @@
 {
   "name": "CAPS Studio",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "channel": "beta",
-  "build": "2026-07-15-13-47-061",
-  "sprint": "A.2.2.1",
-  "milestone": "Projektassistent und Projektinhalte",
-  "cacheBuster": "2026-07-15-13-47-061"
+  "build": "2026-07-15-070",
+  "milestone": "Buchassistent und Buchplan-Generator MVP",
+  "generator": "lokal und regelbasiert",
+  "cacheBuster": "2026-07-15-070"
 }
