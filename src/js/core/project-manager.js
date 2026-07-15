@@ -60,6 +60,8 @@
       bookPlan: input.bookPlan || null,
       manuscript: input.manuscript || null,
       manuscriptStatus: input.manuscript ? "draft" : "open",
+      illustrations: input.illustrations || null,
+      illustrationStatus: input.illustrations ? "draft" : "open",
       planStatus: input.bookPlan ? "draft" : "open",
       pagesData: createPages(pages),
       history: [{

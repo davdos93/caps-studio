@@ -1,9 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "channel": "beta",
-  "build": "2026-07-15-071",
-  "milestone": "Manuskript-Generator MVP",
-  "generator": "lokal und regelbasiert",
-  "cacheBuster": "2026-07-15-071"
+  "build": "2026-07-15-072",
+  "milestone": "Illustrations-Engine MVP",
+  "cacheBuster": "2026-07-15-072"
 }
