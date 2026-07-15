@@ -1,8 +1,9 @@
 {
   "name": "CAPS Studio",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "channel": "beta",
-  "build": "2026-07-15",
+  "build": "2026-07-15-061",
   "sprint": "A.2.2.1",
-  "milestone": "Projektassistent und Projektinhalte"
+  "milestone": "Projektassistent und Projektinhalte",
+  "cacheBuster": "2026-07-15-061"
 }
