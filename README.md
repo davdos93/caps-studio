@@ -2,56 +2,36 @@
 
 CAPS Studio ist eine vollständig browserbasierte Produktionsumgebung für hochwertige KI-Kinderbücher.
 
-## Produktprinzipien
+## Aktueller Entwicklungsstand
 
-- vollständig im Browser
-- keine Installation
-- Google Chrome auf Desktop und iPhone
-- lokale Datenspeicherung
-- kein eigener KI-Bildgenerator
-- ChatGPT erzeugt die Bilder
-- CAPS plant, organisiert, dokumentiert und kontrolliert den Produktionsprozess
+**Sprint A.1 – Projektkern**
 
-## Aktueller Meilenstein
+Enthalten:
 
-**CAPS Studio 5.1 Stable – Sprint A: Projektkern**
-
-Geplanter Funktionsumfang:
-
-- Projekte anlegen, öffnen, umbenennen und löschen
-- lokale Speicherung
-- Projektimport und Projektexport
-- Theme-System
-- automatische Seitenplanung
-- Bildverwaltung über IndexedDB
-- buchähnlicher PDF-Projektexport
-
-## Repository-Struktur
-
-```text
-caps-studio/
-├── .github/
-├── docs/
-├── src/
-├── tests/
-├── releases/
-├── README.md
-├── CHANGELOG.md
-├── ROADMAP.md
-├── CONTRIBUTING.md
-└── LICENSE
-```
+- Projekt anlegen
+- Projekt öffnen
+- Projekt umbenennen
+- Projekt duplizieren
+- Projekt löschen
+- automatische lokale Speicherung
+- Projekt als JSON exportieren
+- Projekt aus JSON importieren
+- automatischer Seitenplan als Grundgerüst
+- responsive Browseroberfläche
 
 ## Anwendung öffnen
 
-Die aktuelle Anwendung befindet sich in `src/`.
-
-Für den lokalen Browser-Test:
-
-1. Repository herunterladen oder ZIP entpacken.
+1. Repository als ZIP herunterladen oder lokal entpacken.
 2. `src/index.html` in Google Chrome öffnen.
-3. Es ist keine Installation erforderlich.
+3. Keine Installation erforderlich.
 
-## Status
+## Datenhaltung
 
-Foundation / Sprint A
+Die Projektdaten werden lokal im Browser gespeichert. Bilder werden in einem späteren Sprint ausschließlich über IndexedDB verwaltet.
+
+## Repository-Struktur
+
+- `docs/` – Architektur, Standards und Roadmap
+- `src/` – Anwendungscode
+- `tests/` – Testfälle und Prüflisten
+- `releases/` – Stable- und Beta-Versionen

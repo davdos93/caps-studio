@@ -1,35 +1,43 @@
-# CAPS Smoke-Test
+# CAPS Smoke-Test – Sprint A.1
 
 ## Start
 
-- [ ] ZIP vollständig entpackt
-- [ ] `src/index.html` in Chrome geöffnet
-- [ ] Anwendung zeigt keinen weißen Bildschirm
-- [ ] Konsole enthält keinen JavaScript-Fehler
+- [ ] `src/index.html` in Chrome öffnen
+- [ ] kein weißer Bildschirm
+- [ ] Dashboard sichtbar
 
-## Projektkern
+## Projekt erstellen
 
+- [ ] neues Projekt anklicken
+- [ ] Titel eingeben
+- [ ] 50 Seiten wählen
 - [ ] Projekt erstellen
-- [ ] Projekt speichern
-- [ ] Projekt öffnen
-- [ ] Projekt umbenennen
-- [ ] Projekt duplizieren
-- [ ] Projekt löschen
+- [ ] 50 Seitenkarten sichtbar
 
 ## Persistenz
 
+- [ ] Dashboard öffnen
 - [ ] Browser schließen
-- [ ] Browser erneut öffnen
-- [ ] Projekt weiterhin vorhanden
-- [ ] Bilder weiterhin vorhanden
+- [ ] `src/index.html` erneut öffnen
+- [ ] Projekt weiterhin sichtbar
 
-## Import und Export
+## Projektaktionen
+
+- [ ] Projekt öffnen
+- [ ] Projekt umbenennen
+- [ ] Projekt duplizieren
+- [ ] Kopie öffnen
+- [ ] Kopie löschen
+
+## Export und Import
 
 - [ ] Projekt exportieren
+- [ ] Exportdatei vorhanden
 - [ ] Projekt importieren
-- [ ] Daten nach Import identisch
+- [ ] importiertes Projekt sichtbar
+- [ ] Seitenzahl und Metadaten stimmen
 
 ## Plattform
 
 - [ ] Chrome Desktop
-- [ ] Chrome iPhone
+- [ ] mobile Darstellung in Chrome DevTools

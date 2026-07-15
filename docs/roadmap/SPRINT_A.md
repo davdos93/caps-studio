@@ -1,27 +1,30 @@
 # Sprint A – Projektkern
 
-## Ziel
+## Sprint A.1 – umgesetzt
 
-Eine stabile Browsergrundlage ohne Prompt- und PDF-Komplexität.
+- [x] Dashboard
+- [x] neues Projekt
+- [x] Projekt öffnen
+- [x] Projekt umbenennen
+- [x] Projekt duplizieren
+- [x] Projekt löschen
+- [x] lokale Speicherung
+- [x] Projektimport
+- [x] Projektexport
+- [x] Seiten-Grundmodell
+- [x] responsive Basisoberfläche
 
-## Umfang
+## Noch offen
 
-- Dashboard
-- Projekt erstellen
-- Projekt öffnen
-- Projekt umbenennen
-- Projekt löschen
-- Projekt duplizieren
-- lokale Speicherung
-- Projektimport
-- Projektexport
-- Theme laden
-- Seitenmodell erzeugen
+- [ ] IndexedDB-Bildspeicherung
+- [ ] `.caps`-Containerformat
+- [ ] automatische Sicherung
+- [ ] Wiederherstellung
+- [ ] Projektbuch-PDF
 
-## Abnahmekriterien
+## Abnahme Sprint A.1
 
-- Anwendung startet ohne weißen Bildschirm
-- 50 Seiten können angelegt werden
-- Browserneustart verliert keine Projektdaten
-- mindestens zwei große Bilder können gespeichert werden
-- Export und Import stellen das Projekt wieder her
+- Anwendung startet ohne weißen Bildschirm.
+- 50 Seiten können angelegt werden.
+- Projekte bleiben nach Browserneustart erhalten.
+- Projektimport und Projektexport funktionieren.
