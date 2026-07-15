@@ -1,0 +1,5 @@
+CAPS Studio
+Version: 0.6.1
+Kanal: beta
+Build: 2026-07-15-13-47-061
+Erstellt: 2026-07-15T11:47:16.267Z

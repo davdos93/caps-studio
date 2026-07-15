@@ -2,8 +2,8 @@
   "product": "CAPS Studio",
   "version": "0.6.1",
   "channel": "beta",
-  "build": "2026-07-15-061",
-  "cacheBuster": "2026-07-15-061",
+  "build": "2026-07-15-13-47-061",
+  "generatedAt": "2026-07-15T11:47:16.267Z",
   "canonicalPaths": {
     "development": "src/",
     "beta": "beta/",
@@ -37,8 +37,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "2b2e7df7a335638e96f272c71621e4552bfc919baeb175ad19114f291e5f203d",
-      "bytes": 458
+      "sha256": "3d6c80634e10a8c22293ecabbb496625370cd50be5f2844d3344f0eeb7a4a07d",
+      "bytes": 582
     },
     {
       "path": "LICENSE",
@@ -49,11 +49,6 @@
       "path": "README.md",
       "sha256": "f07120b22adafff4b765b26777afa30ccb0acc36c4c88b9da270a3bdcb41d42b",
       "bytes": 616
-    },
-    {
-      "path": "RELEASE_MANIFEST.json",
-      "sha256": "c6a213a4033ba3abde533268c466222ed9fde2492c631b31fb7db0bb597a71ae",
-      "bytes": 20705
     },
     {
       "path": "REPLACE_REPOSITORY.md",
@@ -67,8 +62,8 @@
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "f9c77d46e65d30e692b04ccc25d435d8f634e039a6c49ec39f53ab4b08d8b8ee",
-      "bytes": 212
+      "sha256": "3b6fa2a6b4af6f0639ae9a0e67a86034c279e513b9e418603124d0d6dac778b3",
+      "bytes": 224
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -82,8 +77,8 @@
     },
     {
       "path": "beta/index.html",
-      "sha256": "6f0ee06db77dd85c2823d92889eecfc05844a1277adeda102b913e915ee0282b",
-      "bytes": 878
+      "sha256": "094c57564291e19363a614b2ddd2e87cf2c6d6edaaf0879e707fc9bad611bc7d",
+      "bytes": 920
     },
     {
       "path": "beta/js/core/app.js",
@@ -197,7 +192,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "09b0dcc5b4d329820c8f81527ebef4dba59f91486c384665094342a1d7a06785",
+      "sha256": "a0b77f22be6bfcecfe97a3afa85e2abb4c6f17a026d32b97b9e8ebffe7003b47",
       "bytes": 1964
     },
     {
@@ -209,76 +204,6 @@
       "path": "releases/beta/.gitkeep",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/VERSION.json",
-      "sha256": "d439a598a973a978c1793b252f8874c54615a38fa63426c53d12034d3fcfa09b",
-      "bytes": 297
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/css/app.css",
-      "sha256": "2b68d07212567e4daac95d1dd33b6eeb4710ab4909896f10014a3f752f460edf",
-      "bytes": 5477
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/index.html",
-      "sha256": "577d03aa0d644e336f5d4ff5dee131397ef4cde13afdecb5c87ddfbf7e216bc9",
-      "bytes": 543
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/core/app.js",
-      "sha256": "8e9be69c56dd2640aae6307086003e3bab6d35b772db04ccac887a690ec265ec",
-      "bytes": 13310
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/core/project-manager.js",
-      "sha256": "3163aa81b497cb455ee33bf539b930aaf984ad922636f22d8e6cc2cded9b4c9c",
-      "bytes": 3191
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/core/storage-engine.js",
-      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
-      "bytes": 773
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/engines/prompt-engine.js",
-      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
-      "bytes": 107
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/engines/scene-director.js",
-      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
-      "bytes": 108
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/engines/story-engine.js",
-      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
-      "bytes": 106
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/engines/theme-engine.js",
-      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
-      "bytes": 106
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/export/export-engine.js",
-      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
-      "bytes": 107
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/export/pdf-engine.js",
-      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
-      "bytes": 104
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/ui/image-manager.js",
-      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
-      "bytes": 107
-    },
-    {
-      "path": "releases/beta/5.1.0-a1/js/ui/ui-controller.js",
-      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
-      "bytes": 904
     },
     {
       "path": "releases/beta/5.1.0-a1.1/VERSION.json",
@@ -347,6 +272,76 @@
     },
     {
       "path": "releases/beta/5.1.0-a1.1/js/ui/ui-controller.js",
+      "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
+      "bytes": 904
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/VERSION.json",
+      "sha256": "d439a598a973a978c1793b252f8874c54615a38fa63426c53d12034d3fcfa09b",
+      "bytes": 297
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/css/app.css",
+      "sha256": "2b68d07212567e4daac95d1dd33b6eeb4710ab4909896f10014a3f752f460edf",
+      "bytes": 5477
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/index.html",
+      "sha256": "577d03aa0d644e336f5d4ff5dee131397ef4cde13afdecb5c87ddfbf7e216bc9",
+      "bytes": 543
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/core/app.js",
+      "sha256": "8e9be69c56dd2640aae6307086003e3bab6d35b772db04ccac887a690ec265ec",
+      "bytes": 13310
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/core/project-manager.js",
+      "sha256": "3163aa81b497cb455ee33bf539b930aaf984ad922636f22d8e6cc2cded9b4c9c",
+      "bytes": 3191
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/core/storage-engine.js",
+      "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
+      "bytes": 773
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/prompt-engine.js",
+      "sha256": "347571a2c83bcda5e00d340bb3cd15539a31aec02d637874d1956bbc9985b2c6",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/scene-director.js",
+      "sha256": "ded12eb5a78af8bc2056f87effabd9b99f783170243ee497846b6f81695d752b",
+      "bytes": 108
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/story-engine.js",
+      "sha256": "57ff2eab66bd67c7d5836c4382904dd293affda0ac1d03722a32fbbdc20b3545",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/engines/theme-engine.js",
+      "sha256": "15244dc038a375889359cbf0799cc93c922f13a8617c9ec056e0e7d6c9b1eab6",
+      "bytes": 106
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/export/export-engine.js",
+      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/export/pdf-engine.js",
+      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
+      "bytes": 104
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/ui/image-manager.js",
+      "sha256": "de6fff2a24761d755218a16bd0a63ab46e4c194054fb50c81c44d1e3ba59fb13",
+      "bytes": 107
+    },
+    {
+      "path": "releases/beta/5.1.0-a1/js/ui/ui-controller.js",
       "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
       "bytes": 904
     },
@@ -427,8 +422,8 @@
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "f9c77d46e65d30e692b04ccc25d435d8f634e039a6c49ec39f53ab4b08d8b8ee",
-      "bytes": 212
+      "sha256": "3b6fa2a6b4af6f0639ae9a0e67a86034c279e513b9e418603124d0d6dac778b3",
+      "bytes": 224
     },
     {
       "path": "src/assets/.gitkeep",
@@ -442,8 +437,8 @@
     },
     {
       "path": "src/index.html",
-      "sha256": "6f0ee06db77dd85c2823d92889eecfc05844a1277adeda102b913e915ee0282b",
-      "bytes": 878
+      "sha256": "094c57564291e19363a614b2ddd2e87cf2c6d6edaaf0879e707fc9bad611bc7d",
+      "bytes": 920
     },
     {
       "path": "src/js/core/app.js",

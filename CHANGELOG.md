@@ -2,6 +2,11 @@
 
 ## [0.6.1-beta] – 2026-07-15
 
+### Geändert
+- Release Manager eingeführt und Veröffentlichungsprozess vereinheitlicht.
+
+## [0.6.1-beta] – 2026-07-15
+
 ### Hinzugefügt
 - Cache-Buster für sämtliche CSS- und JavaScript-Dateien
 - Build-Kennung `2026-07-15-061`
