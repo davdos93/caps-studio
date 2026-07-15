@@ -1,30 +1,31 @@
 # Sprint A – Projektkern
 
-## Sprint A.1 – umgesetzt
+## Sprint A.1 – bestanden
 
-- [x] Dashboard
-- [x] neues Projekt
+- [x] Projekt erstellen
+- [x] Projekt speichern
 - [x] Projekt öffnen
 - [x] Projekt umbenennen
 - [x] Projekt duplizieren
 - [x] Projekt löschen
-- [x] lokale Speicherung
-- [x] Projektimport
-- [x] Projektexport
-- [x] Seiten-Grundmodell
-- [x] responsive Basisoberfläche
+- [x] Projektsicherung
+- [x] Projektwiederherstellung
 
-## Noch offen
+## Sprint A.1.1 – umgesetzt
+
+- [x] funktionierende Navigation
+- [x] nicht verfügbare Module als „Demnächst“ markieren
+- [x] Seitenkarten öffnen
+- [x] Seitentitel bearbeiten
+- [x] Kategorie bearbeiten
+- [x] Status bearbeiten
+- [x] Notizen speichern
+- [x] vorige und nächste Seite öffnen
+- [x] Projektsicherung und PDF klar trennen
+
+## Nächster Sprint A.2
 
 - [ ] IndexedDB-Bildspeicherung
-- [ ] `.caps`-Containerformat
-- [ ] automatische Sicherung
-- [ ] Wiederherstellung
-- [ ] Projektbuch-PDF
-
-## Abnahme Sprint A.1
-
-- Anwendung startet ohne weißen Bildschirm.
-- 50 Seiten können angelegt werden.
-- Projekte bleiben nach Browserneustart erhalten.
-- Projektimport und Projektexport funktionieren.
+- [ ] mehrere große Bilder
+- [ ] Bild ersetzen und löschen
+- [ ] automatische Sicherung und Wiederherstellung

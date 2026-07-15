@@ -4,18 +4,19 @@
 
 ### Hinzugefügt
 
-- Sprint A.1 Projektkern
-- Projekt anlegen, öffnen, umbenennen, duplizieren und löschen
-- automatische lokale Speicherung
-- Projektimport und Projektexport
-- Grundmodell für Seiten und Projektstatus
-- responsive Dashboard-Oberfläche
+- Sprint A.1.1 Navigation und Seiteneditor
+- anklickbare Navigation für Dashboard und Projektkern
+- deutliche „Demnächst“-Kennzeichnung zukünftiger Module
+- öffnbare Seitenkarten
+- Seiteneditor für Titel, Kategorie, Status und Notizen
+- klare Trennung zwischen Projektsicherung und PDF-Projektbuch
+- verständlichere Bezeichnungen für Import und Export
 
-## [0.1.0] – Foundation
+## [5.1.0-a1]
 
 ### Hinzugefügt
 
-- professionelle Repository-Grundstruktur
-- Dokumentationsbereiche
-- Teststruktur
-- Releaseordner
+- Projektkern
+- Projekt anlegen, öffnen, umbenennen, duplizieren und löschen
+- lokale Speicherung
+- Projektimport und Projektexport

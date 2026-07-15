@@ -1,43 +1,42 @@
-# CAPS Smoke-Test – Sprint A.1
+# CAPS Smoke-Test – Sprint A.1.1
 
-## Start
+## Start und Navigation
 
-- [ ] `src/index.html` in Chrome öffnen
-- [ ] kein weißer Bildschirm
-- [ ] Dashboard sichtbar
+- [ ] Anwendung öffnet ohne weißen Bildschirm
+- [ ] „Projekte“ führt zum Dashboard
+- [ ] „Projektkern“ öffnet das aktive Projekt
+- [ ] künftige Module sind als „Demnächst“ gekennzeichnet
 
-## Projekt erstellen
+## Projekt
 
-- [ ] neues Projekt anklicken
-- [ ] Titel eingeben
-- [ ] 50 Seiten wählen
 - [ ] Projekt erstellen
-- [ ] 50 Seitenkarten sichtbar
-
-## Persistenz
-
-- [ ] Dashboard öffnen
-- [ ] Browser schließen
-- [ ] `src/index.html` erneut öffnen
-- [ ] Projekt weiterhin sichtbar
-
-## Projektaktionen
-
 - [ ] Projekt öffnen
 - [ ] Projekt umbenennen
 - [ ] Projekt duplizieren
-- [ ] Kopie öffnen
-- [ ] Kopie löschen
+- [ ] Projekt löschen
 
-## Export und Import
+## Seiteneditor
 
-- [ ] Projekt exportieren
-- [ ] Exportdatei vorhanden
-- [ ] Projekt importieren
-- [ ] importiertes Projekt sichtbar
-- [ ] Seitenzahl und Metadaten stimmen
+- [ ] Seite 1 öffnen
+- [ ] Seitentitel ändern
+- [ ] Kategorie ändern
+- [ ] Status ändern
+- [ ] Notiz eintragen
+- [ ] Seite speichern
+- [ ] nächste Seite öffnen
+- [ ] vorherige Seite öffnen
+- [ ] Browser schließen und erneut öffnen
+- [ ] Seitenänderungen weiterhin vorhanden
 
-## Plattform
+## Sicherung
 
-- [ ] Chrome Desktop
-- [ ] mobile Darstellung in Chrome DevTools
+- [ ] Projekt sichern (.caps.json)
+- [ ] zum Dashboard wechseln
+- [ ] Projekt wiederherstellen
+- [ ] wiederhergestelltes Projekt öffnen
+- [ ] Seitendaten stimmen
+
+## PDF-Hinweis
+
+- [ ] „Projektbuch als PDF“ ist sichtbar
+- [ ] Funktion ist klar als späterer PDF-Sprint gekennzeichnet

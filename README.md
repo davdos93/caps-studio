@@ -4,19 +4,17 @@ CAPS Studio ist eine vollständig browserbasierte Produktionsumgebung für hochw
 
 ## Aktueller Entwicklungsstand
 
-**Sprint A.1 – Projektkern**
+**Sprint A.1.1 – Navigation und Seiteneditor**
 
 Enthalten:
 
-- Projekt anlegen
-- Projekt öffnen
-- Projekt umbenennen
-- Projekt duplizieren
-- Projekt löschen
+- Projekt anlegen, öffnen, umbenennen, duplizieren und löschen
 - automatische lokale Speicherung
-- Projekt als JSON exportieren
-- Projekt aus JSON importieren
-- automatischer Seitenplan als Grundgerüst
+- Projekt sichern und wiederherstellen
+- anklickbare Navigation für verfügbare Module
+- eindeutige Kennzeichnung künftiger Module
+- Seiten öffnen und bearbeiten
+- Seitentitel, Kategorie, Status und Notizen verwalten
 - responsive Browseroberfläche
 
 ## Anwendung öffnen
@@ -27,11 +25,9 @@ Enthalten:
 
 ## Datenhaltung
 
-Die Projektdaten werden lokal im Browser gespeichert. Bilder werden in einem späteren Sprint ausschließlich über IndexedDB verwaltet.
+Die Projektdaten werden lokal im Browser gespeichert. Bilder folgen in Sprint A.2 über IndexedDB.
 
-## Repository-Struktur
+## Exportarten
 
-- `docs/` – Architektur, Standards und Roadmap
-- `src/` – Anwendungscode
-- `tests/` – Testfälle und Prüflisten
-- `releases/` – Stable- und Beta-Versionen
+- **Projekt sichern (.caps.json):** bearbeitbare Projektsicherung
+- **Projektbuch als PDF:** folgt im PDF-Sprint und ist bereits in der Oberfläche angekündigt
