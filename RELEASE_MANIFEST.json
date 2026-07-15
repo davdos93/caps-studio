@@ -1,8 +1,9 @@
 {
   "product": "CAPS Studio",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "channel": "beta",
-  "buildDate": "2026-07-15",
+  "build": "2026-07-15-061",
+  "cacheBuster": "2026-07-15-061",
   "canonicalPaths": {
     "development": "src/",
     "beta": "beta/",
@@ -36,8 +37,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "fcf80027f8047fdb3aa5f9dcad0185c03ff4fbb1b2d4e716b52efb3ffc11b1c9",
-      "bytes": 551
+      "sha256": "2b2e7df7a335638e96f272c71621e4552bfc919baeb175ad19114f291e5f203d",
+      "bytes": 458
     },
     {
       "path": "LICENSE",
@@ -46,13 +47,18 @@
     },
     {
       "path": "README.md",
-      "sha256": "1b24f51e517ef2d28d343c27905fa2635e83b0fcbb42c4bf83c754dcfb3e8c46",
-      "bytes": 905
+      "sha256": "f07120b22adafff4b765b26777afa30ccb0acc36c4c88b9da270a3bdcb41d42b",
+      "bytes": 616
+    },
+    {
+      "path": "RELEASE_MANIFEST.json",
+      "sha256": "c6a213a4033ba3abde533268c466222ed9fde2492c631b31fb7db0bb597a71ae",
+      "bytes": 20705
     },
     {
       "path": "REPLACE_REPOSITORY.md",
-      "sha256": "d69334035746f2d9d72e42a0e3b39d1a1d2904fbdda25642a2cdaf8e82403f75",
-      "bytes": 653
+      "sha256": "80650a7c555ff8377ca6c54ca7374e4a4816a14214e36ef0be6db9cb03cf6229",
+      "bytes": 688
     },
     {
       "path": "ROADMAP.md",
@@ -61,8 +67,8 @@
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "cadd200513bd7e1885ed2ae595fa2660bd32addf1251d8322f1c3d232ddc511e",
-      "bytes": 173
+      "sha256": "f9c77d46e65d30e692b04ccc25d435d8f634e039a6c49ec39f53ab4b08d8b8ee",
+      "bytes": 212
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -76,8 +82,8 @@
     },
     {
       "path": "beta/index.html",
-      "sha256": "f780984a9c78ed65875d875545fc2d7186535b6074dab4aa214de077f6bd7d2f",
-      "bytes": 759
+      "sha256": "6f0ee06db77dd85c2823d92889eecfc05844a1277adeda102b913e915ee0282b",
+      "bytes": 878
     },
     {
       "path": "beta/js/core/app.js",
@@ -191,7 +197,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "fa3f05ac2d6d26ccb7470074003a5635ef58665d617aaff49127f590b0d77d76",
+      "sha256": "09b0dcc5b4d329820c8f81527ebef4dba59f91486c384665094342a1d7a06785",
       "bytes": 1964
     },
     {
@@ -421,8 +427,8 @@
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "cadd200513bd7e1885ed2ae595fa2660bd32addf1251d8322f1c3d232ddc511e",
-      "bytes": 173
+      "sha256": "f9c77d46e65d30e692b04ccc25d435d8f634e039a6c49ec39f53ab4b08d8b8ee",
+      "bytes": 212
     },
     {
       "path": "src/assets/.gitkeep",
@@ -436,8 +442,8 @@
     },
     {
       "path": "src/index.html",
-      "sha256": "f780984a9c78ed65875d875545fc2d7186535b6074dab4aa214de077f6bd7d2f",
-      "bytes": 759
+      "sha256": "6f0ee06db77dd85c2823d92889eecfc05844a1277adeda102b913e915ee0282b",
+      "bytes": 878
     },
     {
       "path": "src/js/core/app.js",
@@ -536,8 +542,8 @@
     },
     {
       "path": "stable/index.html",
-      "sha256": "46942c37cebefb599747f70a3332f0e9f3e8ccb2fa2777af5ca4b169e609ae7b",
-      "bytes": 664
+      "sha256": "4b46c6324d4c6ea3f77e3317a208ee7ed078402f28a4a8521acea6ac4eb1ce9e",
+      "bytes": 764
     },
     {
       "path": "stable/js/core/app.js",
@@ -618,6 +624,11 @@
       "path": "tests/manual/SMOKE_TEST_0.6.0.md",
       "sha256": "d1f3019e8ac3ce910e77547a817f0545d1376a12b494d0ab3d7970dd694e7db4",
       "bytes": 555
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.6.1.md",
+      "sha256": "64f6fbafd6943170237b14421562b28fb923eef7fe7cc62e8f9b2c644f60218a",
+      "bytes": 699
     },
     {
       "path": "tests/results/.gitkeep",

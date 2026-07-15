@@ -1,18 +1,20 @@
 # Changelog
 
-## [0.6.0-beta] – 2026-07-15
+## [0.6.1-beta] – 2026-07-15
 
 ### Hinzugefügt
-- mehrstufiger Projektassistent
-- freie Themenwahl und Mehrfachauswahl
-- Menschen, Dinosaurier, Tiere und Fabelwesen
-- Roboter, Aliens, Monster, Fahrzeuge, Orte und Objekte
-- eigene Figuren
-- Projektbereiche Übersicht, Inhalte, Seiten und Einstellungen
-- mobile Chrome-Oberfläche
-- sichtbare Versionsanzeige
+- Cache-Buster für sämtliche CSS- und JavaScript-Dateien
+- Build-Kennung `2026-07-15-061`
+- synchronisierte Versionsanzeige
 - vollständiges Repository-Release
 
-### Geändert
-- technische Universum-Begriffe aus dem Hauptworkflow entfernt
-- `src/` und `beta/` auf denselben Release-Stand vereinheitlicht
+### Beibehalten
+- mehrstufiger Projektassistent
+- freie Themenwahl und Mehrfachauswahl
+- projektbezogene Inhalte
+- mobile Chrome-Oberfläche
+
+## [0.6.0-beta]
+
+- vollständiges Repository-Release
+- Projektassistent und Projektinhalte

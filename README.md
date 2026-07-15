@@ -1,15 +1,15 @@
-# CAPS Studio 0.6.0 Beta
+# CAPS Studio 0.6.1 Beta
 
 Dieses Paket enthält das vollständige Repository.
 
-## Verbindliche Struktur
+## Neu in 0.6.1
 
-- `src/` – aktuelle Entwicklungsquelle 0.6.0 Beta
-- `beta/` – veröffentlichte Beta 0.6.0, identisch mit `src/`
-- `stable/` – zuletzt vollständig getestete Version
-- `docs/` – Dokumentation
-- `tests/` – Smoke-Tests
-- `releases/` – Release-Unterlagen
+- verpflichtender Cache-Buster für alle CSS- und JavaScript-Dateien
+- Build-Kennung `2026-07-15-061`
+- sichtbare Versionsanzeige
+- synchronisierte `VERSION.json`
+- `src/` und `beta/` sind identisch
+- `stable/` bleibt auf der zuletzt freigegebenen Version
 
 ## GitHub Pages
 
@@ -17,11 +17,5 @@ Dieses Paket enthält das vollständige Repository.
 - Beta: `/caps-studio/beta/`
 - Stable: `/caps-studio/stable/`
 
-## Hinweis zum GitHub-Webupload
-
-Der Webupload überschreibt gleichnamige Dateien, entfernt aber keine alten Dateien,
-die in einem neuen Paket fehlen. Die aktiven Anwendungspfade `src/`, `beta/` und
-`stable/` werden deshalb bei jedem Release vollständig mitgeliefert.
-
-Die Beta-Website lädt ausschließlich Dateien innerhalb von `beta/`. Alte Dateien
-außerhalb dieses Ordners können die Beta-Anwendung nicht beeinflussen.
+Nach dem Upload sollte ein normaler Seitenaufruf die neue Version laden. Ein
+Inkognito-Fenster ist künftig nur noch zur zusätzlichen Kontrolle nötig.
