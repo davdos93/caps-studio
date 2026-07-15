@@ -4,19 +4,21 @@
 
 ### Hinzugefügt
 
-- Sprint A.1.1 Navigation und Seiteneditor
-- anklickbare Navigation für Dashboard und Projektkern
-- deutliche „Demnächst“-Kennzeichnung zukünftiger Module
-- öffnbare Seitenkarten
-- Seiteneditor für Titel, Kategorie, Status und Notizen
-- klare Trennung zwischen Projektsicherung und PDF-Projektbuch
-- verständlichere Bezeichnungen für Import und Export
+- Sprint A.2.1 CAPS Home
+- zentrale Produktionszentrale
+- Produktionsreife und Fortschrittsberechnung
+- Guided-Production-Timeline
+- Karte für den nächsten sinnvollen Schritt
+- CAPS Coach
+- erste Health-Center-Prüfungen
+- letzte Aktivitäten
+- Quick Continue
+- mobile Navigation und Touch-Optimierung
 
-## [5.1.0-a1]
+## [5.1.0-a1.1]
 
 ### Hinzugefügt
 
-- Projektkern
-- Projekt anlegen, öffnen, umbenennen, duplizieren und löschen
-- lokale Speicherung
-- Projektimport und Projektexport
+- Navigation
+- Seiteneditor
+- Projekt sichern und wiederherstellen

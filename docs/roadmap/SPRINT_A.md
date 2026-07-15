@@ -1,31 +1,30 @@
-# Sprint A – Projektkern
+# Sprint A – Projektkern und Guided Production
 
-## Sprint A.1 – bestanden
+## A.1 / A.1.1 – bestanden
 
-- [x] Projekt erstellen
-- [x] Projekt speichern
-- [x] Projekt öffnen
-- [x] Projekt umbenennen
-- [x] Projekt duplizieren
-- [x] Projekt löschen
-- [x] Projektsicherung
-- [x] Projektwiederherstellung
+- Projektverwaltung
+- lokale Speicherung
+- Navigation
+- Seiteneditor
+- Projektsicherung und Wiederherstellung
 
-## Sprint A.1.1 – umgesetzt
+## A.2.1 – umgesetzt
 
-- [x] funktionierende Navigation
-- [x] nicht verfügbare Module als „Demnächst“ markieren
-- [x] Seitenkarten öffnen
-- [x] Seitentitel bearbeiten
-- [x] Kategorie bearbeiten
-- [x] Status bearbeiten
-- [x] Notizen speichern
-- [x] vorige und nächste Seite öffnen
-- [x] Projektsicherung und PDF klar trennen
+- CAPS Home
+- aktives Projekt
+- Produktionsreife
+- nächster Schritt
+- Guided-Production-Timeline
+- CAPS Coach
+- letzte Aktivitäten
+- Health Center
+- Quick Continue
+- mobile Chrome-Oberfläche
+- Touch-Navigation
 
-## Nächster Sprint A.2
+## Nächste Schritte
 
-- [ ] IndexedDB-Bildspeicherung
-- [ ] mehrere große Bilder
-- [ ] Bild ersetzen und löschen
-- [ ] automatische Sicherung und Wiederherstellung
+- A.2.2 erweiterter Guided Production Workflow
+- A.2.3 Health Center mit automatischen Projektprüfungen
+- A.2.4 Produktionsstatus und Production Score
+- A.2.5 IndexedDB-Bildverwaltung
