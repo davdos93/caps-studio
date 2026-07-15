@@ -2,35 +2,56 @@
 
 CAPS Studio ist eine vollständig browserbasierte Produktionsumgebung für hochwertige KI-Kinderbücher.
 
-## Grundprinzipien
+## Produktprinzipien
 
 - vollständig im Browser
 - keine Installation
 - Google Chrome auf Desktop und iPhone
 - lokale Datenspeicherung
+- kein eigener KI-Bildgenerator
 - ChatGPT erzeugt die Bilder
 - CAPS plant, organisiert, dokumentiert und kontrolliert den Produktionsprozess
 
 ## Aktueller Meilenstein
 
-**Sprint A – Projektkern**
+**CAPS Studio 5.1 Stable – Sprint A: Projektkern**
 
-Ziele:
+Geplanter Funktionsumfang:
 
-- Projektverwaltung
-- lokales Speichern
-- Projekt-Import und -Export
+- Projekte anlegen, öffnen, umbenennen und löschen
+- lokale Speicherung
+- Projektimport und Projektexport
 - Theme-System
-- Seitenplanung
-- stabile Browseroberfläche
+- automatische Seitenplanung
+- Bildverwaltung über IndexedDB
+- buchähnlicher PDF-Projektexport
 
-## Geplante Struktur
+## Repository-Struktur
 
-- `docs/` – Architektur, Standards und Roadmap
-- `src/` – Anwendungscode
-- `tests/` – Testfälle und manuelle Prüflisten
-- `releases/` – freigegebene Stable-Versionen
+```text
+caps-studio/
+├── .github/
+├── docs/
+├── src/
+├── tests/
+├── releases/
+├── README.md
+├── CHANGELOG.md
+├── ROADMAP.md
+├── CONTRIBUTING.md
+└── LICENSE
+```
+
+## Anwendung öffnen
+
+Die aktuelle Anwendung befindet sich in `src/`.
+
+Für den lokalen Browser-Test:
+
+1. Repository herunterladen oder ZIP entpacken.
+2. `src/index.html` in Google Chrome öffnen.
+3. Es ist keine Installation erforderlich.
 
 ## Status
 
-Projektstart / Foundation
+Foundation / Sprint A

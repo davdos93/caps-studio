@@ -2,18 +2,20 @@
 
 ## 5.1 Stable
 
-- Projekt anlegen, öffnen, speichern und löschen
-- Dinosaurier-Theme laden
-- 50 Seiten automatisch planen
-- Master-, Seiten-, Reparatur- und Variantenprompts
-- Bilder lokal verwalten
-- Projektbuch als PDF exportieren
-- Chrome Desktop und Chrome iPhone
+- Projektverwaltung
+- lokale Speicherung
+- Theme-System
+- Scene Director
+- Prompt Engine
+- Bildverwaltung mit IndexedDB
+- Projektbuch als PDF
+- Chrome Desktop
+- Chrome iPhone
 
 ## 5.2
 
-- Projektsuche
-- Duplizieren
+- Projektduplizierung
+- Suche und Filter
 - automatische Backups
 - Vorlagen
 - Favoriten
@@ -23,6 +25,7 @@
 - erweiterte Story Engine
 - Variantenvergleich
 - Produktionsstatistiken
+- erweiterte Originalitätsprüfung
 
 ## 6.0
 
@@ -30,3 +33,11 @@
 - Activity Books
 - Rätselbücher
 - Suchbilder
+- Lernbücher
+
+## 7.0
+
+- Publisher Edition
+- Cover Studio
+- KDP-Vorbereitung
+- Serienverwaltung

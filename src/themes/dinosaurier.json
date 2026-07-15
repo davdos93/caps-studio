@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "id": "dinosaurier",
+  "name": "Dinosaurier",
+  "status": "draft",
+  "meta": {
+    "age": "6-10",
+    "defaultFormat": "DIN A4 Querformat",
+    "defaultStyle": "Premium detailreich"
+  },
+  "characters": [],
+  "locations": [],
+  "actions": [],
+  "promptRules": {
+    "positive": [],
+    "negative": []
+  }
+}
