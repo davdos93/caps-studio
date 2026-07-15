@@ -1,16 +1,16 @@
-# CAPS Studio 0.7.2 Beta
+# CAPS Studio 0.7.3 Beta
 
-## Illustrations-Engine MVP
+## Illustrationskontrolle
 
-- Charakterpässe
-- Style Bible
-- Illustrationsauftrag für jede Szene
-- kopierbarer Prompt
-- Bild-Upload pro Doppelseite
-- Bildfreigabe und Fortschritt
-- mobile Chrome-Ansicht
+- Zeichenstil frei wählen
+- Farbe, Schwarz-Weiß, Sepia oder begrenzte Farbpalette
+- Maltechnik, Detailgrad, Licht, Linien und Textur
+- Farbpalette und Stilbeschreibung
+- Hautfarbe, Körperbau und Größe
+- Haarfarbe, Haarlänge und Frisur
+- Augenfarbe
+- Oberteil, Unterteil und Schuhe
+- Accessoires und feste Erkennungsmerkmale
+- automatische Aktualisierung aller Illustrationsprompts
 
-Die Bildgenerierung erfolgt in diesem MVP noch extern; CAPS verwaltet Briefs,
-Konsistenzdaten, hochgeladene Bilder und Freigaben.
-
-Build: `2026-07-15-072`
+Build: `2026-07-15-073`
