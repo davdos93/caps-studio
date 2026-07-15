@@ -1,48 +1,37 @@
-# CAPS Smoke-Test – Sprint A.2.1
+# Smoke-Test A.2.2.0
 
-## CAPS Home
+## Core Library
+- [ ] Menschen sichtbar
+- [ ] Dinosaurier sichtbar
+- [ ] Tiere sichtbar
+- [ ] Fabelwesen sichtbar
+- [ ] Fahrzeuge, Orte und Objekte sichtbar
+- [ ] Suche funktioniert
+- [ ] Filter funktioniert
 
-- [ ] Anwendung öffnet auf CAPS Home
-- [ ] aktives Projekt wird angezeigt
-- [ ] Produktionsreife wird angezeigt
-- [ ] Karte „Nächster Schritt“ ist verständlich
-- [ ] Hauptbutton öffnet eine noch ungeplante Seite
-- [ ] Timeline zeigt Projekt und Storyboard korrekt
-- [ ] CAPS Coach zeigt einen passenden Hinweis
-- [ ] letzte Aktivitäten werden angezeigt
+## Projekt-Universum
+- [ ] Element hinzufügen
+- [ ] Element entfernen
+- [ ] Auswahl bleibt nach Neuladen gespeichert
 
-## Quick Continue
+## Eigene Elemente
+- [ ] eigenes Element anlegen
+- [ ] Beschreibung speichern
+- [ ] eigenes Element löschen
 
-- [ ] Seite öffnen und bearbeiten
-- [ ] zu CAPS Home wechseln
-- [ ] zuletzt bearbeitete Seite wird angezeigt
-- [ ] „Dort weiterarbeiten“ öffnet dieselbe Seite
+## Universe Packs
+- [ ] Dino-Abenteuer installieren
+- [ ] Märchen & Fabelwesen installieren
+- [ ] Elemente erscheinen im Projekt-Universum
 
-## Health Center
-
-- [ ] „System prüfen“ öffnet das Health Center
-- [ ] Browserstatus sichtbar
-- [ ] Speicherstatus sichtbar
-- [ ] Projektmodell sichtbar
-- [ ] künftige Module als noch nicht implementiert markiert
-
-## Mobile Browser
-
-- [ ] Chrome DevTools auf iPhone-Breite stellen
+## Mobile
+- [ ] Universum in Chrome iPhone öffnen
+- [ ] Suche und Filter bedienbar
 - [ ] keine horizontale Scrollleiste
-- [ ] untere mobile Navigation sichtbar
-- [ ] Home, Projekte, Projekt und System anklickbar
-- [ ] Hauptbutton groß genug
-- [ ] Timeline gut lesbar
-- [ ] Seite öffnen und speichern funktioniert
-- [ ] Quick Continue funktioniert
+- [ ] Pack-Installation funktioniert
 
-## Bestehende Funktionen
-
-- [ ] Projekt erstellen
-- [ ] Projekt öffnen
-- [ ] Projekt umbenennen
-- [ ] Projekt duplizieren
-- [ ] Projekt löschen
-- [ ] Projekt sichern
-- [ ] Projekt wiederherstellen
+## Regression
+- [ ] CAPS Home
+- [ ] Projektverwaltung
+- [ ] Seiteneditor
+- [ ] Sicherung/Wiederherstellung

@@ -43,6 +43,8 @@
       version: 1,
       createdAt: now,
       updatedAt: now,
+      lastOpenedAt: now,
+      lastActivePageId: null,
       pagesCount: pages,
       pagesData: createPages(pages),
       history: [{
@@ -143,6 +145,93 @@
     };
   }
 
+
+  function touchProject(project, pageId) {
+    const now = new Date().toISOString();
+    return {
+      ...project,
+      lastOpenedAt: now,
+      lastActivePageId: pageId || project.lastActivePageId || null
+    };
+  }
+
+  function productionState(project) {
+    const pages = project.pagesData || [];
+    const total = Math.max(1, pages.length);
+    const categorized = pages.filter(page => page.category && page.category !== "unplanned").length;
+    const edited = pages.filter(page => page.notes || page.title !== `Seite ${page.number}`).length;
+    const completed = pages.filter(page => page.status === "completed").length;
+
+    const projectComplete = Boolean(project.title && project.themeId && project.audience && project.format);
+    const storyboardProgress = Math.round((categorized / total) * 100);
+    const editorialProgress = Math.round((edited / total) * 100);
+    const completedProgress = Math.round((completed / total) * 100);
+
+    const score = Math.round(
+      (projectComplete ? 12 : 0) +
+      storyboardProgress * 0.35 +
+      editorialProgress * 0.18 +
+      completedProgress * 0.10
+    );
+
+    let nextStep = {
+      key: "storyboard",
+      title: "Storyboard vorbereiten",
+      text: "Öffne die Seiten und ordne ihnen Kategorien, Titel und Notizen zu.",
+      action: "Projekt öffnen"
+    };
+
+    if (storyboardProgress >= 100) {
+      nextStep = {
+        key: "prompts",
+        title: "Prompts erzeugen",
+        text: "Das Storyboard ist vollständig. Die Prompt Engine folgt in einem späteren Sprint.",
+        action: "Storyboard prüfen"
+      };
+    }
+
+    return {
+      score: Math.max(0, Math.min(100, score)),
+      projectComplete,
+      storyboardProgress,
+      editorialProgress,
+      completedProgress,
+      nextStep,
+      stages: [
+        { key: "project", label: "Projekt", done: projectComplete, current: !projectComplete },
+        { key: "storyboard", label: "Storyboard", done: storyboardProgress >= 100, current: projectComplete && storyboardProgress < 100 },
+        { key: "prompts", label: "Prompts", done: false, current: storyboardProgress >= 100 },
+        { key: "images", label: "Bilder", done: false, current: false },
+        { key: "qa", label: "QA", done: false, current: false },
+        { key: "pdf", label: "Projektbuch", done: false, current: false },
+        { key: "export", label: "Export", done: false, current: false }
+      ]
+    };
+  }
+
+  function healthState(project) {
+    const supportsLocalStorage = (() => {
+      try {
+        const key = "__caps_test__";
+        localStorage.setItem(key, "1");
+        localStorage.removeItem(key);
+        return true;
+      } catch {
+        return false;
+      }
+    })();
+
+    return [
+      { label: "Browser", status: "good", detail: navigator.userAgent.includes("Chrome") ? "Chrome erkannt" : "Browser verfügbar" },
+      { label: "Lokale Speicherung", status: supportsLocalStorage ? "good" : "warn", detail: supportsLocalStorage ? "verfügbar" : "nicht verfügbar" },
+      { label: "Projektmodell", status: project && Array.isArray(project.pagesData) ? "good" : "warn", detail: project ? "gültig" : "kein aktives Projekt" },
+      { label: "Navigation", status: "good", detail: "verfügbar" },
+      { label: "Scene Director", status: "off", detail: "noch nicht implementiert" },
+      { label: "Prompt Engine", status: "off", detail: "noch nicht implementiert" },
+      { label: "PDF Engine", status: "off", detail: "noch nicht implementiert" }
+    ];
+  }
+
   function validateProject(project) {
     return Boolean(
       project &&
@@ -158,6 +247,9 @@
     cloneProject,
     renameProject,
     updatePage,
+    touchProject,
+    productionState,
+    healthState,
     validateProject
   };
 })();

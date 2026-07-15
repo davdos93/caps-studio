@@ -4,6 +4,10 @@
   const Storage=window.CAPS_Storage;
   const Projects=window.CAPS_ProjectManager;
   const UI=window.CAPS_UI;
+  const Universe=window.CAPS_Universe;
+  const coreLibrary=window.CAPS_CORE_LIBRARY||{categories:[],assets:[]};
+  const universePacks=window.CAPS_UNIVERSE_PACKS||{packs:[]};
+  let universeTab="library",universeCategory="all",universeSearch="";
 
   let projectList=Storage.loadProjects();
   let currentView="home";
@@ -34,6 +38,7 @@
       <div class="nav-item clickable ${active==="home"?"active":""}"><button class="nav-button" id="navHome">CAPS Home</button></div>
       <div class="nav-item clickable ${active==="projects"?"active":""}"><button class="nav-button" id="navProjects">Projekte</button></div>
       <div class="nav-item clickable ${active==="project"?"active":""}"><button class="nav-button" id="navProject">Projektkern</button></div>
+      <div class="nav-item clickable ${active==="universe"?"active":""}"><button class="nav-button" id="navUniverse">CAPS Universum</button></div>
       <div class="nav-item disabled">Scene Director <span class="coming-soon">Demnächst</span></div>
       <div class="nav-item disabled">Prompts <span class="coming-soon">Demnächst</span></div>
       <div class="nav-item disabled">Projektbuch <span class="coming-soon">PDF-Sprint</span></div>
@@ -45,6 +50,7 @@
       <button id="mobileHome" class="${active==="home"?"active":""}"><strong>⌂</strong><span>Home</span></button>
       <button id="mobileProjects" class="${active==="projects"?"active":""}"><strong>▦</strong><span>Projekte</span></button>
       <button id="mobileProject" class="${active==="project"?"active":""}"><strong>▤</strong><span>Projekt</span></button>
+      <button id="mobileUniverse" class="${active==="universe"?"active":""}"><strong>✦</strong><span>Universum</span></button>
       <button id="mobileHealth"><strong>✓</strong><span>System</span></button>
     </nav>`;
   }
@@ -269,6 +275,8 @@
     `,"project");
   }
 
+  function catName(id){return coreLibrary.categories.find(x=>x.id===id)?.name||id}function allAssets(p){return [...coreLibrary.assets,...(p?.universe?.customAssets||[])]}function universeView(){const p=activeProject();if(!p)return shell(`<section class="next-step-card"><p class="next-step-label">CAPS UNIVERSUM</p><h2>Zuerst ein Projekt erstellen</h2><button class="primary" id="universeCreateProject">Projekt erstellen</button></section>`,"universe");const n=Universe.ensureProjectUniverse(p);if(!p.universe)patchActiveProject(n);const ids=new Set(n.universe.assetIds||[]),items=allAssets(n),filtered=items.filter(x=>(universeCategory==="all"||x.category===universeCategory)&&(!universeSearch||(x.name+" "+(x.description||"")).toLowerCase().includes(universeSearch.toLowerCase()))),projectItems=items.filter(x=>ids.has(x.id));let content;if(universeTab==="library")content=`<div class="universe-toolbar"><input id="universeSearch" placeholder="Bibliothek durchsuchen" value="${UI.escapeHtml(universeSearch)}"><select id="universeCategory"><option value="all">Alle Kategorien</option>${coreLibrary.categories.map(x=>`<option value="${x.id}" ${universeCategory===x.id?"selected":""}>${UI.escapeHtml(x.name)}</option>`).join("")}</select><button class="primary" id="newCustomAsset">Eigenes Element</button></div><div class="asset-grid">${filtered.map(x=>`<article class="asset-card ${ids.has(x.id)?"selected":""}"><span class="asset-category">${UI.escapeHtml(catName(x.category))}</span><h3>${UI.escapeHtml(x.name)}</h3><small>${x.custom?"Eigenes Element":"CAPS Core Library"}</small><div class="asset-actions">${ids.has(x.id)?`<button class="secondary remove-asset" data-id="${x.id}">Entfernen</button>`:`<button class="primary add-asset" data-id="${x.id}">Zum Projekt</button>`}${x.custom?`<button class="danger delete-custom" data-id="${x.id}">Löschen</button>`:""}</div></article>`).join("")||'<div class="library-empty">Keine Treffer.</div>'}</div>`;else if(universeTab==="project")content=`<div class="asset-grid">${projectItems.map(x=>`<article class="asset-card selected"><span class="asset-category">${UI.escapeHtml(catName(x.category))}</span><h3>${UI.escapeHtml(x.name)}</h3><small>${x.custom?"Eigenes Element":"Aus Core Library"}</small><div class="asset-actions"><button class="secondary remove-asset" data-id="${x.id}">Entfernen</button>${x.custom?`<button class="danger delete-custom" data-id="${x.id}">Löschen</button>`:""}</div></article>`).join("")||'<div class="library-empty">Noch keine Elemente.</div>'}</div>`;else content=`<div class="pack-grid">${universePacks.packs.map(k=>{const installed=(n.universe.installedPackIds||[]).includes(k.id);return `<article class="pack-card"><span class="asset-category">Universe Pack</span><h3>${UI.escapeHtml(k.name)}</h3><p>${UI.escapeHtml(k.description)}</p><button class="${installed?"success":"primary"} install-pack" data-id="${k.id}" ${installed?"disabled":""}>${installed?"Installiert":"Pack installieren"}</button></article>`}).join("")}</div>`;return shell(`<header class="topbar"><div><p class="eyebrow">CAPS UNIVERSUM</p><h1>${UI.escapeHtml(p.title)}</h1><p class="subtle">Menschen, Dinosaurier, Tiere, Fabelwesen, Fahrzeuge, Orte und Objekte.</p></div><button class="secondary" id="backHomeUniverse">CAPS Home</button></header><section class="universe-summary"><div class="stat"><span>Projekt-Elemente</span><strong>${ids.size}</strong></div><div class="stat"><span>Core Library</span><strong>${coreLibrary.assets.length}</strong></div><div class="stat"><span>Eigene Elemente</span><strong>${n.universe.customAssets.length}</strong></div><div class="stat"><span>Packs</span><strong>${n.universe.installedPackIds.length}</strong></div></section><section class="panel"><div class="universe-tabs"><button class="secondary universe-tab ${universeTab==="library"?"active":""}" data-tab="library">Core Library</button><button class="secondary universe-tab ${universeTab==="project"?"active":""}" data-tab="project">Projekt-Universum</button><button class="secondary universe-tab ${universeTab==="packs"?"active":""}" data-tab="packs">Universe Packs</button></div>${content}</section>`,"universe")}function customDialog(){const m=document.createElement("div");m.className="modal-backdrop";m.innerHTML=`<div class="modal"><div class="modal-head"><div><p class="eyebrow">EIGENES ELEMENT</p><h2>Element hinzufügen</h2></div><button class="secondary" id="closeCustom">Schließen</button></div><form id="customAssetForm"><div class="modal-body"><div class="form-grid"><label class="field wide"><span>Name</span><input id="customAssetName" required></label><label class="field"><span>Kategorie</span><select id="customAssetCategory">${coreLibrary.categories.map(x=>`<option value="${x.id}">${UI.escapeHtml(x.name)}</option>`).join("")}</select></label><label class="field wide"><span>Beschreibung</span><textarea id="customAssetDescription"></textarea></label></div></div><div class="modal-actions"><button class="primary">Hinzufügen</button></div></form></div>`;document.body.appendChild(m);document.getElementById("closeCustom").onclick=()=>m.remove();document.getElementById("customAssetForm").onsubmit=e=>{e.preventDefault();patchActiveProject(Universe.addCustomAsset(activeProject(),{name:document.getElementById("customAssetName").value,category:document.getElementById("customAssetCategory").value,description:document.getElementById("customAssetDescription").value}));m.remove();render();UI.toast("Element hinzugefügt")}}
+
   function showHealth(){
     const project=activeProject();
     const checks=Projects.healthState(project);
@@ -289,7 +297,7 @@
 
   function render(){
     const root=document.getElementById("app");
-    root.innerHTML=currentView==="home"?homeView():currentView==="projects"?projectsView():currentView==="create"?createProjectView():currentView==="project"?projectView():pageView();
+    root.innerHTML=currentView==="home"?homeView():currentView==="projects"?projectsView():currentView==="create"?createProjectView():currentView==="project"?projectView():currentView==="universe"?universeView():pageView();
     bindEvents();
   }
 
@@ -328,9 +336,11 @@
     document.getElementById("navHome")?.addEventListener("click",goHome);
     document.getElementById("navProjects")?.addEventListener("click",goProjects);
     document.getElementById("navProject")?.addEventListener("click",goProject);
+    document.getElementById("navUniverse")?.addEventListener("click",()=>{currentView="universe";render();});
     document.getElementById("mobileHome")?.addEventListener("click",goHome);
     document.getElementById("mobileProjects")?.addEventListener("click",goProjects);
     document.getElementById("mobileProject")?.addEventListener("click",goProject);
+    document.getElementById("mobileUniverse")?.addEventListener("click",()=>{currentView="universe";render();});
     document.getElementById("mobileHealth")?.addEventListener("click",showHealth);
     ["openHealth","heroHealth","openHealthProject","pageHealth"].forEach(id=>document.getElementById(id)?.addEventListener("click",showHealth));
 
@@ -347,6 +357,7 @@
       if(project?.lastActivePageId)openPage(project.lastActivePageId);
     });
 
+    document.getElementById("backHomeUniverse")?.addEventListener("click",goHome);document.getElementById("universeCreateProject")?.addEventListener("click",()=>{currentView="create";render()});document.querySelectorAll(".universe-tab").forEach(b=>b.addEventListener("click",()=>{universeTab=b.dataset.tab;render()}));document.getElementById("universeSearch")?.addEventListener("input",e=>{universeSearch=e.target.value;render();const i=document.getElementById("universeSearch");if(i){i.focus();i.setSelectionRange(universeSearch.length,universeSearch.length)}});document.getElementById("universeCategory")?.addEventListener("change",e=>{universeCategory=e.target.value;render()});document.getElementById("newCustomAsset")?.addEventListener("click",customDialog);document.querySelectorAll(".add-asset").forEach(b=>b.addEventListener("click",()=>{patchActiveProject(Universe.addAsset(activeProject(),b.dataset.id));render();UI.toast("Hinzugefügt")}));document.querySelectorAll(".remove-asset").forEach(b=>b.addEventListener("click",()=>{patchActiveProject(Universe.removeAsset(activeProject(),b.dataset.id));render();UI.toast("Entfernt")}));document.querySelectorAll(".delete-custom").forEach(b=>b.addEventListener("click",()=>{if(confirm("Eigenes Element löschen?")){patchActiveProject(Universe.deleteCustomAsset(activeProject(),b.dataset.id));render()}}));document.querySelectorAll(".install-pack").forEach(b=>b.addEventListener("click",()=>{const k=universePacks.packs.find(x=>x.id===b.dataset.id);if(k){patchActiveProject(Universe.installPack(activeProject(),k));render();UI.toast("Pack installiert")}}));
     document.getElementById("projectForm")?.addEventListener("submit",event=>{
       event.preventDefault();
       const project=Projects.createProject({
@@ -438,6 +449,6 @@
     document.getElementById("nextPage")?.addEventListener("click",()=>movePage(1));
   }
 
-  window.CAPS={name:"CAPS Studio",version:"5.1.0-a2.1",sprint:"A.2.1"};
+  window.CAPS={name:"CAPS Studio",version:"5.1.0-a2.2.0",sprint:"A.2.2.0"};
   render();
 })();

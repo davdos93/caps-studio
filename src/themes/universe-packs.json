@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "packs": [
+    {
+      "id": "dino-adventure",
+      "name": "Dino-Abenteuer",
+      "description": "Dinosaurier, Forscher, Fahrzeuge und prähistorische Orte.",
+      "assetIds": [
+        "dinosaurs-tyrannosaurus-rex",
+        "dinosaurs-triceratops",
+        "dinosaurs-velociraptor",
+        "dinosaurs-stegosaurus",
+        "dinosaurs-ankylosaurus",
+        "dinosaurs-spinosaurus",
+        "dinosaurs-brachiosaurus",
+        "humans-forscherin",
+        "humans-forscher",
+        "vehicles-dinosaurier-park-jeep",
+        "vehicles-hubschrauber",
+        "locations-dinosaurierpark",
+        "locations-forschungsstation",
+        "locations-dschungel",
+        "locations-vulkan",
+        "objects-dinosaurier-ei",
+        "objects-fossil"
+      ]
+    },
+    {
+      "id": "fairy-world",
+      "name": "Märchen & Fabelwesen",
+      "description": "Drachen, Einhörner, Feen und magische Welten.",
+      "assetIds": [
+        "mythical-drache",
+        "mythical-einhorn",
+        "mythical-pegasus",
+        "mythical-greif",
+        "mythical-phoenix",
+        "mythical-fee",
+        "mythical-elf",
+        "mythical-zwerg",
+        "humans-prinzessin",
+        "humans-zauberin",
+        "locations-zauberwald",
+        "locations-schloss",
+        "objects-zauberstab",
+        "objects-zauberbuch",
+        "objects-kristall"
+      ]
+    },
+    {
+      "id": "rescue-city",
+      "name": "Rettung & Stadt",
+      "description": "Feuerwehr, Polizei, Rettung und passende Fahrzeuge.",
+      "assetIds": [
+        "humans-feuerwehrfrau",
+        "humans-feuerwehrmann",
+        "humans-polizistin",
+        "humans-polizist",
+        "vehicles-feuerwehrauto",
+        "vehicles-polizeiauto",
+        "vehicles-krankenwagen",
+        "locations-feuerwehrhaus",
+        "locations-stadt",
+        "objects-feuerwehrschlauch",
+        "objects-helm"
+      ]
+    },
+    {
+      "id": "space-expedition",
+      "name": "Weltraum-Expedition",
+      "description": "Astronauten, Aliens, Roboter und Weltraumfahrzeuge.",
+      "assetIds": [
+        "humans-astronautin",
+        "humans-astronaut",
+        "robots-weltraumroboter",
+        "aliens-kleines-gruenes-alien",
+        "vehicles-rakete",
+        "vehicles-ufo",
+        "locations-raumstation",
+        "locations-mond",
+        "locations-mars",
+        "objects-mondstein"
+      ]
+    },
+    {
+      "id": "farm-life",
+      "name": "Bauernhof",
+      "description": "Tiere, Menschen und Fahrzeuge rund um den Bauernhof.",
+      "assetIds": [
+        "animals-kuh",
+        "animals-schaf",
+        "animals-ziege",
+        "animals-huhn",
+        "animals-ente",
+        "animals-pferd",
+        "humans-mutter",
+        "humans-vater",
+        "vehicles-traktor",
+        "locations-bauernhof"
+      ]
+    }
+  ]
+}
