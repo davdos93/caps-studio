@@ -312,3 +312,9 @@ textarea{min-height:130px;resize:vertical}
 .story-influence-grid span{margin-top:4px;color:var(--muted);font-size:13px;line-height:1.45}
 .story-influence-grid .wide{grid-column:1/-1}
 @media(max-width:620px){.story-influence-grid{grid-template-columns:1fr}.story-influence-grid .wide{grid-column:auto}}
+
+.intake-summary,.impact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+.intake-summary>div,.impact-grid>div{border:1px solid var(--line);border-radius:11px;padding:12px;background:#fafbfd}
+.intake-summary strong,.intake-summary span,.impact-grid strong,.impact-grid span{display:block}
+.intake-summary span,.impact-grid span{margin-top:5px;color:var(--muted);line-height:1.5}
+@media(max-width:680px){.intake-summary,.impact-grid{grid-template-columns:1fr}}

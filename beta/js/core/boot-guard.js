@@ -36,6 +36,13 @@ try{
   const projects=JSON.parse(raw);
   if(!Array.isArray(projects))return;
 
+
+  const profileDefaults={
+    topic:"",concreteSituation:"",triggers:[],currentReaction:"",feelings:[],
+    emotionalNeed:"",previousAttempts:"",desiredDevelopment:"",copingStrategy:"",
+    supportiveResponse:"",realisticSuccess:"",storyDistance:"",
+    avoidContent:"",sensitiveWords:"",parentMessage:""
+  };
   const styleDefaults={
     name:"Warmherzige magische Kinderbuchillustration",
     technique:"Digitale Kinderbuchillustration",

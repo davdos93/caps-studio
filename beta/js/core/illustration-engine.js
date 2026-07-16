@@ -49,6 +49,9 @@ function buildPrompt(scene,plan,style,passports){
     `Ort: ${scene.location}.`,
     `Figuren: ${characterText||"keine Hauptfigur sichtbar"}.`,
     `Handlung und Gefühl: ${scene.goal} ${scene.result}`,
+    `Psychologische Funktion: ${scene.psychologicalFunction||"Die emotionale Entwicklung der Szene sichtbar machen"}.`,
+    `Gefühlslage: ${scene.emotionalState||""}. Die Emotion durch Mimik, Körperhaltung, Abstand und Blickrichtung zeigen, nicht durch Symbole oder Text erklären.`,
+    `Hilfreicher Handlungsschritt: ${scene.copingStrategy||""}. Unterstützende Figuren geben Sicherheit, übernehmen aber nicht die entscheidende Handlung.`,
     `Kamera: ${scene.camera||"Halbtotale auf Augenhöhe der Kinder"}.`,
     `Licht: ${scene.light||"warmes, weiches, freundliches Licht"}.`,
     `Farbwelt: ${style.palette}.`,
@@ -103,7 +106,7 @@ function generate(plan){
   return {
     schemaVersion:"1.0",
     generatedAt:new Date().toISOString(),
-    generator:"CAPS Illustration Engine 1.1 – handlungsgenaue Bildbriefs und Bildverwaltung",
+    generator:"CAPS Illustration Engine 1.2 – handlungs- und emotionsgenaue Bildbriefs",
     style,
     characterPassports:passports,
     items,
