@@ -74,6 +74,11 @@ try{
       project.layout.settings={pageFormat:"A4 Querformat",textPosition:"bottom",fontFamily:"Georgia",bodyFontSize:20,titleFontSize:30,showPageNumbers:true,author:"",...(project.layout.settings||{})};
       project.layout.spreads=Array.isArray(project.layout.spreads)?project.layout.spreads:[];
     }
+
+    if(project.manuscript){
+      project.manuscript.settings={readingLevel:"3–6 Jahre",voice:"Warm und abenteuerlich",dialogueLevel:"Ausgewogen",sceneLength:"Mittel",refrain:"Zusammen finden wir einen Weg.",...(project.manuscript.settings||{})};
+      project.manuscript.scenes=Array.isArray(project.manuscript.scenes)?project.manuscript.scenes.map(scene=>({...scene,variation:Number(scene.variation)||0,history:Array.isArray(scene.history)?scene.history:[]})):[];
+    }
     if(project.illustrations){
       project.illustrations.style={...styleDefaults,...(project.illustrations.style||{})};
       project.illustrations.characterPassports=(project.illustrations.characterPassports||[]).map(passport=>({

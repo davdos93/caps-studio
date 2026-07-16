@@ -1,8 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "channel": "beta",
-  "build": "2026-07-16-075",
-  "milestone": "Figuren im ersten Schritt und Probebuch Layout MVP",
-  "cacheBuster": "2026-07-16-075"
+  "build": "2026-07-16-076",
+  "milestone": "Textqualität und Manuskriptüberarbeitung",
+  "cacheBuster": "2026-07-16-076"
 }
