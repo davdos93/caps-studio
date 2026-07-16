@@ -1,15 +1,28 @@
-# CAPS Studio 0.7.7 Beta
+# CAPS Studio 0.7.8 Beta
 
-## Literarischer Manuskriptgenerator
+## Pädagogischer Buchassistent
 
-- Buchzweck und Kernbotschaft wirken über Entscheidungen und Konsequenzen
-- Stärken, Herausforderungen, Entwicklung und Beziehungen jeder Figur steuern die Szenen
-- Welt, Orte, gewünschte Gefühle, Lernziele und Abenteuerart werden als Geschichtenkontext genutzt
-- strenge Kontinuität zwischen aufeinanderfolgenden Szenen
-- ausführlichere Szenen mit mehr Absätzen, Dialog, innerer Bewegung und konkreter Handlung
-- individuelle Figurenstimmen
-- Kapitel können literarisch harmonisiert werden
-- sichtbarer Nachweis, welche Vorgaben jede Szene beeinflussen
-- redaktionelle Prüfung von Lesefluss, Ausführlichkeit, Figurenbezug und Botschaft in Handlung
+Der Assistent erfasst jetzt vor der Geschichte:
 
-Build: `2026-07-16-077`
+- konkretes Problem oder Thema
+- typische Alltagssituation und Auslöser
+- bisherige Reaktion
+- Gefühle und emotionales Bedürfnis
+- bisherige Lösungsversuche
+- gewünschte Entwicklung
+- konkrete hilfreiche Strategie
+- unterstützende Reaktion anderer Figuren
+- realistischen Erfolg
+- sensible und zu vermeidende Inhalte
+- gewünschte Nähe oder Distanz zum Alltagsthema
+
+Diese Informationen steuern verbindlich:
+
+1. Story-Bibel und psychologischen Wirkungsplan
+2. Kapitel- und Szenenbogen
+3. Figurenentwicklung und Beziehungen
+4. literarisches Manuskript
+5. emotionale und handlungsgenaue Illustrationsprompts
+6. Probebuch-Layout
+
+Build: `2026-07-16-078`

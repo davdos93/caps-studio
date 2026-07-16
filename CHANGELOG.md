@@ -1,14 +1,20 @@
 # Changelog
 
-## [0.7.7-beta] – 2026-07-16
+## [0.7.8-beta] – 2026-07-16
 
-- Manuscript Engine 2.0
-- kontextgebundene Erzählstruktur
-- vollständige Figurenbögen und Beziehungen
-- Botschaft wird durch Handlung statt Erklärung vermittelt
-- individuelle Dialogstimmen
-- Szenenkontinuität und natürliche Übergänge
-- ausführlichere Szenen und literarischer Rhythmus
-- Kapitel-Harmonisierung
-- erweiterte redaktionelle Qualitätsprüfung
-- Cache-Buster `2026-07-16-077`
+### Hinzugefügt
+- sechsstufiger pädagogischer Buchassistent
+- konkrete Erfassung von Thema, Alltagssituation und Auslösern
+- Gefühle, Bedürfnisse und bisherige Reaktionen
+- realistisches Entwicklungsziel und Bewältigungsstrategie
+- Unterstützung ohne Übernahme
+- Schutzgrenzen und sensible Inhalte
+- eigener Wirkungsplan im Buchplan
+- 25-stufiger psychologisch plausibler Geschichtenbogen
+- generischer kontextueller Manuskriptgenerator ohne feste Drachenhandlung
+- emotionale Funktion pro Szene
+- psychologische Funktion in Illustrationsprompts
+
+### Behoben
+- feste, auf Elias/Lia/Flammenzahn zugeschnittene Textlogik
+- falscher Local-Storage-Schlüssel in der Datenmigration
