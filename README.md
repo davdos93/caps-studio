@@ -1,17 +1,15 @@
-# CAPS Studio 0.7.5 Beta
+# CAPS Studio 0.7.6 Beta
 
-## Figuren von Anfang an
+## Textqualität
 
-- Figurenname, Rolle, Alter, freie Aussehensbeschreibung und Beziehungen bereits im ersten Buchschritt
-- vertiefte Figurenangaben im dritten Schritt
-- Angaben fließen in Buchplan, Manuskript und Illustrationsprompts
+- neuer szenischer Manuskriptgenerator
+- konkrete Handlungen statt Platzhalter- und Schablonensätzen
+- natürlicher Dialog und abwechslungsreiche Satzanfänge
+- altersgerechte Satzlänge
+- zusammenhängender Abenteuerbogen über alle Szenen
+- Textprofil für Lesestufe, Stimme, Dialoganteil und Szenenlänge
+- Szene vollständig neu schreiben, dialogreicher, bildhafter, kürzer, gefühlvoller oder spannender
+- heuristische Qualitätsanzeige pro Szene und für das Gesamtmanuskript
+- Änderungen aktualisieren Illustrationsprompts und Probebuch
 
-## Probebuch
-
-- Layout aus Manuskript und hochgeladenen Illustrationen erzeugen
-- Cover, Schrift, Textgröße und Textposition einstellen
-- jede Doppelseite einzeln prüfen und bearbeiten
-- fehlende Illustrationen werden markiert
-- Probebuch über den Browser als PDF speichern
-
-Build: `2026-07-16-075`
+Build: `2026-07-16-076`

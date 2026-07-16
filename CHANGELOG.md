@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.7.5-beta] – 2026-07-16
+## [0.7.6-beta] – 2026-07-16
 
-- Figurenbeschreibung in den ersten Schritt verschoben
-- freie Aussehensbeschreibung und Beziehungen von Beginn an
-- Übergabe an Story-Bibel, Manuskript und Illustrationen
-- Probebuch-Layout-Engine
-- Cover- und Seitengestaltung
-- Doppelseitenvorschau
-- Browser-Druck als Arbeits-PDF
-- Cache-Buster `2026-07-16-075`
+- Manuscript Engine 1.1
+- zusammenhängender 25-Beat-Abenteuerbogen
+- konkrete Szenenhandlungen und visuell darstellbare Aktionen
+- natürliche Dialoge statt angehängter Standardsätze
+- Textprofil und echte Szenen-Neufassung
+- Textqualitätsprüfung
+- Migration bestehender Manuskripte
+- Cache-Buster `2026-07-16-076`

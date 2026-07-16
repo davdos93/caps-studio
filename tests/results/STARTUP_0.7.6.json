@@ -1,0 +1,9 @@
+{
+  "version": "0.7.6",
+  "loadedScripts": 11,
+  "appRendered": true,
+  "startupGuardTriggered": false,
+  "reportedVersion": "0.7.6",
+  "testEnvironment": "Node DOM stub",
+  "status": "passed"
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.7.6",
+  "fixture": "Der kleine Drache Flammenzahn",
+  "scenes": 25,
+  "totalWords": 1502,
+  "heuristicQualityScore": 91,
+  "uniqueSceneTexts": 25,
+  "legacyTemplatePhraseMatches": 0,
+  "status": "passed"
+}
