@@ -318,3 +318,9 @@ textarea{min-height:130px;resize:vertical}
 .intake-summary strong,.intake-summary span,.impact-grid strong,.impact-grid span{display:block}
 .intake-summary span,.impact-grid span{margin-top:5px;color:var(--muted);line-height:1.5}
 @media(max-width:680px){.intake-summary,.impact-grid{grid-template-columns:1fr}}
+
+.analysis-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #8fb1ff;background:#f4f7ff;border-radius:12px;padding:14px;margin:14px 0}
+.analysis-banner strong{font-size:18px}.analysis-banner span{color:var(--muted);font-size:13px}
+.story-concept-card{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fffaf0;margin-top:14px}
+.story-concept-card h3{margin:4px 0 10px}
+@media(max-width:560px){.analysis-banner{align-items:flex-start;flex-direction:column}}

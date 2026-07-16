@@ -1,8 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "channel": "beta",
-  "build": "2026-07-16-078",
-  "milestone": "Pädagogischer Buchassistent und kontextueller Autor",
-  "cacheBuster": "2026-07-16-078"
+  "build": "2026-07-16-079",
+  "milestone": "Einfacher Eltern-Intake und automatische Themenanalyse",
+  "cacheBuster": "2026-07-16-079"
 }
