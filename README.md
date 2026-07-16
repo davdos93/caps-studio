@@ -1,13 +1,11 @@
-# CAPS Studio 0.7.3a Beta
+# CAPS Studio 0.7.4 Beta
 
-Korrigierter Build der Illustrationskontrolle.
+## Änderungen
 
-## Reparaturen
-
-- automatische Migration bestehender 0.7.2-Projekte
-- fehlende Stilfelder werden ergänzt
-- alte Charakterpässe werden übernommen
-- ungültiges aktives Altprojekt blockiert den Start nicht mehr
-- Startfehler werden verständlich angezeigt
-- lokale Projektdaten können über die Fehleranzeige repariert werden
-- neuer Cache-Buster `2026-07-15-073a`
+- freies Beschreibungsfeld für das Aussehen jeder Figur
+- freie Beschreibung wird in alle Illustrationsprompts übernommen
+- Prompts berücksichtigen den vollständigen Szenentext aus dem Manuskript
+- Ziel, Konflikt, Ergebnis, Figuren, Objekte und räumliche Beziehungen werden explizit beschrieben
+- Bildprompts werden nach jeder Textänderung automatisch aktualisiert
+- keine erfundenen Handlungen oder weggelassenen Figuren im Prompt
+- Cache-Buster `2026-07-15-074`
