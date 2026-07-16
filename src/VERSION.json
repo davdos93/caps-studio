@@ -1,8 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "channel": "beta",
-  "build": "2026-07-15-074",
-  "milestone": "Freie Figurenbeschreibung und handlungsgenaue Illustrationsprompts",
-  "cacheBuster": "2026-07-15-074"
+  "build": "2026-07-16-075",
+  "milestone": "Figuren im ersten Schritt und Probebuch Layout MVP",
+  "cacheBuster": "2026-07-16-075"
 }

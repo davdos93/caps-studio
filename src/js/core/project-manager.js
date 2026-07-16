@@ -62,6 +62,8 @@
       manuscriptStatus: input.manuscript ? "draft" : "open",
       illustrations: input.illustrations || null,
       illustrationStatus: input.illustrations ? "draft" : "open",
+      layout: input.layout || null,
+      layoutStatus: input.layout ? "draft" : "open",
       planStatus: input.bookPlan ? "draft" : "open",
       pagesData: createPages(pages),
       history: [{

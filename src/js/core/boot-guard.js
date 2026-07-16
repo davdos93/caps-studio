@@ -30,7 +30,7 @@ window.addEventListener("unhandledrejection",event=>{
 });
 
 try{
-  const storageKey="caps-projects";
+  const storageKey="caps-studio-projects-v5-1-a1";
   const raw=localStorage.getItem(storageKey);
   if(!raw)return;
   const projects=JSON.parse(raw);
@@ -66,7 +66,14 @@ try{
     definingFeatures:""
   };
 
+  const characterDefaults={appearanceDescription:"",relationship:"",hairColor:"",hairLength:"",hairstyle:"",eyeColor:"",skinTone:"",bodyType:"",height:"",clothing:"",bottom:"",shoes:"",accessories:"",specialFeatures:""};
   projects.forEach(project=>{
+    if(project.bookBrief?.characters)project.bookBrief.characters=project.bookBrief.characters.map(character=>({...characterDefaults,...character}));
+    if(project.bookPlan?.characters)project.bookPlan.characters=project.bookPlan.characters.map(character=>({...characterDefaults,...character}));
+    if(project.layout){
+      project.layout.settings={pageFormat:"A4 Querformat",textPosition:"bottom",fontFamily:"Georgia",bodyFontSize:20,titleFontSize:30,showPageNumbers:true,author:"",...(project.layout.settings||{})};
+      project.layout.spreads=Array.isArray(project.layout.spreads)?project.layout.spreads:[];
+    }
     if(project.illustrations){
       project.illustrations.style={...styleDefaults,...(project.illustrations.style||{})};
       project.illustrations.characterPassports=(project.illustrations.characterPassports||[]).map(passport=>({
