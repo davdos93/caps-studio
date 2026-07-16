@@ -1,21 +1,25 @@
 {
   "product": "CAPS Studio",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "channel": "beta",
-  "build": "2026-07-16-078",
+  "build": "2026-07-16-079",
   "validation": {
     "javascriptFiles": 47,
     "engineTest": {
+      "category": "Trennung und Übergänge",
+      "title": "Mira und das Licht, das wiederkehrt",
+      "pages": 40,
+      "characters": 3,
       "scenes": 20,
-      "averageWords": 268,
-      "quality": 100,
-      "unique": 20
+      "manuscriptQuality": 100
     },
     "startupTest": {
       "scripts": 11,
       "homeRendered": true,
-      "version": "0.7.8"
+      "version": "0.7.9"
     },
+    "prefillRemoved": true,
+    "parentSolutionFieldsRemoved": true,
     "scriptReferences": "passed",
     "srcBetaIdentical": true
   },
@@ -47,8 +51,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "a4430114ede72da9011751b2c189fa681bc25ff62db7c191a69048e3deaf7d71",
-      "bytes": 730
+      "sha256": "921de2fb86c0d4b542575bdb51334ad1052cd965c9169ee72fd8a4fc6b093ea1",
+      "bytes": 663
     },
     {
       "path": "CONTRIBUTING.md",
@@ -62,13 +66,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "2af0eb1ce03ba6fea1f2490ad511bc2286e67d5ea354ba737c18f4f02898a3f4",
-      "bytes": 766
+      "sha256": "fb824ac02c1515ea9493fbd967665af11952ecda3f4183072808871727b03f11",
+      "bytes": 890
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "00e3d225bb43b90281b93e8d9c4de811e17a184658207af57a4f67abe9f3012e",
-      "bytes": 24419
+      "sha256": "9a5799b1b972fea515f7eccec17fb0e3ece2fd6aff4c908d605808a07e23eeda",
+      "bytes": 25407
     },
     {
       "path": "ROADMAP.md",
@@ -77,8 +81,8 @@
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "598e7b2dfcc7b51562469df48aff3b54cbf31bd5fd64566fe1c5423c1cdac114",
-      "bytes": 206
+      "sha256": "8868653126995864abe692e8097ada00f32c943950a9a113ec9bae8afbdb7b6b",
+      "bytes": 208
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -87,23 +91,23 @@
     },
     {
       "path": "beta/css/app.css",
-      "sha256": "1b37eb003d17b6eb619841a6a2d65e37e31b648d7c1356b9b7ff7eb36ba0bfb4",
-      "bytes": 30355
+      "sha256": "9b472e982fc173e3cddc3ae0b04cf21b28c61b295688a2e5afd5e1b34280cf09",
+      "bytes": 30878
     },
     {
       "path": "beta/index.html",
-      "sha256": "5c8f713361ad2bfdcb2ac83675f33987875fee1315c5b5c570de815672827f82",
+      "sha256": "c7efc72a05cffa4cf0f74b5b822186cf677a11338590a5ffb36e98ffeb6b27b5",
       "bytes": 1216
     },
     {
       "path": "beta/js/core/app.js",
-      "sha256": "7c4afb10f9f355a186a4ea7443f63af5bdb57691077c995f829b87c52d8a17fb",
-      "bytes": 68965
+      "sha256": "12031e62f8c34a83759c1d2f373a67f058b6b765e3495bc473772bd468e68621",
+      "bytes": 60268
     },
     {
       "path": "beta/js/core/book-engine.js",
-      "sha256": "05f3cf51cbd596e8313c35e53d428e7de5a995ba7f450c0a75a5c18928731eba",
-      "bytes": 23911
+      "sha256": "aeeaf4e4a71b149c68da71a44132474b4f3b534ea7d97e430d60754559765af6",
+      "bytes": 43665
     },
     {
       "path": "beta/js/core/boot-guard.js",
@@ -462,8 +466,8 @@
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "598e7b2dfcc7b51562469df48aff3b54cbf31bd5fd64566fe1c5423c1cdac114",
-      "bytes": 206
+      "sha256": "8868653126995864abe692e8097ada00f32c943950a9a113ec9bae8afbdb7b6b",
+      "bytes": 208
     },
     {
       "path": "src/assets/.gitkeep",
@@ -472,23 +476,23 @@
     },
     {
       "path": "src/css/app.css",
-      "sha256": "1b37eb003d17b6eb619841a6a2d65e37e31b648d7c1356b9b7ff7eb36ba0bfb4",
-      "bytes": 30355
+      "sha256": "9b472e982fc173e3cddc3ae0b04cf21b28c61b295688a2e5afd5e1b34280cf09",
+      "bytes": 30878
     },
     {
       "path": "src/index.html",
-      "sha256": "5c8f713361ad2bfdcb2ac83675f33987875fee1315c5b5c570de815672827f82",
+      "sha256": "c7efc72a05cffa4cf0f74b5b822186cf677a11338590a5ffb36e98ffeb6b27b5",
       "bytes": 1216
     },
     {
       "path": "src/js/core/app.js",
-      "sha256": "7c4afb10f9f355a186a4ea7443f63af5bdb57691077c995f829b87c52d8a17fb",
-      "bytes": 68965
+      "sha256": "12031e62f8c34a83759c1d2f373a67f058b6b765e3495bc473772bd468e68621",
+      "bytes": 60268
     },
     {
       "path": "src/js/core/book-engine.js",
-      "sha256": "05f3cf51cbd596e8313c35e53d428e7de5a995ba7f450c0a75a5c18928731eba",
-      "bytes": 23911
+      "sha256": "aeeaf4e4a71b149c68da71a44132474b4f3b534ea7d97e430d60754559765af6",
+      "bytes": 43665
     },
     {
       "path": "src/js/core/boot-guard.js",
@@ -731,6 +735,11 @@
       "bytes": 1103
     },
     {
+      "path": "tests/manual/SMOKE_TEST_0.7.9.md",
+      "sha256": "b9e9bc45ce7f325c3a182c872f04a9838a11094167c68fb8b4c0b81e01026d93",
+      "bytes": 1040
+    },
+    {
       "path": "tests/results/.gitkeep",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
@@ -739,6 +748,11 @@
       "path": "tests/results/ENGINE_0.7.8.json",
       "sha256": "ec829633aa8e4865f078236c5f8ca3afb121ec0c02a560f14698b9e58df0ae93",
       "bytes": 76
+    },
+    {
+      "path": "tests/results/ENGINE_0.7.9.js",
+      "sha256": "8aefa655ce1c57a9e8ced35c6fa9fc47c4d834a7443a33c327903abc0bf77021",
+      "bytes": 2605
     },
     {
       "path": "tests/results/MANUSCRIPT_ENGINE_0.7.6.json",
@@ -759,6 +773,11 @@
       "path": "tests/results/STARTUP_0.7.8.js",
       "sha256": "beaa7966b1b0a096049c77fa7c90449ed50df7e7812dfecf5ff9633c9ada4f1e",
       "bytes": 1542
+    },
+    {
+      "path": "tests/results/STARTUP_0.7.9.js",
+      "sha256": "0cbfaed537972717635b78b111d61fbe33145a3a53cd395dec1c91248046bcf2",
+      "bytes": 1560
     },
     {
       "path": "tests/results/test_078.js",

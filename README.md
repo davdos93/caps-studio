@@ -1,28 +1,34 @@
-# CAPS Studio 0.7.8 Beta
+# CAPS Studio 0.7.9 Beta
 
-## Pädagogischer Buchassistent
+## Vereinfachter Eltern-Intake
 
-Der Assistent erfasst jetzt vor der Geschichte:
+Alle sichtbaren Beispiel- und Voreingaben wurden aus dem Buchassistenten entfernt.
 
-- konkretes Problem oder Thema
-- typische Alltagssituation und Auslöser
-- bisherige Reaktion
-- Gefühle und emotionales Bedürfnis
-- bisherige Lösungsversuche
-- gewünschte Entwicklung
-- konkrete hilfreiche Strategie
-- unterstützende Reaktion anderer Figuren
+Eltern beantworten nur leicht verständliche Fragen:
+
+- Alter des Kindes
+- Problem oder Thema
+- typische Situation
+- beobachtbare Reaktion des Kindes
+- erkennbare Gefühle
+- Interessen und sichere Bezugspunkte
+- gewünschte Art und Stimmung der Geschichte
+- sensible oder zu vermeidende Inhalte
+- Name und optionales Aussehen wichtiger Figuren
+
+Eltern müssen keine Lösung, Strategie, pädagogische Botschaft oder
+Figurenentwicklung mehr formulieren.
+
+## Automatische Hintergrundanalyse
+
+CAPS leitet selbst ab:
+
+- emotionales Bedürfnis
+- realistisches Entwicklungsziel
+- hilfreichen Handlungsschritt
+- Rolle unterstützender Figuren
 - realistischen Erfolg
-- sensible und zu vermeidende Inhalte
-- gewünschte Nähe oder Distanz zum Alltagsthema
+- emotionale Kernbotschaft
+- Welt, Titel und äußeres Abenteuer
 
-Diese Informationen steuern verbindlich:
-
-1. Story-Bibel und psychologischen Wirkungsplan
-2. Kapitel- und Szenenbogen
-3. Figurenentwicklung und Beziehungen
-4. literarisches Manuskript
-5. emotionale und handlungsgenaue Illustrationsprompts
-6. Probebuch-Layout
-
-Build: `2026-07-16-078`
+Build: `2026-07-16-079`
