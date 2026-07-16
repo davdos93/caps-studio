@@ -1,8 +1,8 @@
 {
   "product": "CAPS Studio",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "channel": "beta",
-  "build": "2026-07-16-076",
+  "build": "2026-07-16-077",
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.md",
@@ -31,8 +31,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "b6e85538b825e959c6294321f3b46ffffed3ed527c4d3b802deda72becb61700",
-      "bytes": 365
+      "sha256": "f83db7a1b0d911d4bbec10bd3c81ffdbefa97adec7383f78a9635027c682f46f",
+      "bytes": 443
     },
     {
       "path": "CONTRIBUTING.md",
@@ -46,8 +46,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "4b344707e9c99e3dacb2cfd1d1db10e85997511e1bd5f7ac31a548e574a7097b",
-      "bytes": 616
+      "sha256": "60bd8975882dce730783b9723cbe49431ab21faf84016f6c9c04742788325872",
+      "bytes": 748
+    },
+    {
+      "path": "RELEASE_MANIFEST.json",
+      "sha256": "7cd6f4aed8e5272c93e15f40b48f915bb8c45ed3ec6b7fc268c35f3d82abe38e",
+      "bytes": 24419
     },
     {
       "path": "ROADMAP.md",
@@ -56,8 +61,8 @@
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "64797023d473ba67373be0e8444541bafef83f607f5b02cd36ed3d3b71162317",
-      "bytes": 196
+      "sha256": "234f70cecf2fda826881abedde8052f1107a1e8882f0b4c6703bbb98c2d5b510",
+      "bytes": 187
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -66,18 +71,18 @@
     },
     {
       "path": "beta/css/app.css",
-      "sha256": "95785ddbf1eb492c5dc8d276b488c35603c00a0ab6c46fd984150f0dc1302308",
-      "bytes": 29225
+      "sha256": "cb587ea95f5c0ab480e7c85ceacc051273d091277946419f8155e2d39b9e2283",
+      "bytes": 29856
     },
     {
       "path": "beta/index.html",
-      "sha256": "aca54fba737e26470c9ee15dca3da61b9324c302274c2dcfe2276f8012f4c6e1",
+      "sha256": "8ed06c99e0fa5f0042b1bbb209363b65450c42975690fd0762d78c22e7ab61cf",
       "bytes": 1216
     },
     {
       "path": "beta/js/core/app.js",
-      "sha256": "ab61bacf49d90ce89796c8d2529ffcd82fee8c35575878bd486994a36b8f7f03",
-      "bytes": 57098
+      "sha256": "16095fc9fd304c4e7d8754e139a66245ace1cba4f0a3b00e81de2a4111d1e797",
+      "bytes": 59409
     },
     {
       "path": "beta/js/core/book-engine.js",
@@ -101,8 +106,8 @@
     },
     {
       "path": "beta/js/core/manuscript-engine.js",
-      "sha256": "bc2f41b38733e83dea493f70cbff8895a68492eb0cd669d7e476b3920550e6bf",
-      "bytes": 18623
+      "sha256": "f9dcad9d727c2d201970cef2bb6b42da2be9c25f946fb11c3df0e77428ae857e",
+      "bytes": 43562
     },
     {
       "path": "beta/js/core/project-manager.js",
@@ -441,8 +446,8 @@
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "64797023d473ba67373be0e8444541bafef83f607f5b02cd36ed3d3b71162317",
-      "bytes": 196
+      "sha256": "234f70cecf2fda826881abedde8052f1107a1e8882f0b4c6703bbb98c2d5b510",
+      "bytes": 187
     },
     {
       "path": "src/assets/.gitkeep",
@@ -451,18 +456,18 @@
     },
     {
       "path": "src/css/app.css",
-      "sha256": "95785ddbf1eb492c5dc8d276b488c35603c00a0ab6c46fd984150f0dc1302308",
-      "bytes": 29225
+      "sha256": "cb587ea95f5c0ab480e7c85ceacc051273d091277946419f8155e2d39b9e2283",
+      "bytes": 29856
     },
     {
       "path": "src/index.html",
-      "sha256": "aca54fba737e26470c9ee15dca3da61b9324c302274c2dcfe2276f8012f4c6e1",
+      "sha256": "8ed06c99e0fa5f0042b1bbb209363b65450c42975690fd0762d78c22e7ab61cf",
       "bytes": 1216
     },
     {
       "path": "src/js/core/app.js",
-      "sha256": "ab61bacf49d90ce89796c8d2529ffcd82fee8c35575878bd486994a36b8f7f03",
-      "bytes": 57098
+      "sha256": "16095fc9fd304c4e7d8754e139a66245ace1cba4f0a3b00e81de2a4111d1e797",
+      "bytes": 59409
     },
     {
       "path": "src/js/core/book-engine.js",
@@ -486,8 +491,8 @@
     },
     {
       "path": "src/js/core/manuscript-engine.js",
-      "sha256": "bc2f41b38733e83dea493f70cbff8895a68492eb0cd669d7e476b3920550e6bf",
-      "bytes": 18623
+      "sha256": "f9dcad9d727c2d201970cef2bb6b42da2be9c25f946fb11c3df0e77428ae857e",
+      "bytes": 43562
     },
     {
       "path": "src/js/core/project-manager.js",
@@ -700,6 +705,11 @@
       "bytes": 659
     },
     {
+      "path": "tests/manual/SMOKE_TEST_0.7.7.md",
+      "sha256": "5d2b0ca89a7879f3af71466f82ad76fc1761b968bb2320bb39901dbbaf0d13d8",
+      "bytes": 677
+    },
+    {
       "path": "tests/results/.gitkeep",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
@@ -710,9 +720,19 @@
       "bytes": 224
     },
     {
+      "path": "tests/results/MANUSCRIPT_ENGINE_0.7.7.json",
+      "sha256": "6ae96c9b8f4aab874b4e5302519ed7c4ef33d8dc635dbaf89fd1985c7de23b0b",
+      "bytes": 138
+    },
+    {
       "path": "tests/results/STARTUP_0.7.6.json",
       "sha256": "85f94fb82325ed41ae785227d4b18da3f77d02afd53069b1a17d2986f843e474",
       "bytes": 195
+    },
+    {
+      "path": "tests/results/test_refine_077.js",
+      "sha256": "498d3d70c13c71ea76cf3c51b059c5254548a3376112419fcf6c71e0d827f2b7",
+      "bytes": 2888
     }
   ]
 }

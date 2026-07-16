@@ -1,8 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "channel": "beta",
-  "build": "2026-07-16-076",
-  "milestone": "Textqualität und Manuskriptüberarbeitung",
-  "cacheBuster": "2026-07-16-076"
+  "build": "2026-07-16-077",
+  "milestone": "Literarischer Manuskriptgenerator",
+  "cacheBuster": "2026-07-16-077"
 }

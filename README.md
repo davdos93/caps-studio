@@ -1,15 +1,15 @@
-# CAPS Studio 0.7.6 Beta
+# CAPS Studio 0.7.7 Beta
 
-## Textqualität
+## Literarischer Manuskriptgenerator
 
-- neuer szenischer Manuskriptgenerator
-- konkrete Handlungen statt Platzhalter- und Schablonensätzen
-- natürlicher Dialog und abwechslungsreiche Satzanfänge
-- altersgerechte Satzlänge
-- zusammenhängender Abenteuerbogen über alle Szenen
-- Textprofil für Lesestufe, Stimme, Dialoganteil und Szenenlänge
-- Szene vollständig neu schreiben, dialogreicher, bildhafter, kürzer, gefühlvoller oder spannender
-- heuristische Qualitätsanzeige pro Szene und für das Gesamtmanuskript
-- Änderungen aktualisieren Illustrationsprompts und Probebuch
+- Buchzweck und Kernbotschaft wirken über Entscheidungen und Konsequenzen
+- Stärken, Herausforderungen, Entwicklung und Beziehungen jeder Figur steuern die Szenen
+- Welt, Orte, gewünschte Gefühle, Lernziele und Abenteuerart werden als Geschichtenkontext genutzt
+- strenge Kontinuität zwischen aufeinanderfolgenden Szenen
+- ausführlichere Szenen mit mehr Absätzen, Dialog, innerer Bewegung und konkreter Handlung
+- individuelle Figurenstimmen
+- Kapitel können literarisch harmonisiert werden
+- sichtbarer Nachweis, welche Vorgaben jede Szene beeinflussen
+- redaktionelle Prüfung von Lesefluss, Ausführlichkeit, Figurenbezug und Botschaft in Handlung
 
-Build: `2026-07-16-076`
+Build: `2026-07-16-077`
