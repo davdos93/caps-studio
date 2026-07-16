@@ -1,11 +1,17 @@
-# CAPS Studio 0.7.4 Beta
+# CAPS Studio 0.7.5 Beta
 
-## Änderungen
+## Figuren von Anfang an
 
-- freies Beschreibungsfeld für das Aussehen jeder Figur
-- freie Beschreibung wird in alle Illustrationsprompts übernommen
-- Prompts berücksichtigen den vollständigen Szenentext aus dem Manuskript
-- Ziel, Konflikt, Ergebnis, Figuren, Objekte und räumliche Beziehungen werden explizit beschrieben
-- Bildprompts werden nach jeder Textänderung automatisch aktualisiert
-- keine erfundenen Handlungen oder weggelassenen Figuren im Prompt
-- Cache-Buster `2026-07-15-074`
+- Figurenname, Rolle, Alter, freie Aussehensbeschreibung und Beziehungen bereits im ersten Buchschritt
+- vertiefte Figurenangaben im dritten Schritt
+- Angaben fließen in Buchplan, Manuskript und Illustrationsprompts
+
+## Probebuch
+
+- Layout aus Manuskript und hochgeladenen Illustrationen erzeugen
+- Cover, Schrift, Textgröße und Textposition einstellen
+- jede Doppelseite einzeln prüfen und bearbeiten
+- fehlende Illustrationen werden markiert
+- Probebuch über den Browser als PDF speichern
+
+Build: `2026-07-16-075`

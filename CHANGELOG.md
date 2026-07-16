@@ -1,14 +1,12 @@
 # Changelog
 
-## [0.7.4-beta] – 2026-07-15
+## [0.7.5-beta] – 2026-07-16
 
-### Hinzugefügt
-- freies Feld „Aussehen beschreiben“ pro Figur
-- automatische Übernahme der Beschreibung in alle Prompts
-- Einbindung des vollständigen Manuskript-Szenentextes
-- handlungsgenaue Promptstruktur
-- automatische Promptaktualisierung nach Textänderungen
-
-### Verbessert
-- genauere Darstellung von Handlung, Gesten, Objekten und Figurenpositionen
-- Schutz vor erfundenen oder fehlenden Bildelementen
+- Figurenbeschreibung in den ersten Schritt verschoben
+- freie Aussehensbeschreibung und Beziehungen von Beginn an
+- Übergabe an Story-Bibel, Manuskript und Illustrationen
+- Probebuch-Layout-Engine
+- Cover- und Seitengestaltung
+- Doppelseitenvorschau
+- Browser-Druck als Arbeits-PDF
+- Cache-Buster `2026-07-16-075`
