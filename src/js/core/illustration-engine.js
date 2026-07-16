@@ -29,6 +29,7 @@ function characterPassport(character,index){
     hair:preset.hair,
     eyes:preset.eyes,
     clothes:preset.clothes,
+    appearanceDescription:"",
     definingFeatures:preset.feature,
     consistencyRule:`${character.name} muss auf allen Bildern mit denselben Gesichtsmerkmalen, Farben und Kleidungsstücken erscheinen.`
   };
@@ -36,20 +37,24 @@ function characterPassport(character,index){
 
 function buildPrompt(scene,plan,style,passports){
   const visible=passports.filter(p=>(scene.characters||[]).includes(p.name));
-  const characterText=visible.map(p=>`${p.name}: ${p.age||p.role}, Haut: ${p.skinTone}, Körperbau: ${p.bodyType}, Größe: ${p.height}, Haarfarbe: ${p.hairColor}, Haarlänge: ${p.hairLength}, Frisur: ${p.hairstyle}, Augenfarbe: ${p.eyeColor}, Oberteil: ${p.top}, Unterteil: ${p.bottom}, Schuhe: ${p.shoes}, Accessoires: ${p.accessories||"keine"}, Merkmale: ${p.definingFeatures}`).join("; ");
+  const characterText=visible.map(p=>`${p.name}: ${p.age||p.role}, Haut: ${p.skinTone}, Körperbau: ${p.bodyType}, Größe: ${p.height}, Haarfarbe: ${p.hairColor}, Haarlänge: ${p.hairLength}, Frisur: ${p.hairstyle}, Augenfarbe: ${p.eyeColor}, Oberteil: ${p.top}, Unterteil: ${p.bottom}, Schuhe: ${p.shoes}, Accessoires: ${p.accessories||"keine"}, freie Aussehensbeschreibung: ${p.appearanceDescription||"keine zusätzliche Beschreibung"}, Merkmale: ${p.definingFeatures}`).join("; ");
   return [
     `Kinderbuchillustration als breite Doppelseite im Format 3:2.`,
     `Stil: ${style.name}. Technik: ${style.technique}. Farbmodus: ${style.colorMode}. Detailgrad: ${style.detailLevel}. Farbintensität: ${style.colorIntensity}. Hintergrund: ${style.backgroundStyle}. Licht: ${style.lighting}. Linien: ${style.lineStyle}. Textur: ${style.texture}. ${style.description}`,
     `Szene: ${scene.illustrationIdea}`,
+    `Exakte Handlung der Szene: ${scene.fullText||scene.sceneText||scene.goal||""}`,
+    `Zentrale Handlung: ${scene.goal||""}`,
+    `Konflikt oder Wendepunkt: ${scene.conflict||""}`,
+    `Ergebnis der Szene: ${scene.result||""}`,
     `Ort: ${scene.location}.`,
     `Figuren: ${characterText||"keine Hauptfigur sichtbar"}.`,
     `Handlung und Gefühl: ${scene.goal} ${scene.result}`,
     `Kamera: ${scene.camera||"Halbtotale auf Augenhöhe der Kinder"}.`,
     `Licht: ${scene.light||"warmes, weiches, freundliches Licht"}.`,
     `Farbwelt: ${style.palette}.`,
-    `Komposition: wichtige Gesichter frei sichtbar, ruhiger Bereich für späteren Buchtext, keine Schrift im Bild.`,
+    `Komposition: Die Illustration muss die konkrete Handlung des Szenentextes präzise zeigen. Alle im Text handelnden Figuren, Objekte, Gesten, Blickrichtungen und räumlichen Beziehungen müssen korrekt dargestellt werden. Wichtige Gesichter frei sichtbar, ruhiger Bereich für späteren Buchtext, keine Schrift im Bild.`,
     `Konsistenz: alle Figuren exakt nach ihren Charakterpässen darstellen.`,
-    `Vermeiden: zusätzliche Gliedmaßen, vertauschte Kleidung, wechselnde Haarfarben, Text, Logos, Wasserzeichen, gruselige oder drastische Darstellung.`
+    `Vermeiden: Handlungen oder Gegenstände erfinden, Figuren weglassen, falsche Blickrichtungen, falsche Positionen, zusätzliche Gliedmaßen, vertauschte Kleidung, wechselnde Haarfarben, Text, Logos, Wasserzeichen, gruselige oder drastische Darstellung.`
   ].join("\n");
 }
 
@@ -90,7 +95,7 @@ function generate(plan){
   return {
     schemaVersion:"1.0",
     generatedAt:new Date().toISOString(),
-    generator:"CAPS Illustration Engine 1.0 MVP – lokale Briefs und Bildverwaltung",
+    generator:"CAPS Illustration Engine 1.1 – handlungsgenaue Bildbriefs und Bildverwaltung",
     style,
     characterPassports:passports,
     items,
@@ -107,11 +112,18 @@ function recalc(project){
   return project;
 }
 
+function enrichSceneFromManuscript(project,scene){
+  const manuscriptScene=project.manuscript?.scenes?.find(item=>item.sceneId===scene.id);
+  if(!manuscriptScene)return scene;
+  return {...scene,fullText:manuscriptScene.text||"",sceneText:manuscriptScene.text||""};
+}
+
 function rebuildPrompts(project){
   const ill=project.illustrations;
   if(!ill)return project;
   ill.items.forEach(item=>{
-    const scene=(project.bookPlan.scenes||[]).find(s=>s.id===item.sceneId);
+    const baseScene=(project.bookPlan.scenes||[]).find(s=>s.id===item.sceneId);
+    const scene=enrichSceneFromManuscript(project,baseScene);
     item.prompt=buildPrompt(scene,project.bookPlan,ill.style,ill.characterPassports);
   });
   return project;

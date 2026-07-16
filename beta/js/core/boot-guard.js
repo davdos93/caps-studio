@@ -62,6 +62,7 @@ try{
     bottom:"",
     shoes:"",
     accessories:"",
+    appearanceDescription:"",
     definingFeatures:""
   };
 
