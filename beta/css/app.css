@@ -324,3 +324,6 @@ textarea{min-height:130px;resize:vertical}
 .story-concept-card{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fffaf0;margin-top:14px}
 .story-concept-card h3{margin:4px 0 10px}
 @media(max-width:560px){.analysis-banner{align-items:flex-start;flex-direction:column}}
+
+.scene-quality{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.manuscript-editor textarea{line-height:1.72}
