@@ -327,3 +327,5 @@ textarea{min-height:130px;resize:vertical}
 
 .scene-quality{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 .manuscript-editor textarea{line-height:1.72}
+
+.warning-note{border-color:#f2b84b!important;background:#fff8e8!important}
