@@ -1,8 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "0.7.10",
+  "version": "0.7.11",
   "channel": "beta",
-  "build": "2026-07-16-0710",
-  "milestone": "Zusammenhängender literarischer Manuskriptgenerator",
-  "cacheBuster": "2026-07-16-0710"
+  "build": "2026-07-17-0711",
+  "milestone": "Kinderbuch-Erzählung mit klarem Anfang und konkreten Situationen",
+  "cacheBuster": "2026-07-17-0711"
 }

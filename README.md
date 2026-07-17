@@ -1,16 +1,17 @@
-# CAPS Studio 0.7.10 Beta
+# CAPS Studio 0.7.11 Beta
 
-## Zusammenhängender literarischer Manuskriptgenerator
+## Kinderbuch-Erzählung 4.0
 
-- jede Szene entsteht aus der konkreten Folge der vorherigen Szene
-- Ursache, Handlung, Entscheidung und Konsequenz werden erzählerisch verbunden
-- längere zusammenhängende Absätze statt einzelner Satzbausteine
-- wiederkehrendes Motiv und Gegenstand über das gesamte Buch
-- natürliche Dialoge mit Handlung zwischen den Sprechbeiträgen
-- Rückschläge verändern den weiteren Plan
-- Kapitel beginnen nicht wieder bei null
-- Figurenentwicklung wird durch Entscheidungen sichtbar
-- pädagogische Botschaft bleibt in der Handlung und wird nicht erklärt
-- neue Prüfungen für Szenenverknüpfung, Absatzkohärenz und Dialogqualität
+- klarer Buchanfang in einer verständlichen Alltagssituation
+- Problem wird durch beobachtbare kindliche Handlungen gezeigt
+- kein Fachvokabular im Manuskript
+- konkrete magische Handlung statt abstrakter Planungssätze
+- zusammenhängende Absätze mit Ursache und Folge
+- natürliche, kurze Dialoge
+- wiederkehrender Gegenstand als roter Faden
+- Alltagstransfer am Ende des Buches
+- neue Prüfungen für klaren Anfang, kindliche Sprache und konkrete Situationen
 
-Build: `2026-07-16-0710`
+Bestehende Manuskripte müssen einmal vollständig neu geschrieben werden.
+
+Build: `2026-07-17-0711`

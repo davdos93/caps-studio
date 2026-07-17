@@ -552,6 +552,16 @@ function systemCharacter(role,index,brief,analysis){
   };
 }
 
+function storyPhaseIndex(index,total){
+  const maps={
+    16:[0,1,2,3,5,6,7,8,9,10,12,13,14,16,20,24],
+    20:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,20,24],
+    24:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,24],
+    25:Array.from({length:25},(_,i)=>i)
+  };
+  return maps[total]?.[index]??Math.round(index*24/Math.max(1,total-1));
+}
+
 function generate(input){
   const brief={...input};
   brief.characters=Array.isArray(input.characters)?input.characters.filter(character=>character&&Object.values(character).some(value=>Array.isArray(value)?value.length:String(value??"").trim())):[];
@@ -632,7 +642,7 @@ function generate(input){
   }));
 
   const scenes=Array.from({length:sceneCount},(_,index)=>{
-    const phaseIndex=Math.round(index*(phases.length-1)/Math.max(1,sceneCount-1));
+    const phaseIndex=storyPhaseIndex(index,sceneCount);
     const phase=phases[phaseIndex];
     const chapterIndex=Math.min(chapterCount-1,Math.floor(index*chapterCount/sceneCount));
     const chapter=chapters[chapterIndex];
@@ -698,6 +708,7 @@ function generate(input){
       emotionalPromise:`Das Kind wird mit dem schwierigen Gefühl nicht allein gelassen und erlebt glaubwürdig, wie Sicherheit, Beziehung und eigenes Handeln zusammenwirken.`,
       psychologicalProfile:profile,
       backgroundAnalysis:{category:analysis.category,confidence:analysis.confidence,reason:profile.analysisReason,storyConcept:analysis.story},
+      intakeContext:{childAge:brief.childAge,concreteSituation:brief.concreteSituation,currentReaction:brief.currentReaction,safePeople:brief.safePeople,interests:brief.interests,childFeelings:brief.childFeelings,storyWorldChoice:brief.storyWorldChoice,additionalContext:brief.additionalContext},
       interests:brief.interests,
       tone:brief.bookStyle,
       storyDistance:profile.storyDistance,

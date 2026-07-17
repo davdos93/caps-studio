@@ -1,22 +1,46 @@
 {
   "product": "CAPS Studio",
-  "version": "0.7.10",
+  "version": "0.7.11",
   "channel": "beta",
-  "build": "2026-07-16-0710",
+  "build": "2026-07-17-0711",
   "validation": {
     "javascriptFiles": 47,
     "engineTest": {
       "scenes": 20,
-      "averageWords": 270,
-      "quality": 91,
-      "motif": "Sturmfeder",
-      "unique": 20,
-      "continuity": true
+      "averageWords": 167,
+      "quality": 100,
+      "firstSceneWords": 195,
+      "firstSentence": "Mira baute aus Klötzen ein Haus für die Tierfiguren."
     },
     "startupTest": {
       "scripts": 11,
       "homeRendered": true,
-      "version": "0.7.10"
+      "version": "0.7.11"
+    },
+    "storyArcTest": {
+      "sceneTitles": [
+        "Ein vertrauter Anfang",
+        "Das erste Zeichen",
+        "Die Entscheidung",
+        "Über die Schwelle",
+        "Eine Welt mit eigenen Regeln",
+        "Der gewohnte Versuch",
+        "Was dabei verloren geht",
+        "Ein Gefühl bekommt Platz",
+        "Zuhören verändert den Plan",
+        "Der kleinste mögliche Schritt",
+        "Ein erster eigener Erfolg",
+        "Nicht jeder Erfolg bleibt",
+        "Ein Streit ohne Schuldige",
+        "Der Plan wird verändert",
+        "Üben, solange es noch leicht ist",
+        "Die eigene Stärke neu sehen",
+        "Die große Prüfung beginnt",
+        "Der bewusste Augenblick",
+        "Der Höhepunkt",
+        "Beim nächsten Mal"
+      ],
+      "passed": true
     },
     "srcBetaIdentical": true
   },
@@ -48,8 +72,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "8298d45b7698bea13fa5225f62e0e50649acfaf44e0f14d6d9266e2e1d0c6d85",
-      "bytes": 510
+      "sha256": "e07a5f56cd8692ce7820817d83968f37dba0a345777ca2e8fc76fdf50aea2cc3",
+      "bytes": 572
     },
     {
       "path": "CONTRIBUTING.md",
@@ -63,13 +87,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "ec03f9f6372bdf1bcf1e99f6cca69edb0e8c502952d1e52c22533902da4d51f0",
-      "bytes": 746
+      "sha256": "264b145b67d54e075d15c89d41d546ae8bc4bbf82dce3b83126cb7931cac3dbd",
+      "bytes": 623
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "bb99e76d5b4a371c9d3bc25996260b5debd901c7e50f72fd833464f29ca64a6f",
-      "bytes": 26077
+      "sha256": "b6032913bdf85ed2d2eca62884681eb9d2d9c67026d1db8c7d8bc80719bae7c8",
+      "bytes": 26424
     },
     {
       "path": "ROADMAP.md",
@@ -78,8 +102,8 @@
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "b9b018db8886bb3297e135fee792ca1f927c83a30b5fb744879b81a0d9768b0c",
-      "bytes": 209
+      "sha256": "c980e2c1e8040bb361105b2a4296044579ed79c99c7bb2dabb4ac5dff5d674b9",
+      "bytes": 222
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -88,23 +112,23 @@
     },
     {
       "path": "beta/css/app.css",
-      "sha256": "3e176aeab2ea0b154fcbaade5752f096e3a8508a45aedd03e62dda3f1f952f3a",
-      "bytes": 30998
+      "sha256": "60fc6dbd104416442a6793d77fe0d1449affeed2be7604941bdd7baefd8e40a4",
+      "bytes": 31074
     },
     {
       "path": "beta/index.html",
-      "sha256": "671c63c752e3fa176df4859fedc7f881b5adc6044d0808e48b3ee6eec689af02",
+      "sha256": "b62cd07e0346ee9ecf6c4c5cc844126981203f548c84d6089af7dcf176b6a079",
       "bytes": 1229
     },
     {
       "path": "beta/js/core/app.js",
-      "sha256": "68b14b1ca76e55be789f551da62382227bfab88fbec75f07b618e1a9b26caa67",
-      "bytes": 60791
+      "sha256": "731cb905589621e294aa3cea946638b02f0eae0a78aa1b4c1c3814c9d03ccff7",
+      "bytes": 61334
     },
     {
       "path": "beta/js/core/book-engine.js",
-      "sha256": "aeeaf4e4a71b149c68da71a44132474b4f3b534ea7d97e430d60754559765af6",
-      "bytes": 43665
+      "sha256": "8c67de749ed6df26e63fd37cb101fcd83c5e0fa38ae725bcdf201e63ca5ce802",
+      "bytes": 44291
     },
     {
       "path": "beta/js/core/boot-guard.js",
@@ -123,8 +147,8 @@
     },
     {
       "path": "beta/js/core/manuscript-engine.js",
-      "sha256": "fea37ece330ec30ec859dbb87a6e23614901a0157062d256bdc5e318fd0ca050",
-      "bytes": 35963
+      "sha256": "b35e77eb849e4aeabd2b94dde05811011ea758c83037cce64747d8d5de995c64",
+      "bytes": 48838
     },
     {
       "path": "beta/js/core/project-manager.js",
@@ -463,8 +487,8 @@
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "b9b018db8886bb3297e135fee792ca1f927c83a30b5fb744879b81a0d9768b0c",
-      "bytes": 209
+      "sha256": "c980e2c1e8040bb361105b2a4296044579ed79c99c7bb2dabb4ac5dff5d674b9",
+      "bytes": 222
     },
     {
       "path": "src/assets/.gitkeep",
@@ -473,23 +497,23 @@
     },
     {
       "path": "src/css/app.css",
-      "sha256": "3e176aeab2ea0b154fcbaade5752f096e3a8508a45aedd03e62dda3f1f952f3a",
-      "bytes": 30998
+      "sha256": "60fc6dbd104416442a6793d77fe0d1449affeed2be7604941bdd7baefd8e40a4",
+      "bytes": 31074
     },
     {
       "path": "src/index.html",
-      "sha256": "671c63c752e3fa176df4859fedc7f881b5adc6044d0808e48b3ee6eec689af02",
+      "sha256": "b62cd07e0346ee9ecf6c4c5cc844126981203f548c84d6089af7dcf176b6a079",
       "bytes": 1229
     },
     {
       "path": "src/js/core/app.js",
-      "sha256": "68b14b1ca76e55be789f551da62382227bfab88fbec75f07b618e1a9b26caa67",
-      "bytes": 60791
+      "sha256": "731cb905589621e294aa3cea946638b02f0eae0a78aa1b4c1c3814c9d03ccff7",
+      "bytes": 61334
     },
     {
       "path": "src/js/core/book-engine.js",
-      "sha256": "aeeaf4e4a71b149c68da71a44132474b4f3b534ea7d97e430d60754559765af6",
-      "bytes": 43665
+      "sha256": "8c67de749ed6df26e63fd37cb101fcd83c5e0fa38ae725bcdf201e63ca5ce802",
+      "bytes": 44291
     },
     {
       "path": "src/js/core/boot-guard.js",
@@ -508,8 +532,8 @@
     },
     {
       "path": "src/js/core/manuscript-engine.js",
-      "sha256": "fea37ece330ec30ec859dbb87a6e23614901a0157062d256bdc5e318fd0ca050",
-      "bytes": 35963
+      "sha256": "b35e77eb849e4aeabd2b94dde05811011ea758c83037cce64747d8d5de995c64",
+      "bytes": 48838
     },
     {
       "path": "src/js/core/project-manager.js",
@@ -697,6 +721,11 @@
       "bytes": 619
     },
     {
+      "path": "tests/manual/SMOKE_TEST_0.7.11.md",
+      "sha256": "d78cf20d5bd3054d3f15eef50b653d9b3eabda0d012ba403c3adbc800cb4ca35",
+      "bytes": 645
+    },
+    {
       "path": "tests/manual/SMOKE_TEST_0.7.2.md",
       "sha256": "d289a8a566c96e6e6ba5afb36e0fa1924e1dd8935ac0aa34c689e05fd7e50555",
       "bytes": 454
@@ -747,9 +776,24 @@
       "bytes": 0
     },
     {
+      "path": "tests/results/ARC_0.7.11.js",
+      "sha256": "fa6cb3f28b73257d22f853ad76ffed7ad8bc569aab973ceb446278ad6a8ff75d",
+      "bytes": 1218
+    },
+    {
+      "path": "tests/results/DIAG_0711.js",
+      "sha256": "07ab9ceae6786ba131ce117de547125c303d2e3db31ffe6331f06f3fed3ff631",
+      "bytes": 1235
+    },
+    {
       "path": "tests/results/ENGINE_0.7.10.js",
       "sha256": "92647dc2834c8c51445ef5d692580c2961d5cf65efa12f058df2c11b4c804886",
       "bytes": 2386
+    },
+    {
+      "path": "tests/results/ENGINE_0.7.11.js",
+      "sha256": "e92b1046d3e97834336c7e526d62a2d278020048d7b23fdb35e67e784b79e87a",
+      "bytes": 2018
     },
     {
       "path": "tests/results/ENGINE_0.7.8.json",
@@ -774,6 +818,11 @@
     {
       "path": "tests/results/STARTUP_0.7.10.js",
       "sha256": "71fbbb6f2c9dc007b9ef21d4b8b9a292d94a6faa174a26bd30f8395221b21792",
+      "bytes": 1496
+    },
+    {
+      "path": "tests/results/STARTUP_0.7.11.js",
+      "sha256": "97ae812c93078c63f1cd78efdca33aa74bfc573ffbef85f4a519400670a3e115",
       "bytes": 1496
     },
     {

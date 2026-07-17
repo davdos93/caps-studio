@@ -1,0 +1,14 @@
+const fs=require("fs"),vm=require("vm");
+const sandbox={console,crypto:{randomUUID:()=>Math.random().toString(16).slice(2)+Date.now()},window:{}};vm.createContext(sandbox);
+for(const f of ["src/js/core/book-engine.js","src/js/core/manuscript-engine.js","src/js/core/illustration-engine.js"])vm.runInContext(fs.readFileSync(f,"utf8"),sandbox,{filename:f});
+const intake={childAge:"5 Jahre",problemTopic:"Mein Kind hat große Angst beim Abschied im Kindergarten.",concreteSituation:"An der Tür klammert es sich an mich und möchte wieder mit nach Hause.",currentReaction:"Es weint, hält mich fest und fragt immer wieder, ob ich zurückkomme.",childFeelings:["Angst","Unsicherheit"],interests:["Tiere"],safePeople:"Papa und der Stoffhase",storyWorldChoice:"CAPS soll entscheiden",bookStyle:["warmherzig"],characters:[{name:"Mira",age:"5 Jahre",appearanceDescription:"lockige dunkle Haare und grüner Pullover"}]};
+const plan=sandbox.window.CAPS_BookEngine.generate(intake);const ms=sandbox.window.CAPS_ManuscriptEngine.generate(plan);
+const first=ms.scenes[0],all=ms.scenes.map(s=>s.text).join("\n");
+if(!first.text.startsWith("Mira "))throw new Error("Kein klarer Anfang");
+if(!first.text.includes("„"))throw new Error("Kein Dialog im Anfang");
+if(!/baute|malte|stellte|faltete|rollte/.test(first.text))throw new Error("Keine Alltagshandlung");
+if(/psychologische Funktion|Bewältigungsstrategie|Entwicklungsziel|die Hauptfigur|Reiz und Reaktion/i.test(all))throw new Error("Fachsprache im Manuskript");
+if(!ms.scenes.every(s=>s.quality.childLanguage&&s.quality.concreteSituation))throw new Error("Kinderbuchprüfung fehlgeschlagen");
+if(!ms.scenes.every(s=>s.text.split(/\n\s*\n/).length>=4))throw new Error("Zu wenig zusammenhängende Absätze");
+const avg=ms.scenes.reduce((n,s)=>n+s.wordCount,0)/ms.scenes.length;
+console.log(JSON.stringify({scenes:ms.scenes.length,averageWords:Math.round(avg),quality:ms.qualityScore,firstSceneWords:first.wordCount,firstSentence:first.text.split(/(?<=[.!?])\s+/)[0]},null,2));
