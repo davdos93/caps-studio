@@ -41,3 +41,16 @@
 - Cover Studio
 - KDP-Vorbereitung
 - Serienverwaltung
+
+## 0.8.1 – Phase 2: Bilderbuch-Komposition ✅
+
+- Manuskript-, Bilderbuch- und Layouttext
+- Verdichtung, Umblätterpunkte, Text-/Bild-Gewichtung und Weißraumplanung
+
+## Nächster Schritt
+
+0.8.2 – Phase 3: Illustrationsdramaturgie und Bildkomposition
+
+## Abgeschlossen: 0.8.2 – Illustrationsdramaturgie
+
+Die Auswahl der Bildmomente, Kamera, Blickführung und visuelle Kontinuität werden aus den komponierten Doppelseiten abgeleitet.

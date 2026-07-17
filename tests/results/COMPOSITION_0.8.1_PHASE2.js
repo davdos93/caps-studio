@@ -1,0 +1,22 @@
+const fs=require("fs"),vm=require("vm");
+const sandbox={console,crypto:{randomUUID:()=>Math.random().toString(16).slice(2)+"-"+Date.now()},window:{}};sandbox.window=sandbox;vm.createContext(sandbox);
+for(const file of ["src/js/core/story-treatment-engine.js","src/js/core/book-engine.js","src/js/core/manuscript-engine.js","src/js/core/layout-engine.js"]){vm.runInContext(fs.readFileSync(file,"utf8"),sandbox,{filename:file});}
+const intake={childAge:"5 Jahre",problemTopic:"Angst beim Abschied",concreteSituation:"An der Kindergartentür hält Mira Papa fest.",currentReaction:"Mira weint und fragt, ob Papa zurückkommt.",childFeelings:["Angst"],interests:["Tiere"],characters:[{name:"Mira",age:"5 Jahre"}]};
+const plan=sandbox.CAPS_BookEngine.generate(intake),manuscript=sandbox.CAPS_ManuscriptEngine.generate(plan);
+const project={title:plan.storyBible.title,subtitle:plan.storyBible.subtitle,audience:"5 Jahre",bookPlan:plan,manuscript,illustrations:null,layout:null};
+sandbox.CAPS_LayoutEngine.generate(project);const layout=project.layout;
+if(layout.schemaVersion!=="2.1"||layout.compositionVersion!=="2.0")throw new Error("Phase-2-Schema fehlt");
+if(!layout.spreads.every(s=>s.sourceText&&s.pictureBookText&&s.layoutText&&s.pageTurn&&s.composition?.whiteSpacePlan))throw new Error("Kompositionsebenen unvollständig");
+const source=layout.spreads.reduce((n,s)=>n+s.sourceWordCount,0),book=layout.spreads.reduce((n,s)=>n+s.wordCount,0);
+if(!(book<source))throw new Error(`Keine Verdichtung: ${source} -> ${book}`);
+if(layout.spreads.some(s=>s.wordCount>s.composition.maxWords+8))throw new Error("Doppelseite über Zielbereich");
+if(!layout.spreads.slice(0,-1).some(s=>s.pageTurnStrength>=45))throw new Error("Keine starken Umblätterpunkte");
+const first=layout.spreads[0];if(!first.pictureBookText.includes("Mira"))throw new Error("Hauptfigur im Einstieg verloren");
+const id=layout.spreads[Math.min(4,layout.spreads.length-2)].id,base=layout.spreads.find(s=>s.id===id).composition.imageShare;
+sandbox.CAPS_LayoutEngine.recomposeSpread(project,id,"visual");const visual=project.layout.spreads.find(s=>s.id===id).composition.imageShare;if(visual<=base)throw new Error("Bildvariante erhöht Bildanteil nicht");
+sandbox.CAPS_LayoutEngine.recomposeSpread(project,id,"text");const textShare=project.layout.spreads.find(s=>s.id===id).composition.imageShare;if(textShare>=visual)throw new Error("Textvariante reduziert Bildanteil nicht");
+const manual=project.layout.spreads[0];sandbox.CAPS_LayoutEngine.updateSpread(project,manual.id,{layoutText:"Manueller Layouttext.",pictureBookText:manual.pictureBookText});sandbox.CAPS_LayoutEngine.sync(project);
+if(project.layout.spreads[0].layoutText!=="Manueller Layouttext.")throw new Error("Manuelle Layoutfassung nicht erhalten");
+const phase1=JSON.parse(JSON.stringify(project.layout));phase1.schemaVersion="2.0";phase1.compositionVersion=undefined;phase1.generator="Phase 1";project.layout=phase1;sandbox.CAPS_LayoutEngine.migrate(project);
+if(project.layout.schemaVersion!=="2.1"||!project.layout.phase2Migration?.legacySnapshot)throw new Error("Phase-1-Migration fehlgeschlagen");
+console.log(JSON.stringify({spreads:layout.spreads.length,sourceWords:source,bookWords:book,reduction:layout.quality.reductionPercent,strongTurns:layout.quality.strongTurns,quality:layout.quality.score,layers:3,migrated:true},null,2));

@@ -1,0 +1,8 @@
+
+const fs=require("fs"),vm=require("vm");const store=new Map(),appNode={innerHTML:""};
+const sandbox={console,crypto:{randomUUID:()=>Math.random().toString(16).slice(2)+"-"+Date.now()},localStorage:{getItem:k=>store.has(k)?store.get(k):null,setItem:(k,v)=>store.set(k,String(v)),removeItem:k=>store.delete(k)},navigator:{userAgent:"Chrome Test",clipboard:{writeText:async()=>{}}},document:{getElementById:id=>id==="app"?appNode:null,querySelectorAll:()=>[],createElement:()=>({style:{},appendChild(){},remove(){},click(){},select(){},setAttribute(){},addEventListener(){},classList:{add(){},remove(){}}}),body:{appendChild(){},removeChild(){}},documentElement:{style:{}},execCommand(){return true}},alert(){},confirm(){return true},setTimeout,clearTimeout,FileReader:function(){},Blob:function(){},URL:{createObjectURL(){return ""},revokeObjectURL(){}}};
+sandbox.window=sandbox;sandbox.window.addEventListener=()=>{};sandbox.window.print=()=>{};vm.createContext(sandbox);
+const html=fs.readFileSync("beta/index.html","utf8"),scripts=[...html.matchAll(/<script src="([^"?]+)/g)].map(match=>match[1]);for(const ref of scripts)vm.runInContext(fs.readFileSync("beta/"+ref,"utf8"),sandbox,{filename:ref});
+if(!sandbox.CAPS||sandbox.CAPS.version!=="0.8.2")throw new Error("Version falsch");if(typeof sandbox.CAPS_IllustrationEngine?.generate!=="function"||typeof sandbox.CAPS_IllustrationEngine?.redesignItem!=="function")throw new Error("Phase-3-Engine fehlt");
+if(!appNode.innerHTML.includes("Was soll in einem Kinderherzen bleiben?"))throw new Error("Home nicht gerendert");
+console.log(JSON.stringify({scripts:scripts.length,version:sandbox.CAPS.version,illustrationDramaturgy:true,homeRendered:true},null,2));

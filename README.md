@@ -1,17 +1,24 @@
-# CAPS Studio 0.7.11 Beta
+# CAPS Studio 0.8.3 Beta
 
-## Kinderbuch-Erzählung 4.0
+## Phase 4 – Druckproduktion
 
-- klarer Buchanfang in einer verständlichen Alltagssituation
-- Problem wird durch beobachtbare kindliche Handlungen gezeigt
-- kein Fachvokabular im Manuskript
-- konkrete magische Handlung statt abstrakter Planungssätze
-- zusammenhängende Absätze mit Ursache und Folge
-- natürliche, kurze Dialoge
-- wiederkehrender Gegenstand als roter Faden
-- Alltagstransfer am Ende des Buches
-- neue Prüfungen für klaren Anfang, kindliche Sprache und konkrete Situationen
+CAPS erzeugt jetzt druckfähige PDF-Dateien vollständig im Browser.
 
-Bestehende Manuskripte müssen einmal vollständig neu geschrieben werden.
+Umgesetzt:
 
-Build: `2026-07-17-0711`
+- separater Innenblock mit einzelnen Buchseiten
+- automatische Titelseite und Impressumsseite
+- Auffüllen des Innenblocks auf ein Vielfaches von vier Seiten
+- A5-Hochformat und quadratisches 21-cm-Format
+- echter Beschnittbereich
+- optionale Schnittmarken und Proof-Schnittbox
+- vollständiger Umschlag aus Rückseite, Buchrücken und Vorderseite
+- berechnete Rückenbreite nach Seitenzahl und Papierstärke
+- Rückseitentext, Herausgeber und ISBN-Feld
+- 200- oder 300-dpi-Ausgabe
+- Druckprüfung für Layout, Text, Bilder, Auflösung und Freigaben
+- Produktions-PDF und schnelles Proof-PDF
+- herunterladbarer Prüfbericht
+- PDF-Writer ohne Server und ohne externe Cloud
+
+Build: `2026-07-17-0830-phase4`

@@ -1,47 +1,30 @@
 {
   "product": "CAPS Studio",
-  "version": "0.7.11",
+  "version": "0.8.3",
   "channel": "beta",
-  "build": "2026-07-17-0711",
+  "build": "2026-07-17-0830-phase4",
   "validation": {
-    "javascriptFiles": 47,
-    "engineTest": {
-      "scenes": 20,
-      "averageWords": 167,
-      "quality": 100,
-      "firstSceneWords": 195,
-      "firstSentence": "Mira baute aus Klötzen ein Haus für die Tierfiguren."
+    "javascriptFiles": 51,
+    "pdfTest": {
+      "bytes": 69253,
+      "pages": 2,
+      "header": "%PDF-1.4",
+      "eof": true
+    },
+    "preflightTest": {
+      "score": 93,
+      "pages": 36,
+      "spine": 1.8,
+      "blockersAfterMissing": 1
     },
     "startupTest": {
-      "scripts": 11,
-      "homeRendered": true,
-      "version": "0.7.11"
+      "scripts": 15,
+      "version": "0.8.3",
+      "pdf": true,
+      "export": true,
+      "homeRendered": true
     },
-    "storyArcTest": {
-      "sceneTitles": [
-        "Ein vertrauter Anfang",
-        "Das erste Zeichen",
-        "Die Entscheidung",
-        "Über die Schwelle",
-        "Eine Welt mit eigenen Regeln",
-        "Der gewohnte Versuch",
-        "Was dabei verloren geht",
-        "Ein Gefühl bekommt Platz",
-        "Zuhören verändert den Plan",
-        "Der kleinste mögliche Schritt",
-        "Ein erster eigener Erfolg",
-        "Nicht jeder Erfolg bleibt",
-        "Ein Streit ohne Schuldige",
-        "Der Plan wird verändert",
-        "Üben, solange es noch leicht ist",
-        "Die eigene Stärke neu sehen",
-        "Die große Prüfung beginnt",
-        "Der bewusste Augenblick",
-        "Der Höhepunkt",
-        "Beim nächsten Mal"
-      ],
-      "passed": true
-    },
+    "pdfinfoVerified": true,
     "srcBetaIdentical": true
   },
   "files": [
@@ -72,8 +55,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "e07a5f56cd8692ce7820817d83968f37dba0a345777ca2e8fc76fdf50aea2cc3",
-      "bytes": 572
+      "sha256": "87f27b4298afbe4785e3bb52ff3a4921e71547be12aa2fce9135c71be983ca7d",
+      "bytes": 393
     },
     {
       "path": "CONTRIBUTING.md",
@@ -87,23 +70,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "264b145b67d54e075d15c89d41d546ae8bc4bbf82dce3b83126cb7931cac3dbd",
-      "bytes": 623
+      "sha256": "ad23a321b6ac6c5ba1d48d4302a8207d35fbb7c024b633e815e495bc28422f7f",
+      "bytes": 845
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "b6032913bdf85ed2d2eca62884681eb9d2d9c67026d1db8c7d8bc80719bae7c8",
-      "bytes": 26424
+      "sha256": "7a144c3de08519a7a8e7eee5a27bd83c189b8156185a495815efe2afc513ede3",
+      "bytes": 31069
     },
     {
       "path": "ROADMAP.md",
-      "sha256": "01ebd3e1c5636519a789b97779a067d5172c80aded04ebcc2d938f504aba88a1",
-      "bytes": 598
+      "sha256": "acd3335492872827ff5d5deb5401d6a5ec3fae91116ab110c0c4c92d3ba450ab",
+      "bytes": 1039
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "c980e2c1e8040bb361105b2a4296044579ed79c99c7bb2dabb4ac5dff5d674b9",
-      "bytes": 222
+      "sha256": "a8971f032fa09f25581ad1d655262aca0e0d3128d827cd8e481655f47d89727e",
+      "bytes": 212
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -112,23 +95,23 @@
     },
     {
       "path": "beta/css/app.css",
-      "sha256": "60fc6dbd104416442a6793d77fe0d1449affeed2be7604941bdd7baefd8e40a4",
-      "bytes": 31074
+      "sha256": "a41ff71b2d0ad9d63d5e85e25b2ecac78ca6a982c0d5b870b570db89af716493",
+      "bytes": 44829
     },
     {
       "path": "beta/index.html",
-      "sha256": "b62cd07e0346ee9ecf6c4c5cc844126981203f548c84d6089af7dcf176b6a079",
-      "bytes": 1229
+      "sha256": "01750e2feb07e6d6de29f00eda6475e938dbb052fced49a41c0a3fa26ddd5507",
+      "bytes": 1629
     },
     {
       "path": "beta/js/core/app.js",
-      "sha256": "731cb905589621e294aa3cea946638b02f0eae0a78aa1b4c1c3814c9d03ccff7",
-      "bytes": 61334
+      "sha256": "190986c6c9a24e2d1efc8b527a28e7bbda78539d2b837a26a12844592c97b420",
+      "bytes": 90193
     },
     {
       "path": "beta/js/core/book-engine.js",
-      "sha256": "8c67de749ed6df26e63fd37cb101fcd83c5e0fa38ae725bcdf201e63ca5ce802",
-      "bytes": 44291
+      "sha256": "9b0c7d7a7c5a9371e97590c4d29c4723eda41cf1c45653f44c97e448754187b1",
+      "bytes": 43508
     },
     {
       "path": "beta/js/core/boot-guard.js",
@@ -136,19 +119,24 @@
       "bytes": 5330
     },
     {
+      "path": "beta/js/core/editorial-engine.js",
+      "sha256": "89eff4ac3bd628504098aaa5e46fbdce22610e42ea79f11c3302951327bd0a82",
+      "bytes": 16912
+    },
+    {
       "path": "beta/js/core/illustration-engine.js",
-      "sha256": "ea83058bbbc3e9be8e6b6cce1a1e655a4e49fcf31c0798a3f3a7e0c69dfcce3f",
-      "bytes": 7856
+      "sha256": "77b76ba0ae8b8eadb9e5592b55bbee69ebf02e0eca8cfc90b4acf54f111c4780",
+      "bytes": 35793
     },
     {
       "path": "beta/js/core/layout-engine.js",
-      "sha256": "73ef3d5212d59e2c3886a11cd395c9820196b495719810d086054801cc348734",
-      "bytes": 2749
+      "sha256": "0243ee4adf7305e942d60d769a1faa1e51639cd85797d0cd4a05e4ecede8a846",
+      "bytes": 33097
     },
     {
       "path": "beta/js/core/manuscript-engine.js",
-      "sha256": "b35e77eb849e4aeabd2b94dde05811011ea758c83037cce64747d8d5de995c64",
-      "bytes": 48838
+      "sha256": "57c6bb7647fb06a36a2582dc03737eb18f9e1a0a88a7d94f1c91fb16af7339e7",
+      "bytes": 37853
     },
     {
       "path": "beta/js/core/project-manager.js",
@@ -159,6 +147,11 @@
       "path": "beta/js/core/storage-engine.js",
       "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
       "bytes": 773
+    },
+    {
+      "path": "beta/js/core/story-treatment-engine.js",
+      "sha256": "709cc6cf7830af7a622fb42b6df9ac42a81fac1edb8b6b7030c8d230061cc8a8",
+      "bytes": 40552
     },
     {
       "path": "beta/js/core/universe-engine.js",
@@ -187,13 +180,13 @@
     },
     {
       "path": "beta/js/export/export-engine.js",
-      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
-      "bytes": 107
+      "sha256": "82228daf2439061a976d59ea049fb44dc4aacb5737b60804380084d1bdaacd77",
+      "bytes": 9496
     },
     {
       "path": "beta/js/export/pdf-engine.js",
-      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
-      "bytes": 104
+      "sha256": "23e59ee1f37251764e7fac32c198c796fa285ea3f381f47919be20c63d635103",
+      "bytes": 21251
     },
     {
       "path": "beta/js/ui/image-manager.js",
@@ -242,8 +235,8 @@
     },
     {
       "path": "docs/standards/DATA_MODEL.md",
-      "sha256": "0f7c023b003ceea75e37c2d3c1b0a6415af6b8432c254fc5e9c7ff3d03d746be",
-      "bytes": 453
+      "sha256": "5d4b50ffba7aa0eccfd6a80705d41b9e54a08afd35c3cfff2a680920f676ff3c",
+      "bytes": 730
     },
     {
       "path": "docs/standards/RELEASE_STANDARD.md",
@@ -487,8 +480,8 @@
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "c980e2c1e8040bb361105b2a4296044579ed79c99c7bb2dabb4ac5dff5d674b9",
-      "bytes": 222
+      "sha256": "a8971f032fa09f25581ad1d655262aca0e0d3128d827cd8e481655f47d89727e",
+      "bytes": 212
     },
     {
       "path": "src/assets/.gitkeep",
@@ -497,23 +490,23 @@
     },
     {
       "path": "src/css/app.css",
-      "sha256": "60fc6dbd104416442a6793d77fe0d1449affeed2be7604941bdd7baefd8e40a4",
-      "bytes": 31074
+      "sha256": "a41ff71b2d0ad9d63d5e85e25b2ecac78ca6a982c0d5b870b570db89af716493",
+      "bytes": 44829
     },
     {
       "path": "src/index.html",
-      "sha256": "b62cd07e0346ee9ecf6c4c5cc844126981203f548c84d6089af7dcf176b6a079",
-      "bytes": 1229
+      "sha256": "01750e2feb07e6d6de29f00eda6475e938dbb052fced49a41c0a3fa26ddd5507",
+      "bytes": 1629
     },
     {
       "path": "src/js/core/app.js",
-      "sha256": "731cb905589621e294aa3cea946638b02f0eae0a78aa1b4c1c3814c9d03ccff7",
-      "bytes": 61334
+      "sha256": "190986c6c9a24e2d1efc8b527a28e7bbda78539d2b837a26a12844592c97b420",
+      "bytes": 90193
     },
     {
       "path": "src/js/core/book-engine.js",
-      "sha256": "8c67de749ed6df26e63fd37cb101fcd83c5e0fa38ae725bcdf201e63ca5ce802",
-      "bytes": 44291
+      "sha256": "9b0c7d7a7c5a9371e97590c4d29c4723eda41cf1c45653f44c97e448754187b1",
+      "bytes": 43508
     },
     {
       "path": "src/js/core/boot-guard.js",
@@ -521,19 +514,24 @@
       "bytes": 5330
     },
     {
+      "path": "src/js/core/editorial-engine.js",
+      "sha256": "89eff4ac3bd628504098aaa5e46fbdce22610e42ea79f11c3302951327bd0a82",
+      "bytes": 16912
+    },
+    {
       "path": "src/js/core/illustration-engine.js",
-      "sha256": "ea83058bbbc3e9be8e6b6cce1a1e655a4e49fcf31c0798a3f3a7e0c69dfcce3f",
-      "bytes": 7856
+      "sha256": "77b76ba0ae8b8eadb9e5592b55bbee69ebf02e0eca8cfc90b4acf54f111c4780",
+      "bytes": 35793
     },
     {
       "path": "src/js/core/layout-engine.js",
-      "sha256": "73ef3d5212d59e2c3886a11cd395c9820196b495719810d086054801cc348734",
-      "bytes": 2749
+      "sha256": "0243ee4adf7305e942d60d769a1faa1e51639cd85797d0cd4a05e4ecede8a846",
+      "bytes": 33097
     },
     {
       "path": "src/js/core/manuscript-engine.js",
-      "sha256": "b35e77eb849e4aeabd2b94dde05811011ea758c83037cce64747d8d5de995c64",
-      "bytes": 48838
+      "sha256": "57c6bb7647fb06a36a2582dc03737eb18f9e1a0a88a7d94f1c91fb16af7339e7",
+      "bytes": 37853
     },
     {
       "path": "src/js/core/project-manager.js",
@@ -544,6 +542,11 @@
       "path": "src/js/core/storage-engine.js",
       "sha256": "5d328540cd85bfa2bc6237c18f9e042fce730171a6467555a2ae6a2b0dc139d9",
       "bytes": 773
+    },
+    {
+      "path": "src/js/core/story-treatment-engine.js",
+      "sha256": "709cc6cf7830af7a622fb42b6df9ac42a81fac1edb8b6b7030c8d230061cc8a8",
+      "bytes": 40552
     },
     {
       "path": "src/js/core/universe-engine.js",
@@ -572,13 +575,13 @@
     },
     {
       "path": "src/js/export/export-engine.js",
-      "sha256": "582de784b9cd7504427da1b05ea65d4f367ce8c7b4b497d9f1463c499b899c8e",
-      "bytes": 107
+      "sha256": "82228daf2439061a976d59ea049fb44dc4aacb5737b60804380084d1bdaacd77",
+      "bytes": 9496
     },
     {
       "path": "src/js/export/pdf-engine.js",
-      "sha256": "392e7ddff66040b86151e55246bbeefcae77e1523e4d922807124eaaf668e5f7",
-      "bytes": 104
+      "sha256": "23e59ee1f37251764e7fac32c198c796fa285ea3f381f47919be20c63d635103",
+      "bytes": 21251
     },
     {
       "path": "src/js/ui/image-manager.js",
@@ -696,6 +699,11 @@
       "bytes": 0
     },
     {
+      "path": "tests/fixtures/phase4-sample.jpg",
+      "sha256": "61c8b0c2202154733b2af2e2f9344aeefbdb446aa528fb61eb3d622b4ed2ee96",
+      "bytes": 33945
+    },
+    {
       "path": "tests/manual/RELEASE_CHECKLIST.md",
       "sha256": "d202b62a824fb97e0e50f3442085f01463123bb249915f88d2817ce745d3a067",
       "bytes": 273
@@ -724,6 +732,21 @@
       "path": "tests/manual/SMOKE_TEST_0.7.11.md",
       "sha256": "d78cf20d5bd3054d3f15eef50b653d9b3eabda0d012ba403c3adbc800cb4ca35",
       "bytes": 645
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.7.12.md",
+      "sha256": "09cb232fef46ae88c8de0a578920897c875ac17f88c19d4dd2bb4d0424e4eb6b",
+      "bytes": 917
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.7.13.md",
+      "sha256": "0af8bd564dae9d58a80e834edba6d09d8fd2fafc8e2df725c9629883ee9dca8a",
+      "bytes": 888
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.7.14.md",
+      "sha256": "aebcbc0d37b5ef7af305c9855ae7476e3db80d5f10988a3aa060f2c884ee3ea7",
+      "bytes": 589
     },
     {
       "path": "tests/manual/SMOKE_TEST_0.7.2.md",
@@ -771,6 +794,26 @@
       "bytes": 1040
     },
     {
+      "path": "tests/manual/SMOKE_TEST_0.8.0_PHASE1.md",
+      "sha256": "f443ae5bf02628c8b2c81c4a247e402ffa22d4bfa6cf5617767f0e6d4977447e",
+      "bytes": 589
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.8.1_PHASE2.md",
+      "sha256": "878722ebc80d452f429296e8a2adcccaa8d579066fa8a5c3113155c4324eb769",
+      "bytes": 706
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.8.2_PHASE3.md",
+      "sha256": "27d4a2ced591938385cf26ec8c430840bf0c09473f88945004b404a1a2485dd7",
+      "bytes": 865
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.8.3_PHASE4.md",
+      "sha256": "63eb92efb9deb2126d8156c4d1d0b56927dbb8d4c5f08fecebb8fb421c64acd4",
+      "bytes": 593
+    },
+    {
       "path": "tests/results/.gitkeep",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
@@ -781,9 +824,19 @@
       "bytes": 1218
     },
     {
+      "path": "tests/results/COMPOSITION_0.8.1_PHASE2.js",
+      "sha256": "4256b1708cd1fa7a4bebc88eacbfc49cb03c2608f23fc3a6a5f56ce9a2ff2820",
+      "bytes": 3367
+    },
+    {
       "path": "tests/results/DIAG_0711.js",
       "sha256": "07ab9ceae6786ba131ce117de547125c303d2e3db31ffe6331f06f3fed3ff631",
       "bytes": 1235
+    },
+    {
+      "path": "tests/results/EDITORIAL_0.7.14.js",
+      "sha256": "ad6553ed064e72bea3cd0e141d3ae5bebe922d836c74011120f6bd4cee44c36c",
+      "bytes": 1723
     },
     {
       "path": "tests/results/ENGINE_0.7.10.js",
@@ -796,6 +849,16 @@
       "bytes": 2018
     },
     {
+      "path": "tests/results/ENGINE_0.7.12.js",
+      "sha256": "0a8ef29114b8a50da952f2f142c188e81222a6df0866e98659da741741991650",
+      "bytes": 1781
+    },
+    {
+      "path": "tests/results/ENGINE_0.7.13.js",
+      "sha256": "292a8e2f192f282814c28e968fc447fc7dc5002c558fbaacf7c14485f75484fb",
+      "bytes": 2989
+    },
+    {
       "path": "tests/results/ENGINE_0.7.8.json",
       "sha256": "ec829633aa8e4865f078236c5f8ca3afb121ec0c02a560f14698b9e58df0ae93",
       "bytes": 76
@@ -804,6 +867,11 @@
       "path": "tests/results/ENGINE_0.7.9.js",
       "sha256": "8aefa655ce1c57a9e8ced35c6fa9fc47c4d834a7443a33c327903abc0bf77021",
       "bytes": 2605
+    },
+    {
+      "path": "tests/results/ILLUSTRATION_DRAMATURGY_0.8.2_PHASE3.js",
+      "sha256": "972d95cc3bd37c1d56ebed0d5f5206c5d760186181ef55a774bd50fac7304e96",
+      "bytes": 3695
     },
     {
       "path": "tests/results/MANUSCRIPT_ENGINE_0.7.6.json",
@@ -816,6 +884,26 @@
       "bytes": 138
     },
     {
+      "path": "tests/results/NARRATIVE_LAYOUT_0.8.0_PHASE1.js",
+      "sha256": "3c7e5549784d244eb76e48fb2fe08b08856125ab96e082d4198e08184551602e",
+      "bytes": 3299
+    },
+    {
+      "path": "tests/results/PDF_ENGINE_0.8.3_PHASE4.js",
+      "sha256": "30c9e327cf6d2d0aa05339daf48aa9905e396fd6f06145d5f9c591d7166158ae",
+      "bytes": 990
+    },
+    {
+      "path": "tests/results/PREFLIGHT_0.8.3_PHASE4.js",
+      "sha256": "ca6b8ae737755511ee24f72ccbc0cf4923ccdd42022afddfb9ba19ee86948403",
+      "bytes": 1622
+    },
+    {
+      "path": "tests/results/SAMPLE_0.8.3_PHASE4.pdf",
+      "sha256": "a75c0cdf74fbb0d271d3ac1747b9ea40b359e936c4c82833b3adf680966047ec",
+      "bytes": 69253
+    },
+    {
       "path": "tests/results/STARTUP_0.7.10.js",
       "sha256": "71fbbb6f2c9dc007b9ef21d4b8b9a292d94a6faa174a26bd30f8395221b21792",
       "bytes": 1496
@@ -824,6 +912,21 @@
       "path": "tests/results/STARTUP_0.7.11.js",
       "sha256": "97ae812c93078c63f1cd78efdca33aa74bfc573ffbef85f4a519400670a3e115",
       "bytes": 1496
+    },
+    {
+      "path": "tests/results/STARTUP_0.7.12.js",
+      "sha256": "cadc8fa547d4ddbb0237094d1107639d67597b6e61699246f7fa691ad4098b58",
+      "bytes": 1580
+    },
+    {
+      "path": "tests/results/STARTUP_0.7.13.js",
+      "sha256": "39e9dacb0e71a10773af000127e184023611dd7c203b5f8b28dce87fdd4b3136",
+      "bytes": 1475
+    },
+    {
+      "path": "tests/results/STARTUP_0.7.14.js",
+      "sha256": "c68f6e953e72fede2f4d727101458df24cb5c0a63cd0a5fe351ae92983839f8f",
+      "bytes": 1617
     },
     {
       "path": "tests/results/STARTUP_0.7.6.json",
@@ -839,6 +942,26 @@
       "path": "tests/results/STARTUP_0.7.9.js",
       "sha256": "0cbfaed537972717635b78b111d61fbe33145a3a53cd395dec1c91248046bcf2",
       "bytes": 1560
+    },
+    {
+      "path": "tests/results/STARTUP_0.8.0_PHASE1.js",
+      "sha256": "cd4d8e6c6666ffde4de3f542dd6743d7bcd054c37c7a137ce3b52d49b03ebe04",
+      "bytes": 1619
+    },
+    {
+      "path": "tests/results/STARTUP_0.8.1_PHASE2.js",
+      "sha256": "7107d96747f87eec3a3aa76de13efa43281e6b995c3fa2c8be9762220f04a857",
+      "bytes": 1621
+    },
+    {
+      "path": "tests/results/STARTUP_0.8.2_PHASE3.js",
+      "sha256": "a3e57bcea96c6ce93a43998ab062fc49fa241a4758521ebc3781cdc5d532dd3a",
+      "bytes": 1709
+    },
+    {
+      "path": "tests/results/STARTUP_0.8.3_PHASE4.js",
+      "sha256": "f11a8ff706710fa10fa45788df265a20eda99668635950c9d87f178213a9356d",
+      "bytes": 1693
     },
     {
       "path": "tests/results/test_078.js",
