@@ -1,8 +1,8 @@
 {
   "name": "CAPS Studio",
-  "version": "0.7.11",
+  "version": "0.8.3",
   "channel": "beta",
-  "build": "2026-07-17-0711",
-  "milestone": "Kinderbuch-Erzählung mit klarem Anfang und konkreten Situationen",
-  "cacheBuster": "2026-07-17-0711"
+  "build": "2026-07-17-0830-phase4",
+  "milestone": "Phase 4 – Druckproduktion und PDF-Export",
+  "cacheBuster": "2026-07-17-0830-phase4"
 }
