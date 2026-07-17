@@ -1,34 +1,16 @@
-# CAPS Studio 0.7.9 Beta
+# CAPS Studio 0.7.10 Beta
 
-## Vereinfachter Eltern-Intake
+## Zusammenhängender literarischer Manuskriptgenerator
 
-Alle sichtbaren Beispiel- und Voreingaben wurden aus dem Buchassistenten entfernt.
+- jede Szene entsteht aus der konkreten Folge der vorherigen Szene
+- Ursache, Handlung, Entscheidung und Konsequenz werden erzählerisch verbunden
+- längere zusammenhängende Absätze statt einzelner Satzbausteine
+- wiederkehrendes Motiv und Gegenstand über das gesamte Buch
+- natürliche Dialoge mit Handlung zwischen den Sprechbeiträgen
+- Rückschläge verändern den weiteren Plan
+- Kapitel beginnen nicht wieder bei null
+- Figurenentwicklung wird durch Entscheidungen sichtbar
+- pädagogische Botschaft bleibt in der Handlung und wird nicht erklärt
+- neue Prüfungen für Szenenverknüpfung, Absatzkohärenz und Dialogqualität
 
-Eltern beantworten nur leicht verständliche Fragen:
-
-- Alter des Kindes
-- Problem oder Thema
-- typische Situation
-- beobachtbare Reaktion des Kindes
-- erkennbare Gefühle
-- Interessen und sichere Bezugspunkte
-- gewünschte Art und Stimmung der Geschichte
-- sensible oder zu vermeidende Inhalte
-- Name und optionales Aussehen wichtiger Figuren
-
-Eltern müssen keine Lösung, Strategie, pädagogische Botschaft oder
-Figurenentwicklung mehr formulieren.
-
-## Automatische Hintergrundanalyse
-
-CAPS leitet selbst ab:
-
-- emotionales Bedürfnis
-- realistisches Entwicklungsziel
-- hilfreichen Handlungsschritt
-- Rolle unterstützender Figuren
-- realistischen Erfolg
-- emotionale Kernbotschaft
-- Welt, Titel und äußeres Abenteuer
-
-Build: `2026-07-16-079`
+Build: `2026-07-16-0710`
