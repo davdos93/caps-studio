@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "1.0",
+  "libraryVersion": "2026-07-17-v1",
+  "fixtures": [
+    {
+      "id": "separation",
+      "label": "Trennungsangst",
+      "description": "Abschied an der Kindergartentür",
+      "input": {
+        "childAge": "5 Jahre",
+        "problemTopic": "Trennungsangst",
+        "concreteSituation": "An der Kindergartentür klammert sich Mila an Papa und weint.",
+        "currentReaction": "Mila fragt immer wieder, ob Papa wirklich zurückkommt.",
+        "childFeelings": [
+          "Angst",
+          "Unsicherheit"
+        ],
+        "interests": [
+          "Tiere"
+        ],
+        "characters": [
+          {
+            "name": "Mila",
+            "age": "5 Jahre",
+            "hairColor": "braun",
+            "clothing": "gelbe Jacke"
+          },
+          {
+            "name": "Papa",
+            "age": "35 Jahre",
+            "clothing": "blaue Jacke"
+          }
+        ]
+      }
+    },
+    {
+      "id": "siblings",
+      "label": "Geschwisterstreit",
+      "description": "Teilen, Grenzen und Zusammenhalt",
+      "input": {
+        "childAge": "6 Jahre",
+        "problemTopic": "Geschwisterstreit",
+        "concreteSituation": "Elias ärgert sich, wenn Lia mit seinen Bausteinen spielen möchte.",
+        "currentReaction": "Er nimmt ihr die Steine weg und beide schreien.",
+        "childFeelings": [
+          "Wut",
+          "Eifersucht"
+        ],
+        "interests": [
+          "Drachen",
+          "Bauen"
+        ],
+        "characters": [
+          {
+            "name": "Elias",
+            "age": "6 Jahre",
+            "hairColor": "braun",
+            "clothing": "grüner Pullover"
+          },
+          {
+            "name": "Lia",
+            "age": "3 Jahre",
+            "hairColor": "blond",
+            "clothing": "rotes Kleid"
+          }
+        ]
+      }
+    },
+    {
+      "id": "anger",
+      "label": "Wut und Frustration",
+      "description": "Verlieren und wieder handlungsfähig werden",
+      "input": {
+        "childAge": "6 Jahre",
+        "problemTopic": "Wut und Frustration",
+        "concreteSituation": "Noah verliert beim Spielen und wirft die Karten auf den Boden.",
+        "currentReaction": "Er schreit und will nicht weiterspielen.",
+        "childFeelings": [
+          "Wut",
+          "Enttäuschung"
+        ],
+        "interests": [
+          "Fahrzeuge"
+        ],
+        "characters": [
+          {
+            "name": "Noah",
+            "age": "6 Jahre",
+            "hairColor": "schwarz",
+            "clothing": "blaues Shirt"
+          },
+          {
+            "name": "Oma",
+            "age": "62 Jahre",
+            "clothing": "violette Weste"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dark",
+      "label": "Angst vor Dunkelheit",
+      "description": "Sicher einschlafen trotz Angst",
+      "input": {
+        "childAge": "5 Jahre",
+        "problemTopic": "Angst vor Dunkelheit",
+        "concreteSituation": "Wenn das Licht ausgeht, ruft Emma sofort nach Mama.",
+        "currentReaction": "Emma versteckt sich unter der Decke und kann nicht einschlafen.",
+        "childFeelings": [
+          "Angst"
+        ],
+        "interests": [
+          "Sterne",
+          "Eulen"
+        ],
+        "characters": [
+          {
+            "name": "Emma",
+            "age": "5 Jahre",
+            "hairColor": "rot",
+            "clothing": "Sternenpyjama"
+          },
+          {
+            "name": "Mama",
+            "age": "34 Jahre",
+            "clothing": "heller Pullover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kindergarten",
+      "label": "Kindergartenstart",
+      "description": "Erster Tag in einer neuen Gruppe",
+      "input": {
+        "childAge": "4 Jahre",
+        "problemTopic": "Kindergartenstart",
+        "concreteSituation": "Lina soll zum ersten Mal allein in der neuen Kindergartengruppe bleiben.",
+        "currentReaction": "Sie bleibt im Flur stehen und möchte wieder nach Hause.",
+        "childFeelings": [
+          "Unsicherheit",
+          "Angst"
+        ],
+        "interests": [
+          "Pferde"
+        ],
+        "characters": [
+          {
+            "name": "Lina",
+            "age": "4 Jahre",
+            "hairColor": "braun",
+            "clothing": "rosa Jacke"
+          },
+          {
+            "name": "Ben",
+            "age": "5 Jahre",
+            "clothing": "grünes Shirt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sleep",
+      "label": "Einschlafprobleme",
+      "description": "Abendroutine und innere Ruhe",
+      "input": {
+        "childAge": "5 Jahre",
+        "problemTopic": "Einschlafprobleme",
+        "concreteSituation": "Am Abend findet Theo immer neue Gründe, noch einmal aufzustehen.",
+        "currentReaction": "Er ruft nach Wasser, Licht und einer weiteren Geschichte.",
+        "childFeelings": [
+          "Angst",
+          "Unsicherheit"
+        ],
+        "interests": [
+          "Weltraum"
+        ],
+        "characters": [
+          {
+            "name": "Theo",
+            "age": "5 Jahre",
+            "hairColor": "blond",
+            "clothing": "Raketenpyjama"
+          },
+          {
+            "name": "Papa",
+            "age": "37 Jahre",
+            "clothing": "grauer Pullover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "move",
+      "label": "Umzug",
+      "description": "Vertrautes bewahren und Neues annehmen",
+      "input": {
+        "childAge": "7 Jahre",
+        "problemTopic": "Umzug",
+        "concreteSituation": "Sofia ist in der neuen Wohnung und vermisst ihr altes Zuhause.",
+        "currentReaction": "Sie packt ihre Lieblingssachen nicht aus und sagt, hier sei nichts richtig.",
+        "childFeelings": [
+          "Traurigkeit",
+          "Unsicherheit"
+        ],
+        "interests": [
+          "Malen",
+          "Katzen"
+        ],
+        "characters": [
+          {
+            "name": "Sofia",
+            "age": "7 Jahre",
+            "hairColor": "schwarz",
+            "clothing": "gelber Pullover"
+          },
+          {
+            "name": "Felix",
+            "age": "7 Jahre",
+            "clothing": "rotes Shirt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "petloss",
+      "label": "Verlust eines Haustiers",
+      "description": "Trauer, Erinnerung und Verbundenheit",
+      "input": {
+        "childAge": "7 Jahre",
+        "problemTopic": "Verlust eines Haustiers",
+        "concreteSituation": "Jonas Katze Minka ist gestorben und ihr Körbchen ist leer.",
+        "currentReaction": "Jonas sucht sie morgens und wird still, wenn jemand ihren Namen sagt.",
+        "childFeelings": [
+          "Traurigkeit",
+          "Vermissen"
+        ],
+        "interests": [
+          "Wald",
+          "Tiere"
+        ],
+        "characters": [
+          {
+            "name": "Jonas",
+            "age": "7 Jahre",
+            "hairColor": "braun",
+            "clothing": "blauer Hoodie"
+          },
+          {
+            "name": "Opa",
+            "age": "68 Jahre",
+            "clothing": "grüne Weste"
+          }
+        ]
+      }
+    },
+    {
+      "id": "confidence",
+      "label": "Selbstvertrauen",
+      "description": "Angst vor Fehlern beim Auftreten",
+      "input": {
+        "childAge": "7 Jahre",
+        "problemTopic": "Angst vor Fehlern",
+        "concreteSituation": "Mara möchte ein Lied vorsingen, hat aber Angst, einen Fehler zu machen.",
+        "currentReaction": "Sie sagt, die anderen könnten alles besser als sie.",
+        "childFeelings": [
+          "Unsicherheit",
+          "Angst"
+        ],
+        "interests": [
+          "Musik",
+          "Bühne"
+        ],
+        "characters": [
+          {
+            "name": "Mara",
+            "age": "7 Jahre",
+            "hairColor": "lockig braun",
+            "clothing": "türkises Kleid"
+          },
+          {
+            "name": "Nina",
+            "age": "7 Jahre",
+            "clothing": "orangefarbener Pullover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "doctor",
+      "label": "Arztbesuch",
+      "description": "Untersuchung und Impfung bewältigen",
+      "input": {
+        "childAge": "6 Jahre",
+        "problemTopic": "Arztbesuch",
+        "concreteSituation": "Ben hat Angst vor der Untersuchung und der Impfung.",
+        "currentReaction": "Im Wartezimmer zieht er die Jacke wieder an und will gehen.",
+        "childFeelings": [
+          "Angst",
+          "Anspannung"
+        ],
+        "interests": [
+          "Dinosaurier"
+        ],
+        "characters": [
+          {
+            "name": "Ben",
+            "age": "6 Jahre",
+            "hairColor": "blond",
+            "clothing": "Dino-Shirt"
+          },
+          {
+            "name": "Mama",
+            "age": "36 Jahre",
+            "clothing": "blaue Bluse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "school",
+      "label": "Schulstart",
+      "description": "Neue Klasse und unbekannte Kinder",
+      "input": {
+        "childAge": "6 Jahre",
+        "problemTopic": "Schulstart",
+        "concreteSituation": "Lea freut sich auf die Schule, hat aber Angst, niemanden zu kennen.",
+        "currentReaction": "Vor dem Klassenzimmer wird sie ganz still und hält die Schultüte fest.",
+        "childFeelings": [
+          "Vorfreude",
+          "Unsicherheit"
+        ],
+        "interests": [
+          "Einhörner",
+          "Bücher"
+        ],
+        "characters": [
+          {
+            "name": "Lea",
+            "age": "6 Jahre",
+            "hairColor": "braun",
+            "clothing": "lila Kleid"
+          },
+          {
+            "name": "Sam",
+            "age": "6 Jahre",
+            "clothing": "grünes Hemd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "friendship",
+      "label": "Freundschaft und Ausgrenzung",
+      "description": "Nicht mitspielen dürfen und Kontakt finden",
+      "input": {
+        "childAge": "7 Jahre",
+        "problemTopic": "Freundschaft und Ausgrenzung",
+        "concreteSituation": "Am Spielplatz darf Amir bei einer Gruppe nicht mitspielen.",
+        "currentReaction": "Er setzt sich allein auf die Bank und sagt, niemand möge ihn.",
+        "childFeelings": [
+          "Traurigkeit",
+          "Wut"
+        ],
+        "interests": [
+          "Fußball",
+          "Roboter"
+        ],
+        "characters": [
+          {
+            "name": "Amir",
+            "age": "7 Jahre",
+            "hairColor": "schwarz",
+            "clothing": "rotes Trikot"
+          },
+          {
+            "name": "Mila",
+            "age": "7 Jahre",
+            "clothing": "gelbe Jacke"
+          }
+        ]
+      }
+    }
+  ]
+}

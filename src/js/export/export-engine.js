@@ -34,6 +34,7 @@ function imageItems(project){return (project.layout?.spreads||[]).map(spread=>({
 function quickPreflight(project){
   const production=ensure(project),settings=production.settings,layout=project.layout,checks=[];
   checks.push(item("blocker","layout","Bilderbuch-Layout vorhanden",Boolean(layout?.spreads?.length),layout?.spreads?.length?`${layout.spreads.length} Doppelseiten`:"Layout fehlt"));
+  const workflowBlockers=window.CAPS_WorkflowEngine?.exportBlockers(project)||[];workflowBlockers.forEach(blocker=>checks.push(item("blocker",`workflow-${blocker.id}`,blocker.label,false,blocker.detail)));
   checks.push(item("warning","layout-approval","Layout redaktionell freigegeben",Boolean(layout?.approved),layout?.approved?"freigegeben":"noch nicht freigegeben"));
   checks.push(item("warning","editorial","Manuskriptredaktion freigegeben",Boolean(project.manuscript?.editorialReport?.approved),project.manuscript?.editorialReport?.approved?"freigegeben":"noch nicht freigegeben"));
   const images=imageItems(project),missing=images.filter(entry=>!entry.item?.imageData).length,unapproved=images.filter(entry=>entry.item?.imageData&&!entry.item?.approved).length;
@@ -84,7 +85,7 @@ async function exportCover(project,{proof=false,onProgress=()=>{}}={}){
   const result=await PDF.createCover(project,settings,onProgress);PDF.downloadBytes(result.bytes,proof?result.filename.replace(/\.pdf$/,"-PROOF.pdf"):result.filename);production.history.push({type:proof?"cover-proof":"cover",at:now(),spineWidthMm:result.spineWidthMm,filename:result.filename});return result;
 }
 
-function downloadPreflight(project){const report=activeReport(project),production=ensure(project),payload={product:"CAPS Studio",version:"0.8.3",book:project.layout?.cover?.title||project.title,settings:production.settings,report};const bytes=new TextEncoder().encode(JSON.stringify(payload,null,2)),filename=`${PDF.fileSafe(project.layout?.cover?.title||project.title)}-Druckpruefung.json`;PDF.downloadBytes(bytes,filename,"application/json");return filename;}
+function downloadPreflight(project){const report=activeReport(project),production=ensure(project),payload={product:"CAPS Studio",version:"0.9.0",phase:"5.3",book:project.layout?.cover?.title||project.title,settings:production.settings,report};const bytes=new TextEncoder().encode(JSON.stringify(payload,null,2)),filename=`${PDF.fileSafe(project.layout?.cover?.title||project.title)}-Druckpruefung.json`;PDF.downloadBytes(bytes,filename,"application/json");return filename;}
 
 window.CAPS_ExportEngine={defaults,ensure,updateSettings,invalidate,quickPreflight,preflight,activeReport,exportInterior,exportCover,downloadPreflight,fingerprint};
 })();

@@ -233,7 +233,7 @@ function chapterEight(ctx,motif,seed){
 }
 
 function writeChapter(plan,chapter,index,settings,variation=0){
-  const ctx=context(plan),motif=motifTerms(ctx.treatment?.motif?.name),seed=hash(`${chapter.id}|${variation}|${settings.voice}`);
+  const ctx=context(plan),motif=motifTerms(ctx.treatment?.motif?.name),seed=hash(`${index+1}|${chapter.title||""}|${variation}|${settings.voice}`);
   const writers=[chapterOne,chapterTwo,chapterThree,chapterFour,chapterFive,chapterSix,chapterSeven,chapterEight];
   let paras=(writers[index]||chapterEight)(ctx,motif,seed);
   if(settings.voice==="Ruhig und poetisch")paras=paras.map((p,i)=>i%3===1?{...p,text:`${p.text} Für einen Augenblick schien die Welt langsamer zu atmen.`}:p);

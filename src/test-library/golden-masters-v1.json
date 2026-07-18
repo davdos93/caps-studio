@@ -1,0 +1,465 @@
+{
+  "schemaVersion": "1.0",
+  "goldenVersion": "2026-07-17-v1",
+  "engineVersion": "0.9.0-phase4",
+  "createdAt": "2026-07-17T00:00:00.000Z",
+  "cases": {
+    "separation": {
+      "signature": "c9b2b2a2",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 20,
+        "words": 1806,
+        "editorialScore": 82,
+        "spreads": 20,
+        "layoutScore": 91,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 90,
+        "blockers": 0,
+        "warnings": 11
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Mila",
+        "Papa",
+        "Pico"
+      ],
+      "characterCoverage": true
+    },
+    "siblings": {
+      "signature": "9e928216",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 20,
+        "words": 1814,
+        "editorialScore": 81,
+        "spreads": 20,
+        "layoutScore": 91,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 90,
+        "blockers": 0,
+        "warnings": 11
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text",
+        "transformation-not-shown"
+      ],
+      "characters": [
+        "Elias",
+        "Lia",
+        "Momo"
+      ],
+      "characterCoverage": true
+    },
+    "anger": {
+      "signature": "d82820e6",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 20,
+        "words": 1815,
+        "editorialScore": 82,
+        "spreads": 20,
+        "layoutScore": 91,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 90,
+        "blockers": 0,
+        "warnings": 11
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Noah",
+        "Oma",
+        "Mika"
+      ],
+      "characterCoverage": true
+    },
+    "dark": {
+      "signature": "3abe2e1d",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 20,
+        "words": 1818,
+        "editorialScore": 84,
+        "spreads": 20,
+        "layoutScore": 91,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 91,
+        "blockers": 0,
+        "warnings": 10
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "appearance-hair",
+        "location-image-text"
+      ],
+      "characters": [
+        "Emma",
+        "Mama",
+        "Pico"
+      ],
+      "characterCoverage": true
+    },
+    "kindergarten": {
+      "signature": "22bdea50",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 16,
+        "words": 1810,
+        "editorialScore": 82,
+        "spreads": 20,
+        "layoutScore": 91,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 91,
+        "blockers": 0,
+        "warnings": 10
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Lina",
+        "Ben",
+        "Nilo"
+      ],
+      "characterCoverage": true
+    },
+    "sleep": {
+      "signature": "402a5765",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 20,
+        "words": 1818,
+        "editorialScore": 84,
+        "spreads": 20,
+        "layoutScore": 91,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 90,
+        "blockers": 0,
+        "warnings": 11
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Theo",
+        "Papa",
+        "Momo"
+      ],
+      "characterCoverage": true
+    },
+    "move": {
+      "signature": "dc9a5b30",
+      "metrics": {
+        "planScore": 89,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 24,
+        "words": 1819,
+        "editorialScore": 85,
+        "spreads": 15,
+        "layoutScore": 100,
+        "illustrations": 15,
+        "illustrationQuality": 100,
+        "consistencyScore": 93,
+        "blockers": 0,
+        "warnings": 8
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "echo",
+        "ending",
+        "opening",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Sofia",
+        "Felix",
+        "Mika"
+      ],
+      "characterCoverage": true
+    },
+    "petloss": {
+      "signature": "a5a17e8e",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 24,
+        "words": 1817,
+        "editorialScore": 85,
+        "spreads": 15,
+        "layoutScore": 100,
+        "illustrations": 15,
+        "illustrationQuality": 100,
+        "consistencyScore": 93,
+        "blockers": 0,
+        "warnings": 8
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "echo",
+        "ending",
+        "opening",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Jonas",
+        "Opa",
+        "Pico"
+      ],
+      "characterCoverage": true
+    },
+    "confidence": {
+      "signature": "1190028b",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 24,
+        "words": 1823,
+        "editorialScore": 87,
+        "spreads": 15,
+        "layoutScore": 91,
+        "illustrations": 15,
+        "illustrationQuality": 100,
+        "consistencyScore": 93,
+        "blockers": 0,
+        "warnings": 8
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Mara",
+        "Nina",
+        "Mika"
+      ],
+      "characterCoverage": true
+    },
+    "doctor": {
+      "signature": "64286fa2",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 20,
+        "words": 1818,
+        "editorialScore": 84,
+        "spreads": 20,
+        "layoutScore": 91,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 90,
+        "blockers": 0,
+        "warnings": 11
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Ben",
+        "Mama",
+        "Momo"
+      ],
+      "characterCoverage": true
+    },
+    "school": {
+      "signature": "b55f322d",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 20,
+        "words": 1814,
+        "editorialScore": 82,
+        "spreads": 20,
+        "layoutScore": 82,
+        "illustrations": 20,
+        "illustrationQuality": 100,
+        "consistencyScore": 89,
+        "blockers": 0,
+        "warnings": 12
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "ending",
+        "opening",
+        "practice",
+        "problem",
+        "relationship",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Lea",
+        "Sam",
+        "Kiki"
+      ],
+      "characterCoverage": true
+    },
+    "friendship": {
+      "signature": "7a52a220",
+      "metrics": {
+        "planScore": 100,
+        "beats": 14,
+        "chapters": 8,
+        "scenes": 24,
+        "words": 1817,
+        "editorialScore": 87,
+        "spreads": 15,
+        "layoutScore": 100,
+        "illustrations": 15,
+        "illustrationQuality": 100,
+        "consistencyScore": 93,
+        "blockers": 0,
+        "warnings": 8
+      },
+      "roles": [
+        "climax",
+        "departure",
+        "discovery",
+        "echo",
+        "ending",
+        "opening",
+        "problem",
+        "return"
+      ],
+      "findingCodes": [
+        "location-image-text"
+      ],
+      "characters": [
+        "Amir",
+        "Mila",
+        "Kiki"
+      ],
+      "characterCoverage": true
+    }
+  }
+}
