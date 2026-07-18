@@ -1,32 +1,78 @@
 {
   "product": "CAPS Studio",
-  "version": "0.8.3",
+  "version": "0.9.0",
   "channel": "beta",
-  "build": "2026-07-17-0830-phase4",
+  "build": "2026-07-17-0900-phase4",
   "validation": {
-    "javascriptFiles": 51,
-    "pdfTest": {
-      "bytes": 69253,
-      "pages": 2,
-      "header": "%PDF-1.4",
-      "eof": true
-    },
-    "preflightTest": {
-      "score": 93,
-      "pages": 36,
-      "spine": 1.8,
-      "blockersAfterMissing": 1
-    },
-    "startupTest": {
-      "scripts": 15,
-      "version": "0.8.3",
-      "pdf": true,
-      "export": true,
-      "homeRendered": true
-    },
-    "pdfinfoVerified": true,
-    "srcBetaIdentical": true
+    "product": "CAPS Studio",
+    "version": "0.9.0",
+    "phase": 4,
+    "checkedAt": "2026-07-17T15:26:02.161Z",
+    "status": "pass",
+    "javascriptFiles": 59,
+    "tests": {
+      "REGRESSION_0.9.0_PHASE4.js": {
+        "cases": 12,
+        "passed": 12,
+        "failed": 0,
+        "deterministic": true,
+        "mutationDetected": true,
+        "goldenVersion": "2026-07-17-v1",
+        "durationMs": 1626
+      },
+      "CONSISTENCY_0.9.0_PHASE3.js": {
+        "baselineScore": 90,
+        "baselineBlockers": 0,
+        "brokenBlockers": 3,
+        "findings": 15,
+        "categories": 9,
+        "stale": true
+      },
+      "WORKFLOW_0.9.0_PHASE3.js": {
+        "stages": 9,
+        "score": 37,
+        "consistencyStatus": "stale",
+        "blockers": 7,
+        "finalApprovalInvalidated": true
+      },
+      "HISTORY_0.9.0_PHASE3.js": {
+        "stages": 10,
+        "checkpoints": 5,
+        "restoredScore": 91,
+        "comparisonChanges": 6
+      },
+      "PDF_ENGINE_0.8.3_PHASE4.js": {
+        "bytes": 69253,
+        "pages": 2,
+        "header": "%PDF-1.4",
+        "eof": true
+      },
+      "PREFLIGHT_0.8.3_PHASE4.js": {
+        "score": 93,
+        "pages": 36,
+        "spine": 1.8,
+        "blockersAfterMissing": 1
+      },
+      "STARTUP_0.9.0_PHASE4.js": {
+        "scripts": 19,
+        "version": "0.9.0",
+        "phase": 4,
+        "fixtures": 12,
+        "homeRendered": true
+      }
+    }
   },
+  "browserSmoke": {
+    "status": "deferred",
+    "reason": "GitHub-Pages deployment and device browser are required for the final browser smoke test.",
+    "plannedChecks": [
+      "load beta URL",
+      "open Systemtests",
+      "run 12 reference cases",
+      "verify mobile navigation"
+    ]
+  },
+  "srcBetaIdentical": true,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.md",
@@ -44,6 +90,11 @@
       "bytes": 301
     },
     {
+      "path": ".github/workflows/caps-quality-gate.yml",
+      "sha256": "47c45f072056d753883f6ad690ac967a2294d0bd0739ecbee49d289938399278",
+      "bytes": 599
+    },
+    {
       "path": ".gitignore",
       "sha256": "24a7db9ad4994a94ac81163f83d3f9ab9f7a07a503df529fcbc6e4d330841f47",
       "bytes": 90
@@ -55,8 +106,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "87f27b4298afbe4785e3bb52ff3a4921e71547be12aa2fce9135c71be983ca7d",
-      "bytes": 393
+      "sha256": "f4aed30a04bfae7f29a5cb17741b9412ece3bafc8a1abfe939405df7c3a34991",
+      "bytes": 582
     },
     {
       "path": "CONTRIBUTING.md",
@@ -70,23 +121,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "ad23a321b6ac6c5ba1d48d4302a8207d35fbb7c024b633e815e495bc28422f7f",
-      "bytes": 845
+      "sha256": "62dc8ae32f7ecc26b36bed1ac41daffd73fe00bc96febc8bb71a46438b5f8228",
+      "bytes": 925
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "7a144c3de08519a7a8e7eee5a27bd83c189b8156185a495815efe2afc513ede3",
-      "bytes": 31069
+      "sha256": "99f5a1610dfc72139e26cfde4d9cd29511bcf9fee3511d2cfa43c4c8b77f04fe",
+      "bytes": 35673
     },
     {
       "path": "ROADMAP.md",
-      "sha256": "acd3335492872827ff5d5deb5401d6a5ec3fae91116ab110c0c4c92d3ba450ab",
-      "bytes": 1039
+      "sha256": "9161f9c02bee70d774dc96cf433356627122fb70e450fe4cf82114ca826a92fb",
+      "bytes": 466
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "a8971f032fa09f25581ad1d655262aca0e0d3128d827cd8e481655f47d89727e",
-      "bytes": 212
+      "sha256": "6077175b41b79eec025779495b58665c57e2dc75dafb97bd276810420a05377d",
+      "bytes": 229
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -95,18 +146,18 @@
     },
     {
       "path": "beta/css/app.css",
-      "sha256": "a41ff71b2d0ad9d63d5e85e25b2ecac78ca6a982c0d5b870b570db89af716493",
-      "bytes": 44829
+      "sha256": "996a0597bc381b919ef6c03d0f7dabdf580b6e87097a2fc9983952e9d5a9d3b0",
+      "bytes": 60268
     },
     {
       "path": "beta/index.html",
-      "sha256": "01750e2feb07e6d6de29f00eda6475e938dbb052fced49a41c0a3fa26ddd5507",
-      "bytes": 1629
+      "sha256": "cb51dbf62a8fd2f1b4651dc593ce31bd75fc2a2111af43ad60f61ba21a082273",
+      "bytes": 1948
     },
     {
       "path": "beta/js/core/app.js",
-      "sha256": "190986c6c9a24e2d1efc8b527a28e7bbda78539d2b837a26a12844592c97b420",
-      "bytes": 90193
+      "sha256": "34517f0bb6ef8577d8caa9e4e226eee88c87102068100596b8019e549b51fc27",
+      "bytes": 117686
     },
     {
       "path": "beta/js/core/book-engine.js",
@@ -119,9 +170,19 @@
       "bytes": 5330
     },
     {
+      "path": "beta/js/core/consistency-engine.js",
+      "sha256": "cfa170958e7cce9f0f9f30ac2d35c0bd34f1dc44f2b502aa5865eccae451ff0d",
+      "bytes": 35817
+    },
+    {
       "path": "beta/js/core/editorial-engine.js",
       "sha256": "89eff4ac3bd628504098aaa5e46fbdce22610e42ea79f11c3302951327bd0a82",
       "bytes": 16912
+    },
+    {
+      "path": "beta/js/core/history-engine.js",
+      "sha256": "a13f37248adb5d226e1c29ba2b42dc303114803a636c62fcbe88ea7081af8819",
+      "bytes": 18396
     },
     {
       "path": "beta/js/core/illustration-engine.js",
@@ -135,13 +196,18 @@
     },
     {
       "path": "beta/js/core/manuscript-engine.js",
-      "sha256": "57c6bb7647fb06a36a2582dc03737eb18f9e1a0a88a7d94f1c91fb16af7339e7",
-      "bytes": 37853
+      "sha256": "0867275015de9e43a260d806b4f3bc2cc251a89eda8a244258d153c377ae1c74",
+      "bytes": 37871
     },
     {
       "path": "beta/js/core/project-manager.js",
       "sha256": "50d647c40a2669b90c1d64a3fbb4dd65c7dd7c87a95042c1c3959434a804d99c",
       "bytes": 8484
+    },
+    {
+      "path": "beta/js/core/regression-engine.js",
+      "sha256": "a4b99d7abd9bf12e7ab20d28e018dd67a8af44b540ecc488f7a66747981797a8",
+      "bytes": 22124
     },
     {
       "path": "beta/js/core/storage-engine.js",
@@ -157,6 +223,11 @@
       "path": "beta/js/core/universe-engine.js",
       "sha256": "6c4070ad1b59c061f3657322a69c17a9e1d42d387ef24236bb4b8db440e3d60d",
       "bytes": 1573
+    },
+    {
+      "path": "beta/js/core/workflow-engine.js",
+      "sha256": "04327cff6ced20ea24f101b8f3a84a4654db8b171b1121e68a83871db4b36ca1",
+      "bytes": 19528
     },
     {
       "path": "beta/js/engines/prompt-engine.js",
@@ -180,8 +251,8 @@
     },
     {
       "path": "beta/js/export/export-engine.js",
-      "sha256": "82228daf2439061a976d59ea049fb44dc4aacb5737b60804380084d1bdaacd77",
-      "bytes": 9496
+      "sha256": "7ae4bcf80cf68cb08750e5dd72813bace01b0d05d5fe3dd14b914efbe02ec277",
+      "bytes": 9714
     },
     {
       "path": "beta/js/export/pdf-engine.js",
@@ -197,6 +268,21 @@
       "path": "beta/js/ui/ui-controller.js",
       "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
       "bytes": 904
+    },
+    {
+      "path": "beta/test-library/README.md",
+      "sha256": "aa97d764d49c7bc77d7ed3d2434a777a390827f3c446642ef296470ea96b7a66",
+      "bytes": 580
+    },
+    {
+      "path": "beta/test-library/fixtures-v1.json",
+      "sha256": "aeab033c3f4b815e6006ffada09ef4b0bb6c9678e61dc678a643ba1b111269d0",
+      "bytes": 10635
+    },
+    {
+      "path": "beta/test-library/golden-masters-v1.json",
+      "sha256": "cd6e5b8226f6a518e6a7dbc363457e680548f01c7cfd63021d1d0faa848f7dc7",
+      "bytes": 9749
     },
     {
       "path": "beta/themes/core-library.json",
@@ -479,9 +565,14 @@
       "bytes": 0
     },
     {
+      "path": "scripts/validate-release.js",
+      "sha256": "0709a6dcb7aea2f381d734341e99a71e816fd7571392599ea5a8d428d4d837d4",
+      "bytes": 1418
+    },
+    {
       "path": "src/VERSION.json",
-      "sha256": "a8971f032fa09f25581ad1d655262aca0e0d3128d827cd8e481655f47d89727e",
-      "bytes": 212
+      "sha256": "6077175b41b79eec025779495b58665c57e2dc75dafb97bd276810420a05377d",
+      "bytes": 229
     },
     {
       "path": "src/assets/.gitkeep",
@@ -490,18 +581,18 @@
     },
     {
       "path": "src/css/app.css",
-      "sha256": "a41ff71b2d0ad9d63d5e85e25b2ecac78ca6a982c0d5b870b570db89af716493",
-      "bytes": 44829
+      "sha256": "996a0597bc381b919ef6c03d0f7dabdf580b6e87097a2fc9983952e9d5a9d3b0",
+      "bytes": 60268
     },
     {
       "path": "src/index.html",
-      "sha256": "01750e2feb07e6d6de29f00eda6475e938dbb052fced49a41c0a3fa26ddd5507",
-      "bytes": 1629
+      "sha256": "cb51dbf62a8fd2f1b4651dc593ce31bd75fc2a2111af43ad60f61ba21a082273",
+      "bytes": 1948
     },
     {
       "path": "src/js/core/app.js",
-      "sha256": "190986c6c9a24e2d1efc8b527a28e7bbda78539d2b837a26a12844592c97b420",
-      "bytes": 90193
+      "sha256": "34517f0bb6ef8577d8caa9e4e226eee88c87102068100596b8019e549b51fc27",
+      "bytes": 117686
     },
     {
       "path": "src/js/core/book-engine.js",
@@ -514,9 +605,19 @@
       "bytes": 5330
     },
     {
+      "path": "src/js/core/consistency-engine.js",
+      "sha256": "cfa170958e7cce9f0f9f30ac2d35c0bd34f1dc44f2b502aa5865eccae451ff0d",
+      "bytes": 35817
+    },
+    {
       "path": "src/js/core/editorial-engine.js",
       "sha256": "89eff4ac3bd628504098aaa5e46fbdce22610e42ea79f11c3302951327bd0a82",
       "bytes": 16912
+    },
+    {
+      "path": "src/js/core/history-engine.js",
+      "sha256": "a13f37248adb5d226e1c29ba2b42dc303114803a636c62fcbe88ea7081af8819",
+      "bytes": 18396
     },
     {
       "path": "src/js/core/illustration-engine.js",
@@ -530,13 +631,18 @@
     },
     {
       "path": "src/js/core/manuscript-engine.js",
-      "sha256": "57c6bb7647fb06a36a2582dc03737eb18f9e1a0a88a7d94f1c91fb16af7339e7",
-      "bytes": 37853
+      "sha256": "0867275015de9e43a260d806b4f3bc2cc251a89eda8a244258d153c377ae1c74",
+      "bytes": 37871
     },
     {
       "path": "src/js/core/project-manager.js",
       "sha256": "50d647c40a2669b90c1d64a3fbb4dd65c7dd7c87a95042c1c3959434a804d99c",
       "bytes": 8484
+    },
+    {
+      "path": "src/js/core/regression-engine.js",
+      "sha256": "a4b99d7abd9bf12e7ab20d28e018dd67a8af44b540ecc488f7a66747981797a8",
+      "bytes": 22124
     },
     {
       "path": "src/js/core/storage-engine.js",
@@ -552,6 +658,11 @@
       "path": "src/js/core/universe-engine.js",
       "sha256": "6c4070ad1b59c061f3657322a69c17a9e1d42d387ef24236bb4b8db440e3d60d",
       "bytes": 1573
+    },
+    {
+      "path": "src/js/core/workflow-engine.js",
+      "sha256": "04327cff6ced20ea24f101b8f3a84a4654db8b171b1121e68a83871db4b36ca1",
+      "bytes": 19528
     },
     {
       "path": "src/js/engines/prompt-engine.js",
@@ -575,8 +686,8 @@
     },
     {
       "path": "src/js/export/export-engine.js",
-      "sha256": "82228daf2439061a976d59ea049fb44dc4aacb5737b60804380084d1bdaacd77",
-      "bytes": 9496
+      "sha256": "7ae4bcf80cf68cb08750e5dd72813bace01b0d05d5fe3dd14b914efbe02ec277",
+      "bytes": 9714
     },
     {
       "path": "src/js/export/pdf-engine.js",
@@ -592,6 +703,21 @@
       "path": "src/js/ui/ui-controller.js",
       "sha256": "2aa2eebd80e9992d22c71e5ae9563cae3d193f7116e98ac6bd75f69fb88fe496",
       "bytes": 904
+    },
+    {
+      "path": "src/test-library/README.md",
+      "sha256": "aa97d764d49c7bc77d7ed3d2434a777a390827f3c446642ef296470ea96b7a66",
+      "bytes": 580
+    },
+    {
+      "path": "src/test-library/fixtures-v1.json",
+      "sha256": "aeab033c3f4b815e6006ffada09ef4b0bb6c9678e61dc678a643ba1b111269d0",
+      "bytes": 10635
+    },
+    {
+      "path": "src/test-library/golden-masters-v1.json",
+      "sha256": "cd6e5b8226f6a518e6a7dbc363457e680548f01c7cfd63021d1d0faa848f7dc7",
+      "bytes": 9749
     },
     {
       "path": "src/themes/core-library.json",
@@ -814,6 +940,26 @@
       "bytes": 593
     },
     {
+      "path": "tests/manual/SMOKE_TEST_0.9.0_PHASE1.md",
+      "sha256": "1d8aa470dc2be707c59c1b910d0343bb082453f8abdf6426efc4414d8b0213c0",
+      "bytes": 756
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.9.0_PHASE2.md",
+      "sha256": "45c689f2f1bcaf6ffdaa1b57c7526eb935a2f4df41b7972c5388ae0d37eab3ca",
+      "bytes": 829
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.9.0_PHASE3.md",
+      "sha256": "6add1b5ffce5747f69ea0a33c6f743ab74103ebe781dc9c1bf36aa41de8c8a47",
+      "bytes": 826
+    },
+    {
+      "path": "tests/manual/SMOKE_TEST_0.9.0_PHASE4.md",
+      "sha256": "5f46b451e8f023b87404067aec6c79c65c61f88b764c8f46f475fefd36a2270d",
+      "bytes": 597
+    },
+    {
       "path": "tests/results/.gitkeep",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
@@ -824,9 +970,24 @@
       "bytes": 1218
     },
     {
+      "path": "tests/results/BROWSER_SMOKE_0.9.0_PHASE4.json",
+      "sha256": "fec4b656707c5ee07e9b963e2cf33a799e0da4bd7f0d2816de9e83bf0769ce0b",
+      "bytes": 264
+    },
+    {
+      "path": "tests/results/CAPTURE_GOLDENS_0.9.0_PHASE4.js",
+      "sha256": "751eba242b7fa6786ac13435ab6b7711a655e5ae983c110700f359e2ae27909f",
+      "bytes": 3414
+    },
+    {
       "path": "tests/results/COMPOSITION_0.8.1_PHASE2.js",
       "sha256": "4256b1708cd1fa7a4bebc88eacbfc49cb03c2608f23fc3a6a5f56ce9a2ff2820",
       "bytes": 3367
+    },
+    {
+      "path": "tests/results/CONSISTENCY_0.9.0_PHASE3.js",
+      "sha256": "d19fc8d836f64368ae272a60098243895969bf8204d39d4d4d88ee00c9a933af",
+      "bytes": 2866
     },
     {
       "path": "tests/results/DIAG_0711.js",
@@ -869,6 +1030,16 @@
       "bytes": 2605
     },
     {
+      "path": "tests/results/HISTORY_0.9.0_PHASE2.js",
+      "sha256": "f3d7e452d01613ae6591c26416cfd9f142505ec314bc42db3c12775f9e1f817e",
+      "bytes": 3584
+    },
+    {
+      "path": "tests/results/HISTORY_0.9.0_PHASE3.js",
+      "sha256": "d856466e1319e78b9e8e3f136e030eb3221164bea8f4f4e450e0c9021e7c833d",
+      "bytes": 1569
+    },
+    {
       "path": "tests/results/ILLUSTRATION_DRAMATURGY_0.8.2_PHASE3.js",
       "sha256": "972d95cc3bd37c1d56ebed0d5f5206c5d760186181ef55a774bd50fac7304e96",
       "bytes": 3695
@@ -899,8 +1070,23 @@
       "bytes": 1622
     },
     {
+      "path": "tests/results/QUALITY_GATE_REPORT.json",
+      "sha256": "b5103ef107b4985cbcbb0a7db0ee93a4840d8a937758473de8990011bd7eb5ed",
+      "bytes": 1321
+    },
+    {
+      "path": "tests/results/REGRESSION_0.9.0_PHASE4.js",
+      "sha256": "0da15d97aa175d45ad423a11b394dd7605a291ea2c2fbddcde83346916a698ac",
+      "bytes": 2033
+    },
+    {
+      "path": "tests/results/REGRESSION_REPORT_0.9.0_PHASE4.json",
+      "sha256": "b6b39f089af37aa4680c6908a99306f8b5d5e15b0be7fd940008f0047cb69aad",
+      "bytes": 82867
+    },
+    {
       "path": "tests/results/SAMPLE_0.8.3_PHASE4.pdf",
-      "sha256": "a75c0cdf74fbb0d271d3ac1747b9ea40b359e936c4c82833b3adf680966047ec",
+      "sha256": "bfd1472c90c4d238aa2f9a8135d3c1435bedf6edc387471f3c43d0077d2221d4",
       "bytes": 69253
     },
     {
@@ -962,6 +1148,36 @@
       "path": "tests/results/STARTUP_0.8.3_PHASE4.js",
       "sha256": "f11a8ff706710fa10fa45788df265a20eda99668635950c9d87f178213a9356d",
       "bytes": 1693
+    },
+    {
+      "path": "tests/results/STARTUP_0.9.0_PHASE1.js",
+      "sha256": "a21356f2e0e10b77e51f6b932ebe0daed12b7fd5b1ae50ba35aeda81f3ef6927",
+      "bytes": 1665
+    },
+    {
+      "path": "tests/results/STARTUP_0.9.0_PHASE2.js",
+      "sha256": "e622574f48c1748c49e2f4949f93b7f4b76a5ec91a3c38d6f144e5ceb2a93c27",
+      "bytes": 1774
+    },
+    {
+      "path": "tests/results/STARTUP_0.9.0_PHASE3.js",
+      "sha256": "1b51689ef7dabff55f39a64b90bc870ca9830364480cbc0d3e80e6dce62c46f2",
+      "bytes": 1999
+    },
+    {
+      "path": "tests/results/STARTUP_0.9.0_PHASE4.js",
+      "sha256": "e5724cf69b738999739b53b963719b1b4512fe9c075680f45aca329335810060",
+      "bytes": 1803
+    },
+    {
+      "path": "tests/results/WORKFLOW_0.9.0_PHASE1.js",
+      "sha256": "7cb5f98ac914d6e54e42b7f1af9649ded06017201deec6f4470965fb965e4b05",
+      "bytes": 3608
+    },
+    {
+      "path": "tests/results/WORKFLOW_0.9.0_PHASE3.js",
+      "sha256": "bae893d5abec3bf76e750385d92b94d8b065a01afa42da526d6a0577b006c7c5",
+      "bytes": 3027
     },
     {
       "path": "tests/results/test_078.js",

@@ -1,24 +1,19 @@
-# CAPS Studio 0.8.3 Beta
+# CAPS Studio 0.9.0 Beta – Phase 5.4
 
-## Phase 4 – Druckproduktion
+## Testbibliothek, Golden Masters und automatische Regression
 
-CAPS erzeugt jetzt druckfähige PDF-Dateien vollständig im Browser.
+CAPS enthält jetzt zwölf feste Referenzfälle für häufige Familienthemen. Jeder Fall durchläuft automatisch:
 
-Umgesetzt:
+1. psychologische Analyse und Buchplan
+2. Story Treatment
+3. vollständiges Manuskript
+4. automatische Redaktion
+5. Bilderbuchkomposition
+6. Illustrationsdramaturgie
+7. buchweite Konsistenzprüfung
 
-- separater Innenblock mit einzelnen Buchseiten
-- automatische Titelseite und Impressumsseite
-- Auffüllen des Innenblocks auf ein Vielfaches von vier Seiten
-- A5-Hochformat und quadratisches 21-cm-Format
-- echter Beschnittbereich
-- optionale Schnittmarken und Proof-Schnittbox
-- vollständiger Umschlag aus Rückseite, Buchrücken und Vorderseite
-- berechnete Rückenbreite nach Seitenzahl und Papierstärke
-- Rückseitentext, Herausgeber und ISBN-Feld
-- 200- oder 300-dpi-Ausgabe
-- Druckprüfung für Layout, Text, Bilder, Auflösung und Freigaben
-- Produktions-PDF und schnelles Proof-PDF
-- herunterladbarer Prüfbericht
-- PDF-Writer ohne Server und ohne externe Cloud
+Der Test vergleicht die aktuelle Ausgabe mit einem Golden Master und kontrolliert zusätzlich feste Qualitätsverträge. Eine Inhaltsänderung, eine verlorene Szene, eine verschobene Doppelseite, eine schwächere Qualitätskennzahl oder ein neuer Blocker führt zu einem fehlgeschlagenen Release Gate.
 
-Build: `2026-07-17-0830-phase4`
+Im Repository steht außerdem `scripts/validate-release.js`. Es prüft JavaScript-Syntax, alle Engine-Tests, PDF, Druckvorstufe, Migrationen und die zwölf Golden Masters.
+
+Build: `2026-07-17-0900-phase4`

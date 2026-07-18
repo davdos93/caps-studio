@@ -1,13 +1,15 @@
 # Changelog
 
-## [0.8.3-beta] – 2026-07-17
+## [0.9.0-phase4] – 2026-07-17
 
-- Browser PDF Engine implementiert
-- Innenblock-PDF mit Beschnitt
-- Umschlag-PDF mit Vorderseite, Rückseite und Buchrücken
-- automatische Rückenberechnung
-- Druckvorstufenprüfung
-- Auflösungsprüfung hochgeladener Bilder
-- Proof-Export mit Schnittmarken
-- Druckeinstellungen und Exporthistorie
-- Bildabmessungen werden beim Upload gespeichert
+- zwölf feste Referenzprojekte
+- deterministische Manuskripterzeugung unabhängig von zufälligen IDs
+- deterministische Golden-Master-Signaturen
+- Qualitätsverträge für alle Produktionsstufen
+- eigene Ansicht „Systemtests“
+- Einzeltest und vollständiger Regressionstest
+- Testprojekte können zur manuellen Prüfung geöffnet werden
+- JSON-Regressionstestbericht
+- lokaler und CI-fähiger Release-Validator
+- automatischer GitHub-Quality-Gate-Workflow
+- vorbereiteter GitHub-Pages- und Geräte-Smoke-Test nach dem Deployment

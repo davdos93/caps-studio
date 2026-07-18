@@ -5,6 +5,7 @@ const uid=prefix=>`${prefix}-${crypto.randomUUID?crypto.randomUUID():Date.now()+
 const text=(value,fallback="")=>String(value??"").trim()||fallback;
 const list=value=>Array.isArray(value)?value.map(x=>String(x).trim()).filter(Boolean):String(value??"").split(/[\n,]/).map(x=>x.trim()).filter(Boolean);
 const clamp=(n,min,max)=>Math.max(min,Math.min(max,n));
+const Treatment=window.CAPS_StoryTreatmentEngine;
 
 function normalizeCharacter(character,index,childAge){
   return {
@@ -624,63 +625,12 @@ function generate(input){
   };
   const quest=brief.adventureType;
   const ctx={brief,characters,hero,ally,guide,profile,world,quest};
-  const phases=phaseBlueprints(ctx);
+  if(!Treatment)throw new Error("Story Treatment Engine fehlt.");
+  const storyTreatment=Treatment.generate({brief,analysis,characters,profile,world,quest});
   const sceneCount=clamp(Math.round(brief.pages/2),16,25);
-  const chapterCount=clamp(Math.ceil(sceneCount/2.7),6,10);
-  const chapterTitles=[
-    "Bevor alles begann","Das ungewöhnliche Zeichen","Hinter der vertrauten Welt",
-    "Der erste Versuch","Eine andere Art von Mut","Der Weg wird schwieriger",
-    "Was wirklich hilft","Die größte Prüfung","Ein Erfolg, der bleiben darf","Beim nächsten Mal"
-  ];
-  const chapters=Array.from({length:chapterCount},(_,index)=>({
-    id:uid("CH"),
-    number:index+1,
-    title:chapterTitles[index]||`Kapitel ${index+1}`,
-    purpose:"",
-    endingHook:"",
-    sceneIds:[]
-  }));
-
-  const scenes=Array.from({length:sceneCount},(_,index)=>{
-    const phaseIndex=storyPhaseIndex(index,sceneCount);
-    const phase=phases[phaseIndex];
-    const chapterIndex=Math.min(chapterCount-1,Math.floor(index*chapterCount/sceneCount));
-    const chapter=chapters[chapterIndex];
-    const locationIndex=Math.min(world.locations.length-1,Math.floor(index*world.locations.length/sceneCount));
-    const location=world.locations[locationIndex];
-    const focus=index<3?hero:index%5===3?ally:index%7===5?guide:hero;
-    const visible=[hero.name,ally.name,guide.name].filter((name,pos,array)=>name&&array.indexOf(name)===pos);
-    const scene={
-      id:uid("SCENE"),
-      number:index+1,
-      chapterId:chapter.id,
-      chapterNumber:chapter.number,
-      title:phase.title,
-      pages:[index*2+1,index*2+2],
-      location,
-      characters:visible,
-      focusCharacter:focus.name,
-      emotionalState:phase.emotion,
-      psychologicalFunction:phase.function,
-      goal:phase.goal,
-      conflict:phase.conflict,
-      result:phase.result,
-      copingStrategy:profile.copingStrategy,
-      supportiveResponse:profile.supportiveResponse,
-      illustrationIdea:phase.image,
-      messageMoment:index>=Math.floor(sceneCount*.55),
-      storyPurpose:`${phase.function}. Die äußere Handlung von „${quest}“ und das innere Thema „${profile.topic}“ entwickeln sich gemeinsam.`,
-      endingHook:index===sceneCount-1?"Die neue Erfahrung zeigt sich in einer kleinen Alltagssituation.":phases[Math.min(phases.length-1,phaseIndex+1)].title
-    };
-    chapter.sceneIds.push(scene.id);
-    return scene;
-  });
-
-  chapters.forEach(chapter=>{
-    const chapterScenes=scenes.filter(scene=>scene.chapterId===chapter.id);
-    chapter.purpose=chapterScenes.map(scene=>scene.psychologicalFunction).filter((value,index,array)=>array.indexOf(value)===index).join(" · ");
-    chapter.endingHook=chapterScenes.at(-1)?.endingHook||"";
-  });
+  const structure=Treatment.toPlan(storyTreatment,sceneCount);
+  const chapters=structure.chapters;
+  const scenes=structure.scenes;
 
   const checks=[
     {label:"Konkretes Thema",passed:profile.topic.length>8,detail:profile.topic},
@@ -690,14 +640,15 @@ function generate(input){
     {label:"Konkrete Bewältigungsstrategie",passed:profile.copingStrategy.length>15,detail:profile.copingStrategy},
     {label:"Unterstützung ohne Übernahme",passed:profile.supportiveResponse.length>15,detail:profile.supportiveResponse},
     {label:"Kindgerechte Schutzgrenzen",passed:profile.avoidContent.length>5,detail:profile.avoidContent},
+    {label:"Vollständiger Geschichtenentwurf",passed:storyTreatment.qualityReport.score>=90,detail:`Treatment ${storyTreatment.qualityReport.score}% · ${storyTreatment.beats.length} kausal verbundene Handlungsschritte`},
     {label:"Vollständiger Geschichtenbogen",passed:scenes.length>=16,detail:`${chapters.length} Kapitel und ${scenes.length} Szenen`}
   ];
   const score=Math.round(checks.filter(check=>check.passed).length/checks.length*100);
 
   return {
-    schemaVersion:"2.0",
+    schemaVersion:"2.1",
     generatedAt:new Date().toISOString(),
-    generator:"CAPS Parent Intake Analyzer & Story Planner 1.1",
+    generator:"CAPS Parent Intake Analyzer & Story Treatment Planner 1.2",
     storyBible:{
       title:brief.title,
       subtitle:brief.subtitle,
@@ -717,12 +668,28 @@ function generate(input){
     },
     characters,
     worlds:[world],
+    storyTreatment,
     chapters,
     scenes,
     qualityReport:{score,checks},
-    approvals:{storyBible:false,impact:false,characters:false,worlds:false,chapters:false,scenes:false,quality:false}
+    approvals:{storyBible:false,impact:false,treatment:false,characters:false,worlds:false,chapters:false,scenes:false,quality:false}
   };
 }
 
-window.CAPS_BookEngine={analyze,generate};
+function upgradePlan(plan,brief={}){
+  if(!plan)return plan;
+  plan.approvals={storyBible:false,impact:false,treatment:false,characters:false,worlds:false,chapters:false,scenes:false,quality:false,...(plan.approvals||{})};
+  if(plan.storyTreatment)return plan;
+  const storyBible=plan.storyBible||{},profile=storyBible.psychologicalProfile||{};
+  const analysis={category:storyBible.backgroundAnalysis?.category||profile.category||"Emotionales Alltagsthema",profile,story:storyBible.backgroundAnalysis?.storyConcept||{}};
+  const world=plan.worlds?.[0]||{name:"der Fantasiewelt",locations:[]};
+  const quest=brief.adventureType||analysis.story?.quest||storyBible.logline||"einen wichtigen Auftrag zu erfüllen";
+  plan.storyTreatment=Treatment.generate({brief:{...storyBible.intakeContext,...brief,interests:storyBible.interests||brief.interests},analysis,characters:plan.characters||[],profile,world,quest});
+  return plan;
+}
+function rebuildTreatment(plan,brief={}){
+  const merged={...brief,title:plan?.storyBible?.title||brief.title,subtitle:plan?.storyBible?.subtitle||brief.subtitle};
+  return generate(merged);
+}
+window.CAPS_BookEngine={analyze,generate,upgradePlan,rebuildTreatment};
 })();
