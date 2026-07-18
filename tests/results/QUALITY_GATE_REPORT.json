@@ -1,0 +1,59 @@
+{
+  "product": "CAPS Studio",
+  "version": "0.9.0",
+  "phase": 4,
+  "checkedAt": "2026-07-17T15:26:02.161Z",
+  "status": "pass",
+  "javascriptFiles": 59,
+  "tests": {
+    "REGRESSION_0.9.0_PHASE4.js": {
+      "cases": 12,
+      "passed": 12,
+      "failed": 0,
+      "deterministic": true,
+      "mutationDetected": true,
+      "goldenVersion": "2026-07-17-v1",
+      "durationMs": 1626
+    },
+    "CONSISTENCY_0.9.0_PHASE3.js": {
+      "baselineScore": 90,
+      "baselineBlockers": 0,
+      "brokenBlockers": 3,
+      "findings": 15,
+      "categories": 9,
+      "stale": true
+    },
+    "WORKFLOW_0.9.0_PHASE3.js": {
+      "stages": 9,
+      "score": 37,
+      "consistencyStatus": "stale",
+      "blockers": 7,
+      "finalApprovalInvalidated": true
+    },
+    "HISTORY_0.9.0_PHASE3.js": {
+      "stages": 10,
+      "checkpoints": 5,
+      "restoredScore": 91,
+      "comparisonChanges": 6
+    },
+    "PDF_ENGINE_0.8.3_PHASE4.js": {
+      "bytes": 69253,
+      "pages": 2,
+      "header": "%PDF-1.4",
+      "eof": true
+    },
+    "PREFLIGHT_0.8.3_PHASE4.js": {
+      "score": 93,
+      "pages": 36,
+      "spine": 1.8,
+      "blockersAfterMissing": 1
+    },
+    "STARTUP_0.9.0_PHASE4.js": {
+      "scripts": 19,
+      "version": "0.9.0",
+      "phase": 4,
+      "fixtures": 12,
+      "homeRendered": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+const fs=require("fs"),vm=require("vm");
+const sandbox={console,crypto:{randomUUID:()=>Math.random().toString(16).slice(2)+"-"+Date.now()},window:{}};sandbox.window=sandbox;vm.createContext(sandbox);
+for(const file of ["src/js/core/story-treatment-engine.js","src/js/core/book-engine.js","src/js/core/manuscript-engine.js","src/js/core/editorial-engine.js","src/js/core/layout-engine.js","src/js/core/illustration-engine.js","src/js/core/workflow-engine.js"]){vm.runInContext(fs.readFileSync(file,"utf8"),sandbox,{filename:file});}
+const intake={title:"Miras Mut",childAge:"5 Jahre",problemTopic:"Angst beim Abschied",concreteSituation:"An der Kindergartentür hält Mira Papa fest.",currentReaction:"Mira weint und fragt, ob Papa zurückkommt.",childFeelings:["Angst"],interests:["Tiere"],characters:[{name:"Mira",age:"5 Jahre"}]};
+const project={id:"TEST",title:"Miras Mut",bookBrief:intake,bookPlan:sandbox.CAPS_BookEngine.generate(intake),manuscript:null,illustrations:null,layout:null};
+project.bookPlan.approvals.treatment=true;project.manuscript=sandbox.CAPS_ManuscriptEngine.generate(project.bookPlan);project.manuscript.scenes.forEach(s=>s.status="approved");sandbox.CAPS_ManuscriptEngine.recalc(project.manuscript,project.bookPlan);project.manuscriptStatus="approved";sandbox.CAPS_EditorialEngine.run(project.manuscript,project.bookPlan);project.manuscript.editorialReport.approved=true;project.manuscript.editorialStatus="approved";sandbox.CAPS_LayoutEngine.generate(project);project.layout.approved=true;project.layoutStatus="approved";sandbox.CAPS_IllustrationEngine.generate(project);project.illustrations.items.forEach((item,index)=>{item.imageData=`data:image/jpeg;base64,TEST${index}`;item.imageName=`test-${index}.jpg`;item.imageWidth=3000;item.imageHeight=3000;item.approved=true;item.status="approved";});sandbox.CAPS_IllustrationEngine.recalc(project);project.workflow={manualApprovals:{direction:true}};project.printProduction={settings:{bleedMm:3},preflight:{generatedAt:new Date().toISOString(),score:100,blockers:0,warnings:0,ready:true,stale:false,fingerprint:"test",checks:[]},history:[]};
+let wf=sandbox.CAPS_WorkflowEngine.sync(project,{source:"migration-test"});
+if(!wf||Object.keys(wf.stages).length!==8)throw new Error("Acht Workflow-Stufen fehlen");
+if(wf.blockers.length)throw new Error("Vollständiges Projekt hat unerwartete Blocker: "+JSON.stringify(wf.blockers));
+if(!sandbox.CAPS_WorkflowEngine.toggleFinalApproval(project))throw new Error("Finale Freigabe nicht möglich");
+const imageBefore=project.illustrations.items[0].imageData;
+project.manuscript.bookChapters[0].text+=" Ein neuer Satz verändert das Manuskript.";sandbox.CAPS_ManuscriptEngine.recalc(project.manuscript,project.bookPlan);
+wf=sandbox.CAPS_WorkflowEngine.sync(project,{source:"test-edit"});
+for(const key of ["editorial","layout","direction","images"]){if(wf.stages[key].status!=="stale")throw new Error(`${key} wurde nicht veraltet: ${wf.stages[key].status}`);}
+if(project.workflow.finalApproval.approved)throw new Error("Finale Freigabe blieb nach Änderung aktiv");
+if(project.illustrations.items[0].imageData!==imageBefore)throw new Error("Hochgeladenes Bild wurde verändert");
+if(!sandbox.CAPS_WorkflowEngine.exportBlockers(project).some(b=>b.id==="stale-layout"))throw new Error("Stale-Layout-Blocker fehlt");
+console.log(JSON.stringify({stages:Object.keys(wf.stages).length,score:wf.score,blockers:wf.blockers.length,events:wf.events.length,manuscriptRevision:wf.records.manuscript.revision,layoutStatus:wf.stages.layout.status,imagesPreserved:true,finalApprovalInvalidated:true},null,2));

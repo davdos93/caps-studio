@@ -1,0 +1,3099 @@
+{
+  "schemaVersion": "1.0",
+  "suite": "CAPS Golden Master Quality Gate",
+  "engineVersion": "0.9.0-phase4",
+  "goldenVersion": "2026-07-17-v1",
+  "generatedAt": "2026-07-17T15:26:00.651Z",
+  "durationMs": 1626,
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "status": "pass",
+  "results": [
+    {
+      "fixtureId": "separation",
+      "label": "Trennungsangst",
+      "description": "Abschied an der Kindergartentür",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "c9b2b2a2",
+          "expected": "c9b2b2a2",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 82,
+          "expected": 82,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 90,
+          "expected": 90,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1806,
+          "expected": "1786–1826",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 11,
+          "expected": "8–14",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1806,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 82,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 90,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Mila, Papa, Pico",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "c9b2b2a2",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 20,
+          "words": 1806,
+          "editorialScore": 82,
+          "spreads": 20,
+          "layoutScore": 91,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 90,
+          "blockers": 0,
+          "warnings": 11
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Mila",
+          "Papa",
+          "Pico"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "c9b2b2a2",
+      "durationMs": 200
+    },
+    {
+      "fixtureId": "siblings",
+      "label": "Geschwisterstreit",
+      "description": "Teilen, Grenzen und Zusammenhalt",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "9e928216",
+          "expected": "9e928216",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 81,
+          "expected": 81,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 90,
+          "expected": 90,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1814,
+          "expected": "1794–1834",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 11,
+          "expected": "8–14",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1814,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 81,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 90,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Elias, Lia, Momo",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "9e928216",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 20,
+          "words": 1814,
+          "editorialScore": 81,
+          "spreads": 20,
+          "layoutScore": 91,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 90,
+          "blockers": 0,
+          "warnings": 11
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text",
+          "transformation-not-shown"
+        ],
+        "characters": [
+          "Elias",
+          "Lia",
+          "Momo"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "9e928216",
+      "durationMs": 153
+    },
+    {
+      "fixtureId": "anger",
+      "label": "Wut und Frustration",
+      "description": "Verlieren und wieder handlungsfähig werden",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "d82820e6",
+          "expected": "d82820e6",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 82,
+          "expected": 82,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 90,
+          "expected": 90,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1815,
+          "expected": "1795–1835",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 11,
+          "expected": "8–14",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1815,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 82,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 90,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Noah, Oma, Mika",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "d82820e6",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 20,
+          "words": 1815,
+          "editorialScore": 82,
+          "spreads": 20,
+          "layoutScore": 91,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 90,
+          "blockers": 0,
+          "warnings": 11
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Noah",
+          "Oma",
+          "Mika"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "d82820e6",
+      "durationMs": 141
+    },
+    {
+      "fixtureId": "dark",
+      "label": "Angst vor Dunkelheit",
+      "description": "Sicher einschlafen trotz Angst",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "3abe2e1d",
+          "expected": "3abe2e1d",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 84,
+          "expected": 84,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1818,
+          "expected": "1798–1838",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 10,
+          "expected": "7–13",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1818,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 84,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Emma, Mama, Pico",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "3abe2e1d",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 20,
+          "words": 1818,
+          "editorialScore": 84,
+          "spreads": 20,
+          "layoutScore": 91,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 91,
+          "blockers": 0,
+          "warnings": 10
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "appearance-hair",
+          "location-image-text"
+        ],
+        "characters": [
+          "Emma",
+          "Mama",
+          "Pico"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "3abe2e1d",
+      "durationMs": 125
+    },
+    {
+      "fixtureId": "kindergarten",
+      "label": "Kindergartenstart",
+      "description": "Erster Tag in einer neuen Gruppe",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "22bdea50",
+          "expected": "22bdea50",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 16,
+          "expected": 16,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 82,
+          "expected": 82,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1810,
+          "expected": "1790–1830",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 10,
+          "expected": "7–13",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1810,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 82,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Lina, Ben, Nilo",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "22bdea50",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 16,
+          "words": 1810,
+          "editorialScore": 82,
+          "spreads": 20,
+          "layoutScore": 91,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 91,
+          "blockers": 0,
+          "warnings": 10
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Lina",
+          "Ben",
+          "Nilo"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "22bdea50",
+      "durationMs": 133
+    },
+    {
+      "fixtureId": "sleep",
+      "label": "Einschlafprobleme",
+      "description": "Abendroutine und innere Ruhe",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "402a5765",
+          "expected": "402a5765",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 84,
+          "expected": 84,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 90,
+          "expected": 90,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1818,
+          "expected": "1798–1838",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 11,
+          "expected": "8–14",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1818,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 84,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 90,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Theo, Papa, Momo",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "402a5765",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 20,
+          "words": 1818,
+          "editorialScore": 84,
+          "spreads": 20,
+          "layoutScore": 91,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 90,
+          "blockers": 0,
+          "warnings": 11
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Theo",
+          "Papa",
+          "Momo"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "402a5765",
+      "durationMs": 135
+    },
+    {
+      "fixtureId": "move",
+      "label": "Umzug",
+      "description": "Vertrautes bewahren und Neues annehmen",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "dc9a5b30",
+          "expected": "dc9a5b30",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 24,
+          "expected": 24,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 89,
+          "expected": 89,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 85,
+          "expected": 85,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 93,
+          "expected": 93,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1819,
+          "expected": "1799–1839",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 8,
+          "expected": "5–11",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 89,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1819,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 85,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 15,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 93,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, echo, ending, opening, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Sofia, Felix, Mika",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "dc9a5b30",
+        "metrics": {
+          "planScore": 89,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 24,
+          "words": 1819,
+          "editorialScore": 85,
+          "spreads": 15,
+          "layoutScore": 100,
+          "illustrations": 15,
+          "illustrationQuality": 100,
+          "consistencyScore": 93,
+          "blockers": 0,
+          "warnings": 8
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "echo",
+          "ending",
+          "opening",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Sofia",
+          "Felix",
+          "Mika"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "dc9a5b30",
+      "durationMs": 121
+    },
+    {
+      "fixtureId": "petloss",
+      "label": "Verlust eines Haustiers",
+      "description": "Trauer, Erinnerung und Verbundenheit",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "a5a17e8e",
+          "expected": "a5a17e8e",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 24,
+          "expected": 24,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 85,
+          "expected": 85,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 93,
+          "expected": 93,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1817,
+          "expected": "1797–1837",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 8,
+          "expected": "5–11",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1817,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 85,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 15,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 93,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, echo, ending, opening, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Jonas, Opa, Pico",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "a5a17e8e",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 24,
+          "words": 1817,
+          "editorialScore": 85,
+          "spreads": 15,
+          "layoutScore": 100,
+          "illustrations": 15,
+          "illustrationQuality": 100,
+          "consistencyScore": 93,
+          "blockers": 0,
+          "warnings": 8
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "echo",
+          "ending",
+          "opening",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Jonas",
+          "Opa",
+          "Pico"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "a5a17e8e",
+      "durationMs": 128
+    },
+    {
+      "fixtureId": "confidence",
+      "label": "Selbstvertrauen",
+      "description": "Angst vor Fehlern beim Auftreten",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "1190028b",
+          "expected": "1190028b",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 24,
+          "expected": 24,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 87,
+          "expected": 87,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 93,
+          "expected": 93,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1823,
+          "expected": "1803–1843",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 8,
+          "expected": "5–11",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1823,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 87,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 15,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 93,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Mara, Nina, Mika",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "1190028b",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 24,
+          "words": 1823,
+          "editorialScore": 87,
+          "spreads": 15,
+          "layoutScore": 91,
+          "illustrations": 15,
+          "illustrationQuality": 100,
+          "consistencyScore": 93,
+          "blockers": 0,
+          "warnings": 8
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Mara",
+          "Nina",
+          "Mika"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "1190028b",
+      "durationMs": 118
+    },
+    {
+      "fixtureId": "doctor",
+      "label": "Arztbesuch",
+      "description": "Untersuchung und Impfung bewältigen",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "64286fa2",
+          "expected": "64286fa2",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 84,
+          "expected": 84,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 91,
+          "expected": 91,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 90,
+          "expected": 90,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1818,
+          "expected": "1798–1838",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 11,
+          "expected": "8–14",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1818,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 84,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 91,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 90,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Ben, Mama, Momo",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "64286fa2",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 20,
+          "words": 1818,
+          "editorialScore": 84,
+          "spreads": 20,
+          "layoutScore": 91,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 90,
+          "blockers": 0,
+          "warnings": 11
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Ben",
+          "Mama",
+          "Momo"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "64286fa2",
+      "durationMs": 126
+    },
+    {
+      "fixtureId": "school",
+      "label": "Schulstart",
+      "description": "Neue Klasse und unbekannte Kinder",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "b55f322d",
+          "expected": "b55f322d",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 82,
+          "expected": 82,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 82,
+          "expected": 82,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 89,
+          "expected": 89,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1814,
+          "expected": "1794–1834",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 12,
+          "expected": "9–15",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1814,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 82,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 20,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 82,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 20,
+          "expected": 20,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 89,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, ending, opening, practice, problem, relationship, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Lea, Sam, Kiki",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "b55f322d",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 20,
+          "words": 1814,
+          "editorialScore": 82,
+          "spreads": 20,
+          "layoutScore": 82,
+          "illustrations": 20,
+          "illustrationQuality": 100,
+          "consistencyScore": 89,
+          "blockers": 0,
+          "warnings": 12
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "ending",
+          "opening",
+          "practice",
+          "problem",
+          "relationship",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Lea",
+          "Sam",
+          "Kiki"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "b55f322d",
+      "durationMs": 133
+    },
+    {
+      "fixtureId": "friendship",
+      "label": "Freundschaft und Ausgrenzung",
+      "description": "Nicht mitspielen dürfen und Kontakt finden",
+      "status": "pass",
+      "checks": [
+        {
+          "id": "signature",
+          "label": "Inhalt entspricht dem Golden Master",
+          "pass": true,
+          "actual": "7a52a220",
+          "expected": "7a52a220",
+          "kind": "golden"
+        },
+        {
+          "id": "metric-beats",
+          "label": "beats unverändert",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-chapters",
+          "label": "chapters unverändert",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-scenes",
+          "label": "scenes unverändert",
+          "pass": true,
+          "actual": 24,
+          "expected": 24,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-spreads",
+          "label": "spreads unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "metric-illustrations",
+          "label": "illustrations unverändert",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "golden"
+        },
+        {
+          "id": "score-planScore",
+          "label": "planScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-editorialScore",
+          "label": "editorialScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 87,
+          "expected": 87,
+          "kind": "golden"
+        },
+        {
+          "id": "score-layoutScore",
+          "label": "layoutScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-illustrationQuality",
+          "label": "illustrationQuality innerhalb Toleranz",
+          "pass": true,
+          "actual": 100,
+          "expected": 100,
+          "kind": "golden"
+        },
+        {
+          "id": "score-consistencyScore",
+          "label": "consistencyScore innerhalb Toleranz",
+          "pass": true,
+          "actual": 93,
+          "expected": 93,
+          "kind": "golden"
+        },
+        {
+          "id": "word-range",
+          "label": "Manuskriptlänge im erwarteten Bereich",
+          "pass": true,
+          "actual": 1817,
+          "expected": "1797–1837",
+          "kind": "golden"
+        },
+        {
+          "id": "warning-range",
+          "label": "Warnungszahl ohne starke Drift",
+          "pass": true,
+          "actual": 8,
+          "expected": "5–11",
+          "kind": "golden"
+        },
+        {
+          "id": "plan-floor",
+          "label": "Planqualität mindestens 85 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "treatment-contract",
+          "label": "Treatment besitzt 14 kausale Schritte",
+          "pass": true,
+          "actual": 14,
+          "expected": 14,
+          "kind": "quality"
+        },
+        {
+          "id": "chapter-contract",
+          "label": "Gesamtmanuskript besitzt 8 Kapitel",
+          "pass": true,
+          "actual": 8,
+          "expected": 8,
+          "kind": "quality"
+        },
+        {
+          "id": "word-contract",
+          "label": "Manuskript zwischen 1.500 und 2.300 Wörtern",
+          "pass": true,
+          "actual": 1817,
+          "expected": "1500–2300",
+          "kind": "quality"
+        },
+        {
+          "id": "editorial-floor",
+          "label": "Redaktionswert mindestens 72 %",
+          "pass": true,
+          "actual": 87,
+          "expected": ">= 72",
+          "kind": "quality"
+        },
+        {
+          "id": "spread-contract",
+          "label": "12 bis 24 Doppelseiten",
+          "pass": true,
+          "actual": 15,
+          "expected": "12–24",
+          "kind": "quality"
+        },
+        {
+          "id": "layout-floor",
+          "label": "Layoutqualität mindestens 75 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 75",
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-alignment",
+          "label": "Genau ein Bildauftrag je Doppelseite",
+          "pass": true,
+          "actual": 15,
+          "expected": 15,
+          "kind": "quality"
+        },
+        {
+          "id": "illustration-floor",
+          "label": "Bilddramaturgie mindestens 90 %",
+          "pass": true,
+          "actual": 100,
+          "expected": ">= 90",
+          "kind": "quality"
+        },
+        {
+          "id": "consistency-floor",
+          "label": "Konsistenz mindestens 85 %",
+          "pass": true,
+          "actual": 93,
+          "expected": ">= 85",
+          "kind": "quality"
+        },
+        {
+          "id": "no-blockers",
+          "label": "Keine buchweiten Blocker",
+          "pass": true,
+          "actual": 0,
+          "expected": 0,
+          "kind": "quality"
+        },
+        {
+          "id": "required-roles",
+          "label": "Einstieg, Höhepunkt und Schlussbild vorhanden",
+          "pass": true,
+          "actual": "climax, departure, discovery, echo, ending, opening, problem, return",
+          "expected": "opening, climax, ending",
+          "kind": "quality"
+        },
+        {
+          "id": "character-coverage",
+          "label": "Alle geplanten Figuren erscheinen im Manuskript",
+          "pass": true,
+          "actual": "Amir, Mila, Kiki",
+          "expected": "alle Figuren",
+          "kind": "quality"
+        }
+      ],
+      "failedChecks": [],
+      "snapshot": {
+        "signature": "7a52a220",
+        "metrics": {
+          "planScore": 100,
+          "beats": 14,
+          "chapters": 8,
+          "scenes": 24,
+          "words": 1817,
+          "editorialScore": 87,
+          "spreads": 15,
+          "layoutScore": 100,
+          "illustrations": 15,
+          "illustrationQuality": 100,
+          "consistencyScore": 93,
+          "blockers": 0,
+          "warnings": 8
+        },
+        "roles": [
+          "climax",
+          "departure",
+          "discovery",
+          "echo",
+          "ending",
+          "opening",
+          "problem",
+          "return"
+        ],
+        "findingCodes": [
+          "location-image-text"
+        ],
+        "characters": [
+          "Amir",
+          "Mila",
+          "Kiki"
+        ],
+        "characterCoverage": true
+      },
+      "goldenSignature": "7a52a220",
+      "durationMs": 112
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "deferred",
+  "reason": "GitHub-Pages deployment and device browser are required for the final browser smoke test.",
+  "plannedChecks": [
+    "load beta URL",
+    "open Systemtests",
+    "run 12 reference cases",
+    "verify mobile navigation"
+  ]
+}
