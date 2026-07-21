@@ -1,0 +1,24 @@
+name: CAPS Quality Gate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run CAPS release validation
+        run: node scripts/validate-release.js
+      - name: Upload quality report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: caps-quality-gate-report
+          path: |
+            tests/results/QUALITY_GATE_REPORT.json
+            tests/results/REGRESSION_REPORT_0.9.0_PHASE4.json
