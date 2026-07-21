@@ -1,11 +1,22 @@
 {
   "product": "CAPS Studio",
   "version": "0.9.0",
-  "phase": 4,
-  "checkedAt": "2026-07-17T15:26:02.161Z",
+  "phase": "4.1",
+  "checkedAt": "2026-07-18T15:44:35.809Z",
   "status": "pass",
   "javascriptFiles": 59,
   "tests": {
+    "GITHUB_WORKFLOW_0.9.0_PHASE4_1.js": {
+      "workflow": ".github/workflows/quality-gate.yml",
+      "checks": 13,
+      "passed": 13,
+      "node": 24,
+      "actions": {
+        "checkout": 7,
+        "setupNode": 7,
+        "uploadArtifact": 7
+      }
+    },
     "REGRESSION_0.9.0_PHASE4.js": {
       "cases": 12,
       "passed": 12,
@@ -13,7 +24,7 @@
       "deterministic": true,
       "mutationDetected": true,
       "goldenVersion": "2026-07-17-v1",
-      "durationMs": 1626
+      "durationMs": 1581
     },
     "CONSISTENCY_0.9.0_PHASE3.js": {
       "baselineScore": 90,

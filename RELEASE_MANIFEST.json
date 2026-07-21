@@ -1,78 +1,94 @@
 {
   "product": "CAPS Studio",
   "version": "0.9.0",
-  "channel": "beta",
-  "build": "2026-07-17-0900-phase4",
+  "phase": "4.1",
+  "build": "2026-07-18-0900-phase4.1",
   "validation": {
-    "product": "CAPS Studio",
-    "version": "0.9.0",
-    "phase": 4,
-    "checkedAt": "2026-07-17T15:26:02.161Z",
-    "status": "pass",
     "javascriptFiles": 59,
-    "tests": {
-      "REGRESSION_0.9.0_PHASE4.js": {
-        "cases": 12,
-        "passed": 12,
-        "failed": 0,
-        "deterministic": true,
-        "mutationDetected": true,
-        "goldenVersion": "2026-07-17-v1",
-        "durationMs": 1626
-      },
-      "CONSISTENCY_0.9.0_PHASE3.js": {
-        "baselineScore": 90,
-        "baselineBlockers": 0,
-        "brokenBlockers": 3,
-        "findings": 15,
-        "categories": 9,
-        "stale": true
-      },
-      "WORKFLOW_0.9.0_PHASE3.js": {
-        "stages": 9,
-        "score": 37,
-        "consistencyStatus": "stale",
-        "blockers": 7,
-        "finalApprovalInvalidated": true
-      },
-      "HISTORY_0.9.0_PHASE3.js": {
-        "stages": 10,
-        "checkpoints": 5,
-        "restoredScore": 91,
-        "comparisonChanges": 6
-      },
-      "PDF_ENGINE_0.8.3_PHASE4.js": {
-        "bytes": 69253,
-        "pages": 2,
-        "header": "%PDF-1.4",
-        "eof": true
-      },
-      "PREFLIGHT_0.8.3_PHASE4.js": {
-        "score": 93,
-        "pages": 36,
-        "spine": 1.8,
-        "blockersAfterMissing": 1
-      },
-      "STARTUP_0.9.0_PHASE4.js": {
-        "scripts": 19,
-        "version": "0.9.0",
-        "phase": 4,
-        "fixtures": 12,
-        "homeRendered": true
+    "workflowContract": {
+      "workflow": ".github/workflows/quality-gate.yml",
+      "checks": 13,
+      "passed": 13,
+      "node": 24,
+      "actions": {
+        "checkout": 7,
+        "setupNode": 7,
+        "uploadArtifact": 7
       }
-    }
+    },
+    "workflowYamlParsed": true,
+    "qualityGate": {
+      "product": "CAPS Studio",
+      "version": "0.9.0",
+      "phase": "4.1",
+      "checkedAt": "2026-07-18T15:44:35.809Z",
+      "status": "pass",
+      "javascriptFiles": 59,
+      "tests": {
+        "GITHUB_WORKFLOW_0.9.0_PHASE4_1.js": {
+          "workflow": ".github/workflows/quality-gate.yml",
+          "checks": 13,
+          "passed": 13,
+          "node": 24,
+          "actions": {
+            "checkout": 7,
+            "setupNode": 7,
+            "uploadArtifact": 7
+          }
+        },
+        "REGRESSION_0.9.0_PHASE4.js": {
+          "cases": 12,
+          "passed": 12,
+          "failed": 0,
+          "deterministic": true,
+          "mutationDetected": true,
+          "goldenVersion": "2026-07-17-v1",
+          "durationMs": 1581
+        },
+        "CONSISTENCY_0.9.0_PHASE3.js": {
+          "baselineScore": 90,
+          "baselineBlockers": 0,
+          "brokenBlockers": 3,
+          "findings": 15,
+          "categories": 9,
+          "stale": true
+        },
+        "WORKFLOW_0.9.0_PHASE3.js": {
+          "stages": 9,
+          "score": 37,
+          "consistencyStatus": "stale",
+          "blockers": 7,
+          "finalApprovalInvalidated": true
+        },
+        "HISTORY_0.9.0_PHASE3.js": {
+          "stages": 10,
+          "checkpoints": 5,
+          "restoredScore": 91,
+          "comparisonChanges": 6
+        },
+        "PDF_ENGINE_0.8.3_PHASE4.js": {
+          "bytes": 69253,
+          "pages": 2,
+          "header": "%PDF-1.4",
+          "eof": true
+        },
+        "PREFLIGHT_0.8.3_PHASE4.js": {
+          "score": 93,
+          "pages": 36,
+          "spine": 1.8,
+          "blockersAfterMissing": 1
+        },
+        "STARTUP_0.9.0_PHASE4.js": {
+          "scripts": 19,
+          "version": "0.9.0",
+          "phase": 4,
+          "fixtures": 12,
+          "homeRendered": true
+        }
+      }
+    },
+    "srcBetaIdentical": true
   },
-  "browserSmoke": {
-    "status": "deferred",
-    "reason": "GitHub-Pages deployment and device browser are required for the final browser smoke test.",
-    "plannedChecks": [
-      "load beta URL",
-      "open Systemtests",
-      "run 12 reference cases",
-      "verify mobile navigation"
-    ]
-  },
-  "srcBetaIdentical": true,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.md",
@@ -90,9 +106,19 @@
       "bytes": 301
     },
     {
+      "path": ".github/dependabot.yml",
+      "sha256": "201dbceeffbfdcfae494a71ad7821a781d4f7a56a075628d318be4c14e515a40",
+      "bytes": 169
+    },
+    {
       "path": ".github/workflows/caps-quality-gate.yml",
       "sha256": "47c45f072056d753883f6ad690ac967a2294d0bd0739ecbee49d289938399278",
       "bytes": 599
+    },
+    {
+      "path": ".github/workflows/quality-gate.yml",
+      "sha256": "aa3b05fbe6e83d009338045f95c5cc03d35906bfb8424961bf412f768533c6a9",
+      "bytes": 2700
     },
     {
       "path": ".gitignore",
@@ -106,8 +132,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "f4aed30a04bfae7f29a5cb17741b9412ece3bafc8a1abfe939405df7c3a34991",
-      "bytes": 582
+      "sha256": "13697224b6d7ed2d1a7bee50206e932b62ff1325fd837836d7e2a80b6a14cee8",
+      "bytes": 1118
     },
     {
       "path": "CONTRIBUTING.md",
@@ -121,13 +147,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "62dc8ae32f7ecc26b36bed1ac41daffd73fe00bc96febc8bb71a46438b5f8228",
-      "bytes": 925
+      "sha256": "6c6b2eef619299104b69df8c43863be70639ae45f57bdbf6669314a2ae191721",
+      "bytes": 1088
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "99f5a1610dfc72139e26cfde4d9cd29511bcf9fee3511d2cfa43c4c8b77f04fe",
-      "bytes": 35673
+      "sha256": "cf4c9d7a623e1ee030c3128bee27241468497a9e3159c0a5ee6d908786af1b61",
+      "bytes": 39310
     },
     {
       "path": "ROADMAP.md",
@@ -136,8 +162,8 @@
     },
     {
       "path": "beta/VERSION.json",
-      "sha256": "6077175b41b79eec025779495b58665c57e2dc75dafb97bd276810420a05377d",
-      "bytes": 229
+      "sha256": "0adca17700824e6e39aa89e35dd7d12fba12d7bae2287d0e70600ec7029b6be9",
+      "bytes": 209
     },
     {
       "path": "beta/assets/.gitkeep",
@@ -151,13 +177,13 @@
     },
     {
       "path": "beta/index.html",
-      "sha256": "cb51dbf62a8fd2f1b4651dc593ce31bd75fc2a2111af43ad60f61ba21a082273",
-      "bytes": 1948
+      "sha256": "7b2ab6083519d6b1445941eb09145aa2588057fcd0d071fa99d35afc37f3e0b7",
+      "bytes": 1990
     },
     {
       "path": "beta/js/core/app.js",
-      "sha256": "34517f0bb6ef8577d8caa9e4e226eee88c87102068100596b8019e549b51fc27",
-      "bytes": 117686
+      "sha256": "5c2a79fb6142035f54bb53a7fcc6a8fd38ff39ef161bce78ccfa62238bbb3f6e",
+      "bytes": 117688
     },
     {
       "path": "beta/js/core/book-engine.js",
@@ -566,13 +592,13 @@
     },
     {
       "path": "scripts/validate-release.js",
-      "sha256": "0709a6dcb7aea2f381d734341e99a71e816fd7571392599ea5a8d428d4d837d4",
-      "bytes": 1418
+      "sha256": "a9262ffe79bd3696adab1c476b23c2c04db5ed4515b73c8b3b244249a03c2bd2",
+      "bytes": 1458
     },
     {
       "path": "src/VERSION.json",
-      "sha256": "6077175b41b79eec025779495b58665c57e2dc75dafb97bd276810420a05377d",
-      "bytes": 229
+      "sha256": "0adca17700824e6e39aa89e35dd7d12fba12d7bae2287d0e70600ec7029b6be9",
+      "bytes": 209
     },
     {
       "path": "src/assets/.gitkeep",
@@ -586,13 +612,13 @@
     },
     {
       "path": "src/index.html",
-      "sha256": "cb51dbf62a8fd2f1b4651dc593ce31bd75fc2a2111af43ad60f61ba21a082273",
-      "bytes": 1948
+      "sha256": "7b2ab6083519d6b1445941eb09145aa2588057fcd0d071fa99d35afc37f3e0b7",
+      "bytes": 1990
     },
     {
       "path": "src/js/core/app.js",
-      "sha256": "34517f0bb6ef8577d8caa9e4e226eee88c87102068100596b8019e549b51fc27",
-      "bytes": 117686
+      "sha256": "5c2a79fb6142035f54bb53a7fcc6a8fd38ff39ef161bce78ccfa62238bbb3f6e",
+      "bytes": 117688
     },
     {
       "path": "src/js/core/book-engine.js",
@@ -960,6 +986,11 @@
       "bytes": 597
     },
     {
+      "path": "tests/manual/SMOKE_TEST_0.9.0_PHASE4_1.md",
+      "sha256": "e1693ab4ead8061e1902543717860cc17b86a68c28960bed628d1a89dd924eef",
+      "bytes": 527
+    },
+    {
       "path": "tests/results/.gitkeep",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
@@ -1030,6 +1061,11 @@
       "bytes": 2605
     },
     {
+      "path": "tests/results/GITHUB_WORKFLOW_0.9.0_PHASE4_1.js",
+      "sha256": "504a6688bf753494204d272119febd4d1de9e85f06d2fd98fffbfbcf9de28d2f",
+      "bytes": 1277
+    },
+    {
       "path": "tests/results/HISTORY_0.9.0_PHASE2.js",
       "sha256": "f3d7e452d01613ae6591c26416cfd9f142505ec314bc42db3c12775f9e1f817e",
       "bytes": 3584
@@ -1071,8 +1107,8 @@
     },
     {
       "path": "tests/results/QUALITY_GATE_REPORT.json",
-      "sha256": "b5103ef107b4985cbcbb0a7db0ee93a4840d8a937758473de8990011bd7eb5ed",
-      "bytes": 1321
+      "sha256": "5bd1e2d2a9b5bc688b751f270b0bd426fbf72ac52ce175122743b2ba1b27c1bc",
+      "bytes": 1591
     },
     {
       "path": "tests/results/REGRESSION_0.9.0_PHASE4.js",
@@ -1081,12 +1117,12 @@
     },
     {
       "path": "tests/results/REGRESSION_REPORT_0.9.0_PHASE4.json",
-      "sha256": "b6b39f089af37aa4680c6908a99306f8b5d5e15b0be7fd940008f0047cb69aad",
+      "sha256": "db7013f6d155777fce1139d85d9fbc7275053e0bfbab56474c641e2e067cb094",
       "bytes": 82867
     },
     {
       "path": "tests/results/SAMPLE_0.8.3_PHASE4.pdf",
-      "sha256": "bfd1472c90c4d238aa2f9a8135d3c1435bedf6edc387471f3c43d0077d2221d4",
+      "sha256": "85a403b20594aac6d589de72a89fb29ba48bad74d5b68b8891214830b59721cb",
       "bytes": 69253
     },
     {
