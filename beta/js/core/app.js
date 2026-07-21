@@ -267,4 +267,4 @@ document.getElementById("exportProof")?.addEventListener("click",()=>runPrintAct
 document.getElementById("downloadPreflight")?.addEventListener("click",()=>{const p=ap();X.downloadPreflight(p);U.toast("Prüfbericht heruntergeladen")});
 document.getElementById("printLayout")?.addEventListener("click",()=>{window.print()});
 document.querySelectorAll(".approve").forEach(b=>b.onclick=()=>{const p=ap(),s=b.dataset.s;p.bookPlan.approvals[s]=!p.bookPlan.approvals[s];p.planStatus=Object.values(p.bookPlan.approvals).every(Boolean)?"approved":"draft";patch(p);render()})}
-window.CAPS={name:"CAPS Studio",version:"0.9.0",sprint:"Production Pipeline & Quality Gate · Phase 4"};render()})();
+window.CAPS={name:"CAPS Studio",version:"0.9.0",sprint:"Production Pipeline & Quality Gate · Phase 4.1"};render()})();
